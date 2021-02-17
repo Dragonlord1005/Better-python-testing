@@ -1,0 +1,16 @@
+[[package]]
+category = "main"
+description = ""
+name = "gradle"
+optional = false
+python-versions = ">=3.5"
+version = "0.0.0.20200724"
+
+[metadata]
+content-hash = "d18306620581b5cfe4e3d9ec034a6eae14ec35951ab3da474d37d26ecedfd2a9"
+python-versions = "^3.8"
+
+[metadata.files]
+gradle = [
+    {file = "gradle-0.0.0.20200724.tar.gz", hash = "sha256:ea6d5dd35ad0f0152a86eb2acc2a947cd5b4b37230a8d8e68b57a9cb57288533"},
+]
