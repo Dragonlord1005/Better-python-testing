@@ -6,7 +6,7 @@ authors = ["repl.it user <replituser@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-gradle = "^0.0.0"
+pytest = "^6.2.2"
 
 [tool.poetry.dev-dependencies]
 
