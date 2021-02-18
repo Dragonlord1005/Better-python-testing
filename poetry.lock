@@ -70,6 +70,14 @@ version = "1.10.0"
 
 [[package]]
 category = "main"
+description = "Python gradle wrapper"
+name = "pygradle"
+optional = false
+python-versions = "*"
+version = "0.1.dev0"
+
+[[package]]
+category = "main"
 description = "Python parsing module"
 name = "pyparsing"
 optional = false
@@ -106,7 +114,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "0.10.2"
 
 [metadata]
-content-hash = "a89bba2e8a4b38904bc3c4d6762dcfc2cc6205ffd711cf875c113afa9521dca3"
+content-hash = "908da15bab80c12ce1633d5a8fe1b4c012c481358098d39f1f3c081f338daf3d"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -137,6 +145,9 @@ pluggy = [
 py = [
     {file = "py-1.10.0-py2.py3-none-any.whl", hash = "sha256:3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a"},
     {file = "py-1.10.0.tar.gz", hash = "sha256:21b81bda15b66ef5e1a777a21c4dcd9c20ad3efd0b3f817e7a809035269e1bd3"},
+]
+pygradle = [
+    {file = "pygradle-0.1.dev0.tar.gz", hash = "sha256:504cde93561719ac796be5866d3beb617e6aff56df1660afe9d5161436b4153e"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
