@@ -1,2 +1,2 @@
 language = "python3"
-run = "smile.py"
+run = "echo hello world"
