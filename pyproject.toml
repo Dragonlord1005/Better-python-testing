@@ -8,6 +8,7 @@ authors = ["repl.it user <replituser@example.com>"]
 python = "^3.8"
 pytest = "^6.2.2"
 pygame = "^2.0.1"
+arcade = "^2.3"
 
 [tool.poetry.dev-dependencies]
 
