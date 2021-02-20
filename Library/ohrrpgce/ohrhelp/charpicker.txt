@@ -1,5 +1,0 @@
-This is the font character picker.
-
-Use the arrow keys to highlight a character, and then press ENTER or SPACE to insert it.
-
-Press ESC to cancel.
