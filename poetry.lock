@@ -186,6 +186,14 @@ version = "2.0.1"
 
 [[package]]
 category = "main"
+description = "Assets manager for Pygame apps"
+name = "pygame-assets"
+optional = false
+python-versions = ">=3.4"
+version = "0.1"
+
+[[package]]
+category = "main"
 description = "Geometry environment for pygame."
 name = "pygame-geometry"
 optional = false
@@ -321,7 +329,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "99f806773857c23748d6816b53f6e4f3d97e89d8596a16f5437762b2ee8dfe72"
+content-hash = "bd21b7b79c03a50ef406ab5e16a6cea357329bb55b9f23378d45aec6200f237a"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -555,6 +563,9 @@ pygame = [
     {file = "pygame-2.0.1-pp37-pypy37_pp73-manylinux2010_i686.whl", hash = "sha256:a4e35d89b6754941e82df1ce980a1c370943d3c076938d94ed1e48165dd6a11b"},
     {file = "pygame-2.0.1-pp37-pypy37_pp73-manylinux2010_x86_64.whl", hash = "sha256:b812285d23b5644c643a6ae30553a772f935f47f61826660b108b8727936384b"},
     {file = "pygame-2.0.1.tar.gz", hash = "sha256:8b1e7b63f47aafcdd8849933b206778747ef1802bd3d526aca45ed77141e4001"},
+]
+pygame-assets = [
+    {file = "pygame_assets-0.1-py3-none-any.whl", hash = "sha256:b417c26cf628c21e557becc3b729afe8e1a25d8fe11421230398d65b582e8c5f"},
 ]
 pygame-geometry = [
     {file = "pygame_geometry-0.1.2-py3-none-any.whl", hash = "sha256:2e978e894d6908caf53322faddc03356ded63c4b1588fd46716a932c479cb075"},
