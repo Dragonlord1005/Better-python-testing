@@ -33,7 +33,6 @@ name = "atomicwrites"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.4.0"
-
 [[package]]
 category = "main"
 description = "Classes Without Boilerplate"
@@ -186,6 +185,14 @@ version = "2.0.1"
 
 [[package]]
 category = "main"
+description = "Assets manager for Pygame apps"
+name = "pygame-assets"
+optional = false
+python-versions = ">=3.4"
+version = "0.1"
+
+[[package]]
+category = "main"
 description = "Geometry environment for pygame."
 name = "pygame-geometry"
 optional = false
@@ -310,6 +317,17 @@ watchdog = ["watchdog"]
 
 [[package]]
 category = "main"
+description = "A built-package format for Python"
+name = "wheel"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+version = "0.36.2"
+
+[package.extras]
+test = ["pytest (>=3.0.0)", "pytest-cov"]
+
+[[package]]
+category = "main"
 description = "Yet another URL library"
 name = "yarl"
 optional = false
@@ -321,7 +339,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "99f806773857c23748d6816b53f6e4f3d97e89d8596a16f5437762b2ee8dfe72"
+content-hash = "b4622f82a0ee833bf441e26239b28d9766952283fc30aadf6a321681bd414238"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -556,6 +574,9 @@ pygame = [
     {file = "pygame-2.0.1-pp37-pypy37_pp73-manylinux2010_x86_64.whl", hash = "sha256:b812285d23b5644c643a6ae30553a772f935f47f61826660b108b8727936384b"},
     {file = "pygame-2.0.1.tar.gz", hash = "sha256:8b1e7b63f47aafcdd8849933b206778747ef1802bd3d526aca45ed77141e4001"},
 ]
+pygame-assets = [
+    {file = "pygame_assets-0.1-py3-none-any.whl", hash = "sha256:b417c26cf628c21e557becc3b729afe8e1a25d8fe11421230398d65b582e8c5f"},
+]
 pygame-geometry = [
     {file = "pygame_geometry-0.1.2-py3-none-any.whl", hash = "sha256:2e978e894d6908caf53322faddc03356ded63c4b1588fd46716a932c479cb075"},
     {file = "pygame_geometry-0.1.2.tar.gz", hash = "sha256:68a2fa6a3670e9d7d08f0ad5628332ed7f7d92f6102003e95dff26608386b852"},
@@ -598,6 +619,10 @@ typing-extensions = [
 werkzeug = [
     {file = "Werkzeug-1.0.1-py2.py3-none-any.whl", hash = "sha256:2de2a5db0baeae7b2d2664949077c2ac63fbd16d98da0ff71837f7d1dea3fd43"},
     {file = "Werkzeug-1.0.1.tar.gz", hash = "sha256:6c80b1e5ad3665290ea39320b91e1be1e0d5f60652b964a3070216de83d2e47c"},
+]
+wheel = [
+    {file = "wheel-0.36.2-py2.py3-none-any.whl", hash = "sha256:78b5b185f0e5763c26ca1e324373aadd49182ca90e825f7853f4b2509215dc0e"},
+    {file = "wheel-0.36.2.tar.gz", hash = "sha256:e11eefd162658ea59a60a0f6c7d493a7190ea4b9a85e335b33489d9f17e0245e"},
 ]
 yarl = [
     {file = "yarl-1.6.3-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:0355a701b3998dcd832d0dc47cc5dedf3874f966ac7f870e0f3a6788d802d434"},
