@@ -1,10 +1,10 @@
 [[package]]
-category = "main"
-description = "Async http client/server framework (asyncio)"
 name = "aiohttp"
+version = "3.7.3"
+description = "Async http client/server framework (asyncio)"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "3.7.3"
 
 [package.dependencies]
 async-timeout = ">=3.0,<4.0"
@@ -18,73 +18,72 @@ yarl = ">=1.0,<2.0"
 speedups = ["aiodns", "brotlipy", "cchardet"]
 
 [[package]]
-category = "main"
-description = "Timeout context manager for asyncio programs"
 name = "async-timeout"
+version = "3.0.1"
+description = "Timeout context manager for asyncio programs"
+category = "main"
 optional = false
 python-versions = ">=3.5.3"
-version = "3.0.1"
 
 [[package]]
-category = "main"
-description = "Atomic file writes."
-marker = "sys_platform == \"win32\""
 name = "atomicwrites"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.4.0"
-[[package]]
+description = "Atomic file writes."
 category = "main"
-description = "Classes Without Boilerplate"
-name = "attrs"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "attrs"
 version = "20.3.0"
+description = "Classes Without Boilerplate"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.extras]
-dev = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "furo", "sphinx", "pre-commit"]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "furo", "sphinx", "pre-commit"]
 docs = ["furo", "sphinx", "zope.interface"]
-tests = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
-tests_no_zope = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
 
 [[package]]
-category = "main"
-description = "Universal encoding detector for Python 2 and 3"
 name = "chardet"
+version = "3.0.4"
+description = "Universal encoding detector for Python 2 and 3"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.4"
 
 [[package]]
-category = "main"
-description = "Composable command line interface toolkit"
 name = "click"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "7.1.2"
+description = "Composable command line interface toolkit"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
-category = "main"
-description = "Cross-platform colored terminal text."
-marker = "sys_platform == \"win32\""
 name = "colorama"
+version = "0.4.4"
+description = "Cross-platform colored terminal text."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "0.4.4"
 
 [[package]]
-category = "main"
-description = "A simple framework for building complex web applications."
 name = "flask"
+version = "1.1.2"
+description = "A simple framework for building complex web applications."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "1.1.2"
 
 [package.dependencies]
-Jinja2 = ">=2.10.1"
-Werkzeug = ">=0.15"
 click = ">=5.1"
 itsdangerous = ">=0.24"
+Jinja2 = ">=2.10.1"
+Werkzeug = ">=0.15"
 
 [package.extras]
 dev = ["pytest", "coverage", "tox", "sphinx", "pallets-sphinx-themes", "sphinxcontrib-log-cabinet", "sphinx-issues"]
@@ -92,36 +91,36 @@ docs = ["sphinx", "pallets-sphinx-themes", "sphinxcontrib-log-cabinet", "sphinx-
 dotenv = ["python-dotenv"]
 
 [[package]]
-category = "main"
-description = "Internationalized Domain Names in Applications (IDNA)"
 name = "idna"
+version = "3.1"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
 optional = false
 python-versions = ">=3.4"
-version = "3.1"
 
 [[package]]
-category = "main"
-description = "iniconfig: brain-dead simple config-ini parsing"
 name = "iniconfig"
+version = "1.1.1"
+description = "iniconfig: brain-dead simple config-ini parsing"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.1.1"
 
 [[package]]
-category = "main"
-description = "Various helpers to pass data to untrusted environments and back."
 name = "itsdangerous"
+version = "1.1.0"
+description = "Various helpers to pass data to untrusted environments and back."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "1.1.0"
 
 [[package]]
-category = "main"
-description = "A very fast and expressive template engine."
 name = "jinja2"
+version = "2.11.3"
+description = "A very fast and expressive template engine."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "2.11.3"
 
 [package.dependencies]
 MarkupSafe = ">=0.23"
@@ -130,93 +129,93 @@ MarkupSafe = ">=0.23"
 i18n = ["Babel (>=0.8)"]
 
 [[package]]
-category = "main"
-description = "Safely add untrusted strings to HTML/XML markup."
 name = "markupsafe"
+version = "1.1.1"
+description = "Safely add untrusted strings to HTML/XML markup."
+category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
-version = "1.1.1"
 
 [[package]]
-category = "main"
-description = "multidict implementation"
 name = "multidict"
+version = "5.1.0"
+description = "multidict implementation"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "5.1.0"
 
 [[package]]
-category = "main"
-description = "Core utilities for Python packages"
 name = "packaging"
+version = "20.9"
+description = "Core utilities for Python packages"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "20.9"
 
 [package.dependencies]
 pyparsing = ">=2.0.2"
 
 [[package]]
-category = "main"
-description = "plugin and hook calling mechanisms for python"
 name = "pluggy"
+version = "0.13.1"
+description = "plugin and hook calling mechanisms for python"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "0.13.1"
 
 [package.extras]
 dev = ["pre-commit", "tox"]
 
 [[package]]
-category = "main"
-description = "library with cross-python path, ini-parsing, io, code, log facilities"
 name = "py"
+version = "1.10.0"
+description = "library with cross-python path, ini-parsing, io, code, log facilities"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "1.10.0"
 
 [[package]]
-category = "main"
-description = "Python Game Development"
 name = "pygame"
+version = "2.0.1"
+description = "Python Game Development"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.0.1"
 
 [[package]]
-category = "main"
-description = "Assets manager for Pygame apps"
 name = "pygame-assets"
+version = "0.1"
+description = "Assets manager for Pygame apps"
+category = "main"
 optional = false
 python-versions = ">=3.4"
-version = "0.1"
 
 [[package]]
-category = "main"
-description = "Geometry environment for pygame."
 name = "pygame-geometry"
+version = "0.1.2"
+description = "Geometry environment for pygame."
+category = "main"
 optional = false
 python-versions = ">=3.7"
-version = "0.1.2"
 
 [[package]]
-category = "main"
-description = "A GUI module for pygame 2"
 name = "pygame-gui"
+version = "0.5.7"
+description = "A GUI module for pygame 2"
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "0.5.7"
 
 [package.dependencies]
 pygame = ">=1.9.5"
 
 [[package]]
-category = "main"
-description = "A menu for pygame, simple, lightweight and easy to use"
 name = "pygame-menu"
+version = "3.5.6"
+description = "A menu for pygame, simple, lightweight and easy to use"
+category = "main"
 optional = false
 python-versions = ">=2.7, <4"
-version = "3.5.6"
 
 [package.dependencies]
 pygame = ">=1.9.3"
@@ -226,44 +225,44 @@ pyperclip = "*"
 docs = ["pygame (>=1.9.3)", "pyperclip", "sphinx", "sphinx-rtd-theme"]
 
 [[package]]
-category = "main"
-description = "Widgets for use with Pygame"
 name = "pygame-widgets"
+version = "0.4.0"
+description = "Widgets for use with Pygame"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "0.3.0"
 
 [package.dependencies]
 pygame = ">=2.0.0"
 
 [[package]]
-category = "main"
-description = "Python parsing module"
 name = "pyparsing"
+version = "2.4.7"
+description = "Python parsing module"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "2.4.7"
 
 [[package]]
-category = "main"
-description = "A cross-platform clipboard module for Python. (Only handles plain text for now.)"
 name = "pyperclip"
+version = "1.8.1"
+description = "A cross-platform clipboard module for Python. (Only handles plain text for now.)"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.8.1"
 
 [[package]]
-category = "main"
-description = "pytest: simple powerful testing with Python"
 name = "pytest"
+version = "6.2.2"
+description = "pytest: simple powerful testing with Python"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "6.2.2"
 
 [package.dependencies]
-atomicwrites = ">=1.0"
+atomicwrites = {version = ">=1.0", markers = "sys_platform == \"win32\""}
 attrs = ">=19.2.0"
-colorama = "*"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
 iniconfig = "*"
 packaging = "*"
 pluggy = ">=0.12,<1.0.0a1"
@@ -274,12 +273,12 @@ toml = "*"
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
 
 [[package]]
-category = "main"
-description = "A library for interacting with features of repl.it"
 name = "replit"
+version = "2.0.0"
+description = "A library for interacting with features of repl.it"
+category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
-version = "2.0.0"
 
 [package.dependencies]
 aiohttp = ">=3.6.2,<4.0.0"
@@ -288,59 +287,49 @@ typing_extensions = ">=3.7.4,<4.0.0"
 werkzeug = ">=1.0.1,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Python Library for Tom's Obvious, Minimal Language"
 name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "0.10.2"
 
 [[package]]
-category = "main"
-description = "Backported and Experimental Type Hints for Python 3.5+"
 name = "typing-extensions"
+version = "3.7.4.3"
+description = "Backported and Experimental Type Hints for Python 3.5+"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.7.4.3"
 
 [[package]]
-category = "main"
-description = "The comprehensive WSGI web application library."
 name = "werkzeug"
+version = "1.0.1"
+description = "The comprehensive WSGI web application library."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "1.0.1"
 
 [package.extras]
 dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-themes", "sphinx-issues"]
 watchdog = ["watchdog"]
 
 [[package]]
-category = "main"
-description = "A built-package format for Python"
-name = "wheel"
-optional = false
-python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
-version = "0.36.2"
-
-[package.extras]
-test = ["pytest (>=3.0.0)", "pytest-cov"]
-
-[[package]]
-category = "main"
-description = "Yet another URL library"
 name = "yarl"
+version = "1.6.3"
+description = "Yet another URL library"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "1.6.3"
 
 [package.dependencies]
 idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "b4622f82a0ee833bf441e26239b28d9766952283fc30aadf6a321681bd414238"
+lock-version = "1.1"
 python-versions = "^3.8"
+content-hash = "094d9dce77542650fbb79b7c57edaad76499b25901f81567125800579ef05187"
 
 [metadata.files]
 aiohttp = [
@@ -589,8 +578,8 @@ pygame-menu = [
     {file = "pygame_menu-3.5.6-py2.py3-none-any.whl", hash = "sha256:5cc0b6874c159e08b9b9e71378310eeb0a32cfaf76f8fbe267009bac63a10032"},
 ]
 pygame-widgets = [
-    {file = "pygame-widgets-0.3.0.tar.gz", hash = "sha256:fe5e0f4e62c9e21c2c0bd89067c6ef927c8e641b74910221f873bef0fbd9a650"},
-    {file = "pygame_widgets-0.3.0-py3-none-any.whl", hash = "sha256:a16cb070b339211ad97554a5b16c2588d37bab8f94cd181aa3fb5fc5198a0180"},
+    {file = "pygame-widgets-0.4.0.tar.gz", hash = "sha256:a31b1e0002b5a39f3d09470ad892f3b934842b053e51b97f966df77a15a471fa"},
+    {file = "pygame_widgets-0.4.0-py3-none-any.whl", hash = "sha256:67231811d19045917b2c52785b215cc5c8a6196d9f112915097c35e27d689e08"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
@@ -619,10 +608,6 @@ typing-extensions = [
 werkzeug = [
     {file = "Werkzeug-1.0.1-py2.py3-none-any.whl", hash = "sha256:2de2a5db0baeae7b2d2664949077c2ac63fbd16d98da0ff71837f7d1dea3fd43"},
     {file = "Werkzeug-1.0.1.tar.gz", hash = "sha256:6c80b1e5ad3665290ea39320b91e1be1e0d5f60652b964a3070216de83d2e47c"},
-]
-wheel = [
-    {file = "wheel-0.36.2-py2.py3-none-any.whl", hash = "sha256:78b5b185f0e5763c26ca1e324373aadd49182ca90e825f7853f4b2509215dc0e"},
-    {file = "wheel-0.36.2.tar.gz", hash = "sha256:e11eefd162658ea59a60a0f6c7d493a7190ea4b9a85e335b33489d9f17e0245e"},
 ]
 yarl = [
     {file = "yarl-1.6.3-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:0355a701b3998dcd832d0dc47cc5dedf3874f966ac7f870e0f3a6788d802d434"},
