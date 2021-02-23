@@ -1,4 +1,5 @@
 import pytest
+import random
 print("A guard stands before you")
 print("you can sneak, attack, or run")
 print("type your response")
