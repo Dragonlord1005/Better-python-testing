@@ -194,48 +194,11 @@ version = "0.1"
 
 [[package]]
 category = "main"
-description = "Geometry environment for pygame."
-name = "pygame-geometry"
+description = "Python gradle wrapper"
+name = "pygradle"
 optional = false
-python-versions = ">=3.7"
-version = "0.1.2"
-
-[[package]]
-category = "main"
-description = "A GUI module for pygame 2"
-name = "pygame-gui"
-optional = false
-python-versions = ">=3.5"
-version = "0.5.7"
-
-[package.dependencies]
-pygame = ">=1.9.5"
-
-[[package]]
-category = "main"
-description = "A menu for pygame, simple, lightweight and easy to use"
-name = "pygame-menu"
-optional = false
-python-versions = ">=2.7, <4"
-version = "3.5.6"
-
-[package.dependencies]
-pygame = ">=1.9.3"
-pyperclip = "*"
-
-[package.extras]
-docs = ["pygame (>=1.9.3)", "pyperclip", "sphinx", "sphinx-rtd-theme"]
-
-[[package]]
-category = "main"
-description = "Widgets for use with Pygame"
-name = "pygame-widgets"
-optional = false
-python-versions = ">=3.6"
-version = "0.4.0"
-
-[package.dependencies]
-pygame = ">=2.0.0"
+python-versions = "*"
+version = "0.1.dev0"
 
 [[package]]
 category = "main"
@@ -244,14 +207,6 @@ name = "pyparsing"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "2.4.7"
-
-[[package]]
-category = "main"
-description = "A cross-platform clipboard module for Python. (Only handles plain text for now.)"
-name = "pyperclip"
-optional = false
-python-versions = "*"
-version = "1.8.2"
 
 [[package]]
 category = "main"
@@ -340,7 +295,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "094d9dce77542650fbb79b7c57edaad76499b25901f81567125800579ef05187"
+content-hash = "b444a579b6c262fd2c558f221af3ae096c8bb0cbe97ec16f2d56bc079ccda3bd"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -578,27 +533,12 @@ pygame = [
 pygame-assets = [
     {file = "pygame_assets-0.1-py3-none-any.whl", hash = "sha256:b417c26cf628c21e557becc3b729afe8e1a25d8fe11421230398d65b582e8c5f"},
 ]
-pygame-geometry = [
-    {file = "pygame_geometry-0.1.2-py3-none-any.whl", hash = "sha256:2e978e894d6908caf53322faddc03356ded63c4b1588fd46716a932c479cb075"},
-    {file = "pygame_geometry-0.1.2.tar.gz", hash = "sha256:68a2fa6a3670e9d7d08f0ad5628332ed7f7d92f6102003e95dff26608386b852"},
-]
-pygame-gui = [
-    {file = "pygame_gui-0.5.7.tar.gz", hash = "sha256:a699c6c5c3f080c37955a1f53bf4d4d8c48b77b49ae3fe5eec925f05b8c1145a"},
-]
-pygame-menu = [
-    {file = "pygame-menu-3.5.6.tar.gz", hash = "sha256:f2ff056948913c97fa526b1d6217e01007698d2141252b9f37ca96ada018728e"},
-    {file = "pygame_menu-3.5.6-py2.py3-none-any.whl", hash = "sha256:5cc0b6874c159e08b9b9e71378310eeb0a32cfaf76f8fbe267009bac63a10032"},
-]
-pygame-widgets = [
-    {file = "pygame-widgets-0.4.0.tar.gz", hash = "sha256:a31b1e0002b5a39f3d09470ad892f3b934842b053e51b97f966df77a15a471fa"},
-    {file = "pygame_widgets-0.4.0-py3-none-any.whl", hash = "sha256:67231811d19045917b2c52785b215cc5c8a6196d9f112915097c35e27d689e08"},
+pygradle = [
+    {file = "pygradle-0.1.dev0.tar.gz", hash = "sha256:504cde93561719ac796be5866d3beb617e6aff56df1660afe9d5161436b4153e"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
     {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
-]
-pyperclip = [
-    {file = "pyperclip-1.8.2.tar.gz", hash = "sha256:105254a8b04934f0bc84e9c24eb360a591aaf6535c9def5f29d92af107a9bf57"},
 ]
 pytest = [
     {file = "pytest-6.2.2-py3-none-any.whl", hash = "sha256:b574b57423e818210672e07ca1fa90aaf194a4f63f3ab909a2c67ebb22913839"},
