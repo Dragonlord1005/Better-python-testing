@@ -1,11 +1,21 @@
-from random import randint
+import random
 import os
 import tkinter
-import PIL
+from PIL import Image
+import time
+import numpy
+import nose
+import evennia
+
+
+
+
+  
+
 
 #This is for sneaking
 def stealth():
-    sneak = randint(1, 20)
+    sneak = random.randint(1, 20)
     if sneak == (12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20):
         print("You sneak past")
     elif sneak:
@@ -25,3 +35,6 @@ if option == ("run"):
     print("You run away, flailing your arms, while screaming like a coward")
 if option == ("test"):
     stealth()
+
+
+
