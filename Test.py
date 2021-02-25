@@ -1,4 +1,4 @@
-import random
+from random import randint
 import os
 import pytest
 
@@ -13,7 +13,7 @@ def test_answer():
 
 #This is for sneaking
 def stealth():
-    sneak = random.randint(1, 10)
+    sneak = randint(1, 10)
     if sneak == (1 or 2 or 3 or 4 or 5 or 6 or 7):
         print("You sneak past")
     elif sneak:
