@@ -1,6 +1,5 @@
 pytest==6.2.2
 pygame==2.0.1
-replit==2.0.0
 pygame-assets==0.1
 wheel==0.36.2
 setuptools==53.0.0
@@ -8,6 +7,5 @@ Flask==1.1.2
 Jinja2==2.11.3
 Werkzeug==1.0.1
 idna==3.1
-chardet==4.0.0
 iniconfig==1.1.1
 py==1.10.0
