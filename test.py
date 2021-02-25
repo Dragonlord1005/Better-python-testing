@@ -1,12 +1,8 @@
 import random
 import os
-import tkinter
-from PIL import Image
-import time
 import numpy
 import nose
-import evennia
-
+import virtualenv
 
 
 
