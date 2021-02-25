@@ -5,10 +5,6 @@ import nose
 import virtualenv
 
 
-
-  
-
-
 #This is for sneaking
 def stealth():
     sneak = random.randint(1, 20)
@@ -31,6 +27,3 @@ if option == ("run"):
     print("You run away, flailing your arms, while screaming like a coward")
 if option == ("test"):
     stealth()
-
-
-
