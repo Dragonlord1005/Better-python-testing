@@ -1,20 +1,12 @@
 from random import randint
 import os
-import pytest
-
-
-#test
-def func(x):
-    return x + 1
-
-
-def test_answer():
-    assert func(3) == 5
+import tkinter
+import PIL
 
 #This is for sneaking
 def stealth():
-    sneak = randint(1, 10)
-    if sneak == (1 or 2 or 3 or 4 or 5 or 6 or 7):
+    sneak = randint(1, 20)
+    if sneak == (12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20):
         print("You sneak past")
     elif sneak:
         print("You don't sneak past and are caught,")
