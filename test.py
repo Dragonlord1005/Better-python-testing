@@ -1,7 +1,7 @@
 import random
 
 
-#This is for sneaking
+# This is for sneaking
 def stealth():
     sneak = random.randint(1, 20)
     if sneak == (12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20):
