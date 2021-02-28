@@ -1,8 +1,4 @@
 import random
-import os
-import numpy
-import nose
-import virtualenv
 
 
 #This is for sneaking
