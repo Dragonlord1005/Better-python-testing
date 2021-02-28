@@ -1,4 +1,5 @@
-#This is for sneaking
+# This is for sneaking
+
 
 def stealth():
     sneak = random.randint(1, 10)
@@ -7,4 +8,3 @@ def stealth():
     elif sneak:
         print("You don't sneak past and are caught,")
         print("This would initate combat but its not done")
-        
