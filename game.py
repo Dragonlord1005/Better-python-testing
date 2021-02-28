@@ -21,5 +21,7 @@ if option == ("attack"):
     print("You would attack, but it's not implemented")
 if option == ("run"):
     print("You run away, flailing your arms, while screaming like a coward")
+    print("You end up attracting too much attention, and are thrown in jail")
+    print("You lose")
 if option == ("test"):
     stealth()
