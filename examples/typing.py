@@ -1,5 +1,4 @@
 import time
-import os
 import sys
 
 
@@ -8,7 +7,6 @@ for char in words:
     sleep(0.2)
     sys.stdout.write(char)
     sys.stdout.flush()
-
 
 
 def typingPrint(text):
