@@ -9,7 +9,6 @@ for char in words:
     sys.stdout.flush()
 
 
-
 def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
