@@ -3,6 +3,13 @@ import os
 import sys
 
 
+
+words = "This is just a test :P\n"
+for char in words:
+    sleep(0.2)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+
 def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
@@ -19,4 +26,4 @@ def typingInput(text):
     return value
 
 
-typingPrint("Hi, this is a test\n")
+
