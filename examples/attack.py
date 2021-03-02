@@ -8,6 +8,7 @@ def attack():
   global enemy_health
   enemy_health = enemy_health - 7
   print("you successfully attacked")
+  print("the enemy is now at")
   print(enemy_health)
   
 
