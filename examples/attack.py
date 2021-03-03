@@ -22,7 +22,8 @@ def attack():
   global enemy_health
   enemy_health = enemy_health - 7
   typingPrint("you successfully attacked\n")
-  print("the enemy is now at", enemy_health, "health\n")
+  print("the enemy is now at", enemy_health, "health!!!")
+  
   
   
 
