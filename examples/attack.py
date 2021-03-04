@@ -21,7 +21,8 @@ enemy_defending = 0
 turn = 0
 enemy_choice = 0
 
-while player_health or enemy_health >= 0:
+def combat():
+  while player_health or enemy_health == 0:
     #this is for player attacking
       def attack():
         global enemy_health
@@ -71,3 +72,5 @@ while player_health or enemy_health >= 0:
         turn = 0
       if player_health or enemy_health <= 0:
         break
+
+combat()
