@@ -4,6 +4,7 @@ import sys
 import random
 
 winner = 2
+global winner
 # this is for typing effect
 
 
@@ -23,6 +24,7 @@ while winner < 0:
     enemy_defending = 0
     turn = 0
     enemy_choice = 0
+    global player_health = 50, player_attack = 7, player_defending = 0, enemy_health = 50, enemy_attack = 7, enemy_defending = 0, turn = 0, enemy_choice = 0
     # this is for player attacking
 
     def attack():
