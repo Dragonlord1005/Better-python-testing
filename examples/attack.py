@@ -21,6 +21,7 @@ def typingPrint(text):
         sys.stdout.flush()
         time.sleep(0.05)
 
+
 def combat():
     while winner < 0:
         global enemy_defending
@@ -28,6 +29,7 @@ def combat():
         global player_attack
         global turn
         global player_health
+
         def attack():
 
             if enemy_defending == 0:
@@ -74,9 +76,6 @@ def combat():
         if player_health or enemy_health <= 0:
             break
 
-
-
-
         def attack():
             global enemy_health
             enemy_health = enemy_health - 7
@@ -87,9 +86,9 @@ def combat():
 
             print(enemy_health)
 
-
         print("You can attack or defend")
         print("defending is not implemented")
+
 
 battle = input(">")
 
