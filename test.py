@@ -13,6 +13,71 @@ enemy_defending = 0
 turn = 0
 enemy_choice = 0
 winner = 3
+
+
+
+def combat():
+
+    global enemy_health
+    global winner
+    while winner < 5:
+        global enemy_defending
+        global turn
+        # this is for player attacking
+
+        def attack():
+            global enemy_defending
+            global enemy_attack
+            global enemy_choice
+            global enemy_health
+            global turn
+            if enemy_defending == 0:
+                enemy_health = enemy_health - player_attack
+            elif enemy_defending == 1:
+                enemy_health = enemy_health - (player_attack / 2)
+                enemy_defending = 0
+                turn = 1
+            typingPrint("you successfully attacked\n")
+            print("the enemy is now at", enemy_health, "health!!!")
+            turn = 1
+        # this is for player defending
+
+        def defend():
+            globals()
+            global player_defending
+            player_defending = 1
+            turn = 1
+        if turn == 0:
+            typingPrint("You can attack or defend\n")
+            battle = input(">")
+        if battle == ("attack"):
+            attack()
+        if battle == ("defend"):
+            defend()
+        if battle == ("debug"):
+            turn = 1
+        # this is for the enemys turn
+        if turn == 1:
+            global enemy_choice
+            global enemy_defending
+            global enemy_attack
+            global player_health
+            global player_defending
+            enemy_choice = random.randint(1, 10)
+            print("works")
+            if enemy_choice == (1 or 2 or 3 or 4 or 5):
+                typingPrint("the enemy is going to attack you!\n")
+                if player_defending == 0:
+                    player_health = player_health - enemy_attack
+                elif player_defending == 1:
+                    player_health = player_health - (enemy_attack / 2)
+                    player_defending = 0
+            elif enemy_choice:
+                enemy_defending = 1
+                typingPrint("The enemy is defending\n")
+            print("You are now at", player_health, "health!!!!")
+            turn = 0
+
 battling = 0
 
 while battling == 1:
@@ -61,6 +126,7 @@ while battling == 1:
         turn = 0
 
 
+
 # This is for typing
 def typingPrint(text):
     for character in text:
@@ -96,7 +162,11 @@ if option == ("sneak"):
     stealth()
 if option == ("attack"):
     typingPrint("You atttack the guard, the battle begins!!!!\n")
+
+    combat()
+
     battling = 1
+
 if option == ("run"):
     typingPrint(
         "You run away, flailing your arms, while screaming like a coward\n")
