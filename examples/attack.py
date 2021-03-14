@@ -138,7 +138,6 @@ def attack():
     print("the enemy is now at", enemy_health, "health\n")
 
 
-
 typingPrint("You can attack or defend\n")
 typingPrint("defending is not implemented\n")
 battle = input(">")
@@ -147,4 +146,3 @@ if battle == ("attack"):
     attack()
 
 combat()
-
