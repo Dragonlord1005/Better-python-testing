@@ -15,7 +15,6 @@ enemy_choice = 0
 winner = 3
 
 
-
 def combat():
 
     global enemy_health
@@ -78,6 +77,7 @@ def combat():
             print("You are now at", player_health, "health!!!!")
             turn = 0
 
+
 battling = 0
 
 while battling == 1:
@@ -124,7 +124,6 @@ while battling == 1:
             typingPrint("The enemy is defending\n")
         print("You are now at", player_health, "health!!!!")
         turn = 0
-
 
 
 # This is for typing
