@@ -101,4 +101,3 @@ if option == ("run"):
     typingPrint("You end up attracting too much attention, and are thrown in jail\n")
     typingPrint("You lose\n")
 if option == ("test"):
-    stealth()
