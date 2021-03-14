@@ -5,6 +5,8 @@ import random
 
 winner = 2
 # this is for typing effect
+
+
 def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
