@@ -3,7 +3,7 @@ import time
 import sys
 import random
 
-
+winner = 2
 # this is for typing effect
 def typingPrint(text):
     for character in text:
@@ -12,7 +12,7 @@ def typingPrint(text):
         time.sleep(0.05)
 
 
-while player_health or enemy_health >= 0:
+while winner < 0:
     player_health = 50
     player_attack = 7
     player_defending = 0
