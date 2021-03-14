@@ -129,16 +129,12 @@ def combat():
             break
 
 
-
-
-
 def attack():
     global enemy_health
     enemy_health = enemy_health - 7
     typingPrint("you successfully attacked\n")
 
     print("the enemy is now at", enemy_health, "health\n")
-
 
 
 typingPrint("You can attack or defend\n")
@@ -149,5 +145,3 @@ if battle == ("attack"):
     attack()
 
 combat()
-
-
