@@ -12,7 +12,6 @@ def typingPrint(text):
         time.sleep(0.05)
 
 
-
 while player_health or enemy_health >= 0:
     player_health = 50
     player_attack = 7
@@ -23,6 +22,7 @@ while player_health or enemy_health >= 0:
     turn = 0
     enemy_choice = 0
     # this is for player attacking
+
     def attack():
         if enemy_defending == 0:
             enemy_health = enemy_health - player_attack
@@ -118,7 +118,6 @@ def combat():
             break
 
 
-
 def attack():
     enemy_health = enemy_health - 7
 
@@ -136,7 +135,6 @@ battle = input(">")
 
 if battle == ("attack"):
     attack()
-
 
 
 combat()
