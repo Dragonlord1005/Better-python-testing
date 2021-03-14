@@ -1,6 +1,3 @@
-import pytest
-import pygame
-from replit import db
 print("Hi! Its me, your friend.")
 print("this is a pretty simple test")
 print("all I have to do is figure out how to give you options")
