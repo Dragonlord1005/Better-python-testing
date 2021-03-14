@@ -12,22 +12,18 @@ def typingPrint(text):
         time.sleep(0.05)
 
 
-player_health = 50
-player_attack = 7
-player_defending = 0
-enemy_health = 50
-enemy_attack = 7
-enemy_defending = 0
-turn = 0
-enemy_choice = 0
-
 
 while player_health or enemy_health >= 0:
+    player_health = 50
+    player_attack = 7
+    player_defending = 0
+    enemy_health = 50
+    enemy_attack = 7
+    enemy_defending = 0
+    turn = 0
+    enemy_choice = 0
     # this is for player attacking
     def attack():
-        global enemy_health
-        global turn
-        global enemy_defending
         if enemy_defending == 0:
             enemy_health = enemy_health - player_attack
         elif enemy_defending == 1:
@@ -39,8 +35,6 @@ while player_health or enemy_health >= 0:
     # this is for player defending
 
     def defend():
-        global turn
-        global player_defending
         player_defending = 1
         turn = 1
 
@@ -79,9 +73,6 @@ def combat():
     while player_health or enemy_health == 0:
         # this is for player attacking
         def attack():
-            global enemy_health
-            global turn
-            global enemy_defending
             if enemy_defending == 0:
                 enemy_health = enemy_health - player_attack
             elif enemy_defending == 1:
@@ -93,8 +84,6 @@ def combat():
     # this is for player defending
 
         def defend():
-            global turn
-            global player_defending
             player_defending = 1
             turn = 1
 
@@ -131,7 +120,6 @@ def combat():
 
 
 def attack():
-    global enemy_health
     enemy_health = enemy_health - 7
 
     print("you successfully attacked")
@@ -152,7 +140,3 @@ if battle == ("attack"):
 
 
 combat()
-
-
-
-
