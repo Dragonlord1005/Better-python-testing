@@ -129,8 +129,6 @@ def combat():
             break
 
 
-
-
 def attack():
     global enemy_health
     enemy_health = enemy_health - 7
@@ -146,4 +144,3 @@ if battle == ("attack"):
     attack()
 
 combat()
-
