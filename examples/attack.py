@@ -52,7 +52,6 @@ def combat():
         if turn == 0:
             typingPrint("You can attack or defend\n")
             battle = input(">")
-
             if battle == ("attack"):
                 attack()
             elif battle == ("defend"):
