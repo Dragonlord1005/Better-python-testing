@@ -30,6 +30,8 @@ def combat():
         global turn
         global player_health
 
+        # this is for the player attack
+
         def attack():
 
             if enemy_defending == 0:
@@ -40,6 +42,7 @@ def combat():
             typingPrint("you successfully attacked\n")
             print("the enemy is now at", enemy_health, "health!!!")
             turn = 1
+
         # this is for player defending
 
         def defend():
@@ -56,7 +59,9 @@ def combat():
                 defend()
             elif battle == ("debug"):
                 enemy_health = 0
+
         # this is for the enemys turn
+
         if turn == 1:
             enemy_choice = random.randint(1, 10)
             if enemy_choice == (1 or 2 or 3 or 4 or 5):
