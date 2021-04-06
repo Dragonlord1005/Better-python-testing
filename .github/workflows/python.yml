@@ -39,4 +39,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           pip install yapf
-          yapf -ir . -vv -p --style
+          yapf -ir . -vv -p
