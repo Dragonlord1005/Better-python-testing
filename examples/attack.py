@@ -1,8 +1,5 @@
 # this is the combat module
 import random
-import time
-import sys
-import yapf
 
 # This is for combat
 player_health = 50
