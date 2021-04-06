@@ -1,3 +1,4 @@
+  
 name: Formatting python code
 on:
   push:
@@ -12,7 +13,7 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: autoyapf
         id: autoyapf
-        uses: mritunjaysharma394/autoyapf@v2
+        uses: mritunjaysharma394/autoyapf@v1.0.2-beta
         with:
           args: --style pep8 --recursive --in-place .
       - name: Check for modified files
