@@ -1,4 +1,4 @@
-#this is the combat module
+# this is the combat module
 import random
 import time
 import sys
