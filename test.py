@@ -42,10 +42,13 @@ def combat():
         # this is for player defending
 
         def defend():
-            globals()
-            global player_defending
-            player_defending = 1
-            turn = 1
+          print("hi")
+          globals()
+          global turn
+          global player_defending
+          player_defending = 1
+          print("You are defendig")
+          turn = 1
         if turn == 0:
             typingPrint("You can attack or defend\n")
             battle = input(">")
@@ -55,6 +58,8 @@ def combat():
             defend()
         if battle == ("debug"):
             turn = 1
+        if battle == ("win"):
+          winner = 5
         # this is for the enemys turn
         if turn == 1:
             global enemy_choice
