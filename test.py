@@ -1,7 +1,6 @@
 import random
 import time
 import sys
-import autopep8
 
 # This is for combat
 player_health = 50

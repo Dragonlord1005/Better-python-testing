@@ -1,7 +1,6 @@
 import time
 import sys
 
-
 words = "This is just a test :P\n"
 for char in words:
     sleep(0.2)
