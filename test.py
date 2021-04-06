@@ -3,7 +3,7 @@ import time
 import sys
 
 # This is for combat
- player_health = 50
+player_health = 50
 player_attack = 7
 player_defending = 0
 enemy_health = 50
