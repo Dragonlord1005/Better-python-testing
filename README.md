@@ -1,4 +1,5 @@
 [![DeepSource](https://deepsource.io/gh/Dragonlord1005/Bettery-python-testing.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Bettery-python-testing/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/Dragonlord1005/Bettery-python-testing.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Bettery-python-testing/?ref=repository-badge)
 # Bettery-python-testing
   This is actually a project I'm woring on, I'm trying to make the framework of a text based python game, but it isn't going so well.
 # Why
