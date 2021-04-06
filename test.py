@@ -1,6 +1,6 @@
 import random
-import time
 import sys
+import time
 
 # This is for combat
 player_health = 50

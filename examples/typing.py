@@ -1,5 +1,5 @@
-import time
 import sys
+import time
 
 words = "This is just a test :P\n"
 for char in words:
