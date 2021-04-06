@@ -3,7 +3,6 @@ import time
 import sys
 import autopep8
 
-
 # This is for combat
 player_health = 50
 player_attack = 7
@@ -23,6 +22,7 @@ def combat():
     while winner < 5:
         global enemy_defending
         global turn
+
         # this is for player attacking
 
         def attack():
@@ -40,16 +40,18 @@ def combat():
             typingPrint("you successfully attacked\n")
             print("the enemy is now at", enemy_health, "health!!!")
             turn = 1
+
         # this is for player defending
 
         def defend():
-          print("hi")
-          globals()
-          global turn
-          global player_defending
-          player_defending = 1
-          print("You are defendig")
-          turn = 1
+            print("hi")
+            globals()
+            global turn
+            global player_defending
+            player_defending = 1
+            print("You are defendig")
+            turn = 1
+
         if turn == 0:
             typingPrint("You can attack or defend\n")
             battle = input(">")
@@ -60,7 +62,7 @@ def combat():
         if battle == ("debug"):
             turn = 1
         if battle == ("win"):
-          winner = 5
+            winner = 5
         # this is for the enemys turn
         if turn == 1:
             global enemy_choice
@@ -98,6 +100,7 @@ while battling == 1:
         typingPrint("you successfully attacked\n")
         print("the enemy is now at", enemy_health, "health!!!")
         turn = 1
+
     # this is for player defending
 
     def defend():
@@ -105,6 +108,7 @@ while battling == 1:
         global player_defending
         player_defending = 1
         turn = 1
+
     if turn == 0:
         typingPrint("You can attack or defend\n")
         battle = input(">")
