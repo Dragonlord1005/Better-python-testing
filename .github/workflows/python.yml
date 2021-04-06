@@ -30,8 +30,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-      - run: python pip install yapf
-      - run: yapf -ir . -vv -p
+        run: python pip install yapf
+        run: yapf -ir . -vv -p
       
       
         run: echo Hello, world!
