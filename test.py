@@ -1,7 +1,6 @@
 import random
 import sys
 import time
-from time import sleep
 
 # This is for combat
 player_health = 50
