@@ -21,7 +21,6 @@ def typingInput(text):
     return value
 
 
-
 # This is for combat
 player_health = 50
 player_attack = 7
