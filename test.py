@@ -14,11 +14,6 @@ turn = 0
 enemy_choice = 0
 winner = 3
 
-words = "This is just a test :P\n"
-for char in words:
-    sleep(0.2)
-    sys.stdout.write(char)
-    sys.stdout.flush()
 
 
 def typingPrint(text):
