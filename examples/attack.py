@@ -19,7 +19,7 @@ info = {
 while win == 0:
   # this is for player attacking
   def attack():
-    enemy_defending = info[""enemy_defending"]
+    enemy_defending = info["enemy_defending"]
     if enemy_defending == 0:
       print("hey")
     elif enemy_defending == 1:
