@@ -1,13 +1,1 @@
-pytest==6.2.2
-pygame==2.0.1
-pygame-gui==0.5.7
-pygame-geometry==0.1.2
-pygame-widgets==0.3.0
-pygame-menu==3.5.6
-replit==2.0.0
-pygame-assets==0.1
-wheel==0.36.2
-setuptools==53.0.0
-Flask==1.1.2
-Jinja2==2.11.3
-Werkzeug==1.0.1
+
