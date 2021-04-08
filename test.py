@@ -1,8 +1,10 @@
 import random
 import sys
 import time
+from numba import jit
 
 # This is for combat
+
 player_health = 50
 player_attack = 7
 player_defending = 0
@@ -20,7 +22,6 @@ def typingPrint(text):
         sys.stdout.flush()
         time.sleep(0.05)
 
-
 def typingInput(text):
     for character in text:
         sys.stdout.write(character)
@@ -29,7 +30,7 @@ def typingInput(text):
     value = input()
     return value
 
-
+@jit(nppythonmode)
 def combat():
 
     global enemy_health

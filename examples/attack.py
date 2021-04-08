@@ -1,24 +1,5 @@
 # this is the combat module
-import random
-import sys
-import time
-
-
-# This is for typing
-def typingPrint(text):
-    for character in text:
-        sys.stdout.write(character)
-        sys.stdout.flush()
-        time.sleep(0.05)
-
-
-def typingInput(text):
-    for character in text:
-        sys.stdout.write(character)
-        sys.stdout.flush()
-        time.sleep(0.05)
-    value = input()
-    return value
+from numba import jit, njit
 
 
 # This is for combat
@@ -34,35 +15,31 @@ info = {
   "winner": 3
 }
 
-def combat():
-    win = info["winner"]
-    info["winner"] = 0
-    while winner == 0:
 
-        # this is for player attacking
-        def attack():
-            if enemy_defending == 0:
-            elif enemy_defending == 1:
-                enemy_health = enemy_health - (player_attack / 2)
-                enemy_defending = 0
-                turn = 1
-            typingPrint("you successfully attacked\n")
-            print("the enemy is now at", enemy_health, "health!!!")
-            turn = 1
+while win == 0:
+  # this is for player attacking
+  def attack():
+    enemy_defending = info[""enemy_defending"]
+    if enemy_defending == 0:
+      print("hey")
+    elif enemy_defending == 1:
+      enemy_health = enemy_health - (player_attack / 2)
+      enemy_defending = 0
+    turn = 1
+    print("you successfully attacked")
+    print("the enemy is now at", enemy_health, "health!")
 
-        # this is for player defending
+  # this is for player defending
 
-        def defend():
-            print("hi")
-            globals()
-            global turn
-            global player_defending
-            player_defending = 1
-            print("You are defendig")
+  def defend():
+  print("hi")
+  defending
+  player_defending = 1
+  rint("You are defendig")
             turn = 1
 
         if turn == 0:
-            typingPrint("You can attack or defend\n")
+            print("You can attack or defend")
             battle = input(">")
         if battle == ("attack"):
             attack()
@@ -82,7 +59,7 @@ def combat():
             enemy_choice = random.randint(1, 10)
             print("works")
             if enemy_choice == (1 or 2 or 3 or 4 or 5):
-                typingPrint("the enemy is going to attack you!\n")
+                print("the enemy is going to attack you!")
                 if player_defending == 0:
                     player_health = player_health - enemy_attack
                 elif player_defending == 1:
@@ -90,7 +67,7 @@ def combat():
                     player_defending = 0
             elif enemy_choice:
                 enemy_defending = 1
-                typingPrint("The enemy is defending\n")
+                print("The enemy is defending\n")
             print("You are now at", player_health, "health!!!!")
             turn = 0
 combat()
