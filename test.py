@@ -22,6 +22,7 @@ def typingPrint(text):
         sys.stdout.flush()
         time.sleep(0.05)
 
+
 def typingInput(text):
     for character in text:
         sys.stdout.write(character)
@@ -29,6 +30,7 @@ def typingInput(text):
         time.sleep(0.05)
     value = input()
     return value
+
 
 @jit(nppythonmode)
 def combat():
