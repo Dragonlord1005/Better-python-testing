@@ -22,35 +22,26 @@ def typingInput(text):
 
 
 # This is for combat
-player_health = 50
-player_attack = 7
-player_defending = 0
-enemy_health = 50
-enemy_attack = 7
-enemy_defending = 0
-turn = 0
-enemy_choice = 0
-winner = 3
-
+info = {
+  "player_health": 50,
+  "player_attack": 7,
+  "player_defending": 0,
+  "enemy_health": 50,
+  "enemy_attack": 7,
+  "enemy_defending": 0,
+  "turn": 0,
+  "enemy_choice": 0,
+  "winner": 3
+}
 
 def combat():
-
-    global enemy_health
-    global winner
-    while winner < 5:
-        global enemy_defending
-        global turn
+    win = info["winner"]
+    info["winner"] = 0
+    while winner == 0:
 
         # this is for player attacking
-
         def attack():
-            global enemy_defending
-            global enemy_attack
-            global enemy_choice
-            global enemy_health
-            global turn
             if enemy_defending == 0:
-                enemy_health = enemy_health - player_attack
             elif enemy_defending == 1:
                 enemy_health = enemy_health - (player_attack / 2)
                 enemy_defending = 0
@@ -102,3 +93,4 @@ def combat():
                 typingPrint("The enemy is defending\n")
             print("You are now at", player_health, "health!!!!")
             turn = 0
+combat()
