@@ -32,7 +32,7 @@ def typingInput(text):
     return value
 
 
-@jit(nppythonmode)
+@jit(nopythonmode)
 def combat():
 
     global enemy_health
