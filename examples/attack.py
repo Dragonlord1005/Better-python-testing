@@ -15,7 +15,7 @@ info = {
 }
 win = info["winner"]
 
-while win == 0:
+while info["winner"] == 0:
     # this is for player attacking
     def attack():
         enemy_defending = info["enemy_defending"]
