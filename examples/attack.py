@@ -22,7 +22,8 @@ while info["winner"] == 0:
         if enemy_defending == 0:
             print("hey")
         elif enemy_defending == 1:
-            info["enemy_health"] = info["enemy_health"] - info["player_attack"] / 2
+            info["enemy_health"] = info[
+                "enemy_health"] - info["player_attack"] / 2
             info["enemy_defending"] = 0
         info["turn"] = 1
         print("you successfully attacked")
