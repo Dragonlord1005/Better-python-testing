@@ -14,15 +14,14 @@ info = {
   "enemy_choice": 0,
   "winner": 3
 }
-
-
+win = info["winner"]
 while win == 0:
   # this is for player attacking
   def attack():
-    enemy_defending = info["enemy_defending"]
-    if enemy_defending == 0:
-      print("hey")
-    elif enemy_defending == 1:
+      enemy_defending = info["enemy_defending"]
+    if info["enemy_defending"] = 0:
+        print("hey")
+    dlif enemy_defending == 1:
       enemy_health = enemy_health - (player_attack / 2)
       enemy_defending = 0
     turn = 1
@@ -30,16 +29,11 @@ while win == 0:
     print("the enemy is now at", enemy_health, "health!")
 
   # this is for player defending
-
   def defend():
-  print("hi")
-  defending
-  player_defending = 1
-  rint("You are defendig")
-            turn = 1
+    turn = 1
 
-        if turn == 0:
-            print("You can attack or defend")
+    if turn == 0:
+        print("You can attack or defend")
             battle = input(">")
         if battle == ("attack"):
             attack()
@@ -70,4 +64,4 @@ while win == 0:
                 print("The enemy is defending\n")
             print("You are now at", player_health, "health!!!!")
             turn = 0
-combat()
+info["winner"] = 0
