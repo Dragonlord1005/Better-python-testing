@@ -47,7 +47,7 @@ def combat():
             if battle == ("defend"):
                 defend()
             if battle == ("debug"):
-                info["turn'] = 1
+                info["turn"] = 1
             if battle == ("win"):
                 info["winner"] = 1
             if battle == ("lose"):
