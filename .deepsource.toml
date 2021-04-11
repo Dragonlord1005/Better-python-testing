@@ -2,7 +2,8 @@ version = 1
 
 test_patterns = [
     "examples/**",
-    "test,py"
+    "test,py",
+    ".style.py"
 ]
 
 [[analyzers]]
