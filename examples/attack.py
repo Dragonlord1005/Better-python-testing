@@ -1,7 +1,6 @@
 # this is the combat module
 import random
 
-
 # This is for combat
 info = {
     "player_health": 50,
