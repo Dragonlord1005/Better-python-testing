@@ -1,5 +1,5 @@
 # this is the combat module
-import random
+from random import *
 
 # This is for combat
 info = {
@@ -55,7 +55,7 @@ def combat():
                 info["player_health"] = -15
             # this is for the enemys turn
         if info["turn"] == 1:
-            info["enemy_choice"] = random.randint(1, 10)
+            info["enemy_choice"] = randint(1, 10)
             print("works")
             if info["enemy_choice"] == (1 or 2 or 3 or 4 or 5):
                 print("the enemy is going to attack you!")
