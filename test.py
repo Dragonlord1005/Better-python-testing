@@ -1,7 +1,6 @@
 import random
 import sys
 import time
-from numba import jit
 
 # This is for combat
 
@@ -32,7 +31,7 @@ def typingInput(text):
     return value
 
 
-@jit(nopythonmode)
+
 def combat():
 
     global enemy_health
