@@ -11,5 +11,7 @@
 - [x] automated code fixes
 - [x] stealth
 - [ ] fully working combat system (that doesnt keep breaking)
+- [ ] Inventory system
+- [ ] NPC's 
 - [ ] exp
 - [ ] classes
