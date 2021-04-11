@@ -33,6 +33,7 @@ def combat():
         # this is for player defending
         def defend():
             info["turn"] = 1
+
         if info["player_health"] <= 0:
             print("You lose, keep trying!")
             info["winner"] = 2
