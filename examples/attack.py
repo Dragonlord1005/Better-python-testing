@@ -1,6 +1,6 @@
 # this is the combat module
 from numba import jit, njit
-import random, time, sys
+
 
 # This is for combat
 info = {
@@ -49,7 +49,7 @@ def combat():
             if battle == ("defend"):
                 defend()
             if battle == ("debug"):
-                turn = 1
+                info["turn"] = 1
             if battle == ("win"):
                 info["winner"] = 1
             if battle == ("lose"):
@@ -66,7 +66,7 @@ def combat():
                 elif info["player_defending"] == 1:
                     info["player_health"] = info[
                         "player_health"] - info["enemy_attack"] / 2
-                    indo["player_defending"] = 0
+                    info["player_defending"] = 0
             elif info["enemy_choice"]:
                 info["enemy_defending"] = 1
                 print("The enemy is defending")
