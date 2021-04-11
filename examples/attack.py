@@ -1,5 +1,5 @@
 # this is the combat module
-from numba import jit, njit
+import random
 
 
 # This is for combat
