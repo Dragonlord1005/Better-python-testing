@@ -14,7 +14,6 @@ enemy_choice = 0
 winner = 3
 
 
-
 def typingPrint(text):
     for character in text:
         sys.stdout.write(character)
