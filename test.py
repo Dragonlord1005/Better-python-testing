@@ -12,6 +12,8 @@ info = {
     "enemy_choice": 0,
     "winner": 0
 }
+
+
 def combat():
     info["winner"] = 3
     while info["winner"] == 3:
@@ -51,7 +53,7 @@ def combat():
                 print("the enemy is going to attack you!")
                 if info["player_defending"] == 0:
                     info["player_health"] = ["player_health"
-                                            ] - info["enemy_attack"]
+                                             ] - info["enemy_attack"]
                 elif info["player_defending"] == 1:
                     info["player_health"] = info[
                         "player_health"] - info["enemy_attack"] / 2
