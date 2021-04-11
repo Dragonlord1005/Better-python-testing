@@ -1,5 +1,5 @@
 # this is the combat module
-from random import *
+from random import randint
 
 # This is for combat
 info = {
