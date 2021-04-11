@@ -35,6 +35,10 @@ def combat():
         # this is for player defending
         def defend():
             info["turn"] = 1
+        if info["player_health"] <= 0:
+            print("You lose, keep trying!")
+            info["winner"] = 2
+            break
 
         if info["turn"] == 0:
             print("You can attack or defend")
@@ -46,8 +50,10 @@ def combat():
             if battle == ("debug"):
                 turn = 1
             if battle == ("win"):
-                info["winner"] = 5
-                # this is for the enemys turn
+                info["winner"] = 1
+            if battle == ("lose"):
+                info["player_health"] = -15
+            # this is for the enemys turn
         if info["turn"] == 1:
             info["enemy_choice"] = random.randint(1, 10)
             print("works")
