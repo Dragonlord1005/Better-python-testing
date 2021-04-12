@@ -83,7 +83,7 @@ def stealth():
         print("You sneak past")
     elif sneak:
         print("You don't sneak past and are caught,\n")
-        print("This would initate combat but its not done\n")
+        combat()
 
 
 print("A guard stands before you\n")
