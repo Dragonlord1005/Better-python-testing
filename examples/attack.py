@@ -39,6 +39,10 @@ def combat():
             print("You lose, keep trying!")
             info["winner"] = 2
             break
+        if info["enemy_health"] <= 0:
+          print("you win, this doesnt progress the story yet")
+          info["winner"] = 1
+          break
 
         if info["turn"] == 0:
             print("You can attack or defend")
@@ -50,7 +54,7 @@ def combat():
             if battle == ("debug"):
                 info["turn"] = 1
             if battle == ("win"):
-                info["winner"] = 1
+                info["enemy_health"] = -1
             if battle == ("lose"):
                 info["player_health"] = -15
             # this is for the enemys turn
@@ -60,8 +64,7 @@ def combat():
             if info["enemy_choice"] == (1 or 2 or 3 or 4 or 5):
                 print("the enemy is going to attack you!")
                 if info["player_defending"] == 0:
-                    info["player_health"] = ["player_health"
-                                             ] - info["enemy_attack"]
+                    info["player_health"] = info["player_health"] - info["enemy_attack"]
                 elif info["player_defending"] == 1:
                     info["player_health"] = info[
                         "player_health"] - info["enemy_attack"] / 2
@@ -71,6 +74,5 @@ def combat():
                 print("The enemy is defending")
             print("You are now at", info["player_health"], "health!!!!")
             info["turn"] = 0
-
 
 combat()
