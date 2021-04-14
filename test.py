@@ -53,20 +53,20 @@ def combat():
 
         # this is for player defending
         def defend():
-            typingprint("you are defending")
+            typingprint("you are defending\n")
             info["turn"] = 1
 
         if info["player_health"] <= 0:
-            typingprint("You lose, keep trying!")
+            typingprint("You lose, keep trying!\n")
             info["winner"] = 2
             break
         if info["enemy_health"] <= 0:
-            typingprint("you win, this doesnt progress the story yet")
+            typingprint("you win, this doesnt progress the story yet\n")
             info["winner"] = 1
             break
 
         if info["turn"] == 0:
-            typingprint("You can attack or defend")
+            typingprint("You can attack or defend\n")
             battle = input(">")
             if battle == ("attack"):
                 attack()
@@ -81,9 +81,8 @@ def combat():
             # this is for the enemys turn
         if info["turn"] == 1:
             info["enemy_choice"] = randint(1, 10)
-            print("works")
             if info["enemy_choice"] == (1 or 2 or 3 or 4 or 5):
-                print("the enemy is going to attack you!")
+                typingprint("the enemy is going to attack you!\n")
                 if info["player_defending"] == 0:
                     info["player_health"] = info["player_health"] - info[
                         "enemy_attack"]
@@ -93,10 +92,10 @@ def combat():
                     info["player_defending"] = 0
             elif info["enemy_choice"]:
                 info["enemy_defending"] = 1
-                print("The enemy is defending\n")
+                typingprint("The enemy is defending\n")
             typingprint("You are now at\n")
             print(info["player_health"])
-            typingprint("Health!!!")
+            typingprint("Health!!!\n")
             info["turn"] = 0
 
 
@@ -104,15 +103,15 @@ def combat():
 def stealth():
     sneak = randint(1, 20)
     if sneak == (12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20):
-        typingprint("You sneak past")
+        typingprint("You sneak past\n")
     elif sneak:
         typingprint("You don't sneak past and are caught,\n")
         combat()
 
 
-print("A guard stands before you\n")
-print("you can sneak, attack, or run\n")
-print("type your response\n")
+typingprint("A guard stands before you\n")
+typingprint("you can sneak, attack, or run\n")
+typingprint("type your response\n")
 option = input(">")
 if option == ("sneak"):
     stealth()
