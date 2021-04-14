@@ -37,22 +37,24 @@ def combat():
     while info["winner"] == 3:
         # this is for player attacking
         def attack():
-          enemy_defending = info["enemy_defending"]
-          if enemy_defending == 0:
-            info["enemy_health"] = info["enemy_health"] - info["player_attack"]
-          elif enemy_defending == 1:
-            info["enemy_health"] = info[
-              "enemy_health"] - info["player_attack"] / 2
-            info["enemy_defending"] = 0
-          info["turn"] = 1
-          typingprint("you successfully attacked\n")
-          typingprint("the enemy is now at\n")
-          print(info["enemy_health"])
-          typingprint("health!!!\n")
+            enemy_defending = info["enemy_defending"]
+            if enemy_defending == 0:
+                info["enemy_health"] = info["enemy_health"] - info[
+                    "player_attack"]
+            elif enemy_defending == 1:
+                info["enemy_health"] = info[
+                    "enemy_health"] - info["player_attack"] / 2
+                info["enemy_defending"] = 0
+            info["turn"] = 1
+            typingprint("you successfully attacked\n")
+            typingprint("the enemy is now at\n")
+            print(info["enemy_health"])
+            typingprint("health!!!\n")
+
         # this is for player defending
         def defend():
-          typingprint("you are defending")
-          info["turn"] = 1
+            typingprint("you are defending")
+            info["turn"] = 1
 
         if info["player_health"] <= 0:
             typingprint("You lose, keep trying!")
