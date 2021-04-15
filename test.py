@@ -49,7 +49,7 @@ def combat():
             typingprint("the enemy is now at\n")
             print(info["enemy_health"])
             typingprint("health!!!\n")
-            time.sleep(15)
+            time.sleep(8)
             info["turn"] = 1
 
         # this is for player defending
