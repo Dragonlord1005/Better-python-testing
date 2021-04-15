@@ -45,11 +45,12 @@ def combat():
                 info["enemy_health"] = info[
                     "enemy_health"] - info["player_attack"] / 2
                 info["enemy_defending"] = 0
-            info["turn"] = 1
             typingprint("you successfully attacked\n")
             typingprint("the enemy is now at\n")
             print(info["enemy_health"])
             typingprint("health!!!\n")
+            time.sleep(15)
+            info["turn"] = 1
 
         # this is for player defending
         def defend():
@@ -96,6 +97,7 @@ def combat():
             typingprint("You are now at\n")
             print(info["player_health"])
             typingprint("Health!!!\n")
+            time.sleep(5)
             info["turn"] = 0
 
 
