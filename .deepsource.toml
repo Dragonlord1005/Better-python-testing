@@ -3,7 +3,8 @@ version = 1
 test_patterns = [
     "examples/**",
     "test,py",
-    ".style.py"
+    ".style.py",
+    "examples/pygame.py"
 ]
 
 [[analyzers]]
@@ -11,7 +12,7 @@ name = "python"
 enabled = true
 
   [analyzers.meta]
-  runtime_version = "3.x.x"
+  runtime_version = "3.8.9"
 
 [[transformers]]
 name = "autopep8"
