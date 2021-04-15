@@ -13,4 +13,5 @@ python = "^3.8"
 pygame = "^2.0.1"
 pygame-menu = "^4.0.2"
 pygame-gui = "^0.5.7"
+pip = "^21.0.1"
 [tool.poetry.dev-dependencies]
