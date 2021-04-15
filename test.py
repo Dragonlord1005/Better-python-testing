@@ -117,8 +117,8 @@ if option == ("sneak"):
     stealth()
 if option == ("attack"):
     typingprint("You atttack the guard, the battle begins!!!!\n")
-    combat()
-if option == ("run"):
-    print("You run away, flailing your arms, while screaming like a coward\n")
-    print("You end up attracting too much attention, and are thrown in jail\n")
-    print("You lose\n")
+    combat()n
+if option == ("ru":)
+    typingprint("You run away, flailing your arms, while screaming like a coward\n")
+    typingprint("You end up attracting too much attention, and are thrown in jail\n")
+    typingprint("You lose\n")
