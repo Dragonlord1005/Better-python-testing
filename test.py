@@ -1,5 +1,6 @@
 from random import randint
-import time, sys
+import time
+import sys
 
 
 def typingprint(text):
