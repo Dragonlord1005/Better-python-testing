@@ -8,10 +8,11 @@
   Sorry.. just needed to get that off my chest ya know.
 
 # Goals
-- [x] automated code fixes
-- [x] stealth
-- [ ] fully working combat system (that doesnt keep breaking)
+- [x] Automated code fixes
+- [x] Stealth
+- [x] Fully working combat system (that doesnt keep breaking)
 - [ ] Inventory system
+- [ ] Exp
+- [ ] Classes
 - [ ] NPC's 
-- [ ] exp
-- [ ] classes
+- [ ] Story
