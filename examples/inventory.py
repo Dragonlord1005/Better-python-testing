@@ -18,12 +18,13 @@ class Inventory(object):
     def add_item(self, item):
         self.items[item.name] = item
 
-
     def __str__(self):
         out = '\t'.join(['Name', 'Attack', 'Armor', 'Weight', 'Value'])
         for item in self.items.values():
-            out += '\n' + '\t'.join([str(x) for x in [item.name,
-                                    item.attack, item.armor, item.weight, item.price]])
+            out += '\n' + '\t'.join([
+                str(x) for x in
+                [item.name, item.attack, item.armor, item.weight, item.price]
+            ])
         return out
 
 
