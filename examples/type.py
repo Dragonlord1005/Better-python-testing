@@ -1,3 +1,5 @@
+# This is a typing effect I found online, havn't beem able to make it print variables though
+
 import time, sys
 
 
