@@ -1,5 +1,5 @@
-[![DeepSource](https://deepsource.io/gh/Dragonlord1005/Better-python-testing.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Better-python-testing/?ref=repository-badge)
-[![DeepSource](https://deepsource.io/gh/Dragonlord1005/Better-python-testing.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Better-python-testing/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
 # Better-python-testing
   This is actually a project I'm woring on, I'm trying to make the framework of a text based python game, feel free to use it
 # Goals
