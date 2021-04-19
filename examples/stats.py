@@ -46,6 +46,7 @@ class enemy:
     def enemy_health(self):
         return self.health
 
+
 print("What is your name?")
 info = input(">")
 character_name = info
@@ -58,4 +59,3 @@ print(player_info.math_health(7))
 print(player_info.get_health())
 guard = enemy("guard", 7, 50)
 print(guard.enemy_damage(player_info.get_attack()))
-
