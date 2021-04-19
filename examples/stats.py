@@ -31,7 +31,7 @@ class player:
         self.health = self.health - damage
 
 
-# This is for enemies, it's not finished, I dont know if it works yet
+# This is for enemies, will make it inherit from another class soon
 class enemy:
     def __init__(self, type, attack, health):
         self.type = type
@@ -55,7 +55,8 @@ info = input(">")
 character_age = info
 player_info = player(character_name, character_age, 7, 50)
 print(player_info.get_name(), player_info.get_age(), player_info.get_health())
-print(player_info.math_health(7))
-print(player_info.get_health())
+player_info.math_health(7)
+print("You are at", player_info.get_health(), "health")
 guard = enemy("guard", 7, 50)
-print(guard.enemy_damage(player_info.get_attack()))
+guard.enemy_damage(player_info.get_attack())
+print("The enemy is at", guard.enemy_health(), "health")
