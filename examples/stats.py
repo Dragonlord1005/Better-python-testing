@@ -9,6 +9,10 @@ class player:
     # will get the name of the player
     def get_name(self):
         return self.name
+      
+    # Will get the value of attack from the player
+    def get_attack(self):
+      return self.attack  
 
     # will get the age of the player
     def get_age(self):
@@ -38,6 +42,10 @@ class enemy:
 
     def enemy_damage(self, target):
         self.health = self.health - target
+    
+    # This gets the enemys health
+    def enemy_health(self):
+      return self.health
 
 print("What is your name?")
 info = input(">")
@@ -51,3 +59,6 @@ player_info.set_health(8)
 print(player_info.get_health())
 print(player_info.math_health())
 print(player_info.get_health())
+guard = enemy("guard", 7, 50)
+print(guard.enemy_damage(7))
+print(guard.enemy_health())
