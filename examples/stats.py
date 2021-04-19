@@ -27,8 +27,8 @@ class player:
         self.health = health
 
     # This subtracts health from the player, need to get it to take input
-    def math_health(self, target):
-        self.health = self.health - target
+    def math_health(self, damage):
+        self.health = self.health - damage
 
 
 # This is for enemies, it's not finished, I dont know if it works yet
@@ -39,8 +39,8 @@ class enemy:
         self.health = health
 
     # this makes the enemy take damage
-    def enemy_damage(self, target):
-        self.health = self.health - target
+    def enemy_damage(self, damage):
+        self.health = self.health - damage
 
     # This gets the enemys health
     def enemy_health(self):
@@ -57,5 +57,5 @@ print(player_info.get_name(), player_info.get_age(), player_info.get_health())
 print(player_info.math_health(7))
 print(player_info.get_health())
 guard = enemy("guard", 7, 50)
-print(guard.enemy_damage(player_info.get_attack())
-# it seems right here its getting an eof error
+print(guard.enemy_damage(player_info.get_attack()))
+
