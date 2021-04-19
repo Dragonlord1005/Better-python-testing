@@ -1,4 +1,5 @@
 # This is a new version of stats from the combat but instead it uses classes which I hope will make things easier
+# dont use this right now, its broken for some reason
 class player:
     def __init__(self, name, age, health):
         self.name = name
@@ -16,6 +17,8 @@ class player:
 
     def set_health(self, health):
         self.health = health
+    def math_health(self):
+      return self.health - 7
 
 
 Jack = player("Jack", 37, 50)
@@ -29,6 +32,5 @@ info = input(">")
 character_age = info
 player_info = player(character_name, character_age, 50)
 print(player_info.get_name(), player_info.get_age(), player_info.get_health())
-
 player_info.set_health(8)
-print(player_inf0.get_health)
+print(player_info.get_health)
