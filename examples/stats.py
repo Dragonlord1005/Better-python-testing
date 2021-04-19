@@ -1,8 +1,9 @@
 # This is a new version of stats from the combat but instead it uses classes which I hope will make things easier
 class player:
-    def __init__(self, name, age, health):
+    def __init__(self, name, age, attack, health):
         self.name = name
         self.age = age
+        self.attack = attack
         self.health = health
 
     # will get the name of the player
@@ -25,9 +26,13 @@ class player:
     def math_health(self):
         self.health = self.health - 7
 
+# This is for enemies, it's not finished
+class enemy:
+  def __init__(self, type, attack, health):
+    self.type = type
+    self.attack = attack
+    self.health = health
 
-Jack = player("Jack", 37, 50)
-print(Jack.get_name(), Jack.get_age())
 
 print("What is your name?")
 info = input(">")
@@ -35,7 +40,7 @@ character_name = info
 print("What is your age?")
 info = input(">")
 character_age = info
-player_info = player(character_name, character_age, 50)
+player_info = player(character_name, character_age, 7, 50)
 print(player_info.get_name(), player_info.get_age(), player_info.get_health())
 player_info.set_health(8)
 print(player_info.get_health())
