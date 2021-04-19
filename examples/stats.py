@@ -4,18 +4,23 @@ class player:
         self.name = name
         self.age = age
         self.health = health
+
     # will get the name of the player
     def get_name(self):
         return self.name
+
     # will get the age of the player
     def get_age(self):
         return self.age
+
     # Will grab healths value from player
     def get_health(self):
         return self.health
+
     # Sets health for player, don't know what to use it for yet
     def set_health(self, health):
         self.health = health
+
     # This subtracts health from the player, need to get it to take input
     def math_health(self):
         self.health = self.health - 7
