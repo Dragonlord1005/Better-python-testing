@@ -17,8 +17,9 @@ class player:
 
     def set_health(self, health):
         self.health = health
+
     def math_health(self):
-      return self.health - 7
+        return self.health - 7
 
 
 Jack = player("Jack", 37, 50)
