@@ -26,12 +26,13 @@ class player:
     def math_health(self):
         self.health = self.health - 7
 
+
 # This is for enemies, it's not finished
 class enemy:
-  def __init__(self, type, attack, health):
-    self.type = type
-    self.attack = attack
-    self.health = health
+    def __init__(self, type, attack, health):
+        self.type = type
+        self.attack = attack
+        self.health = health
 
 
 print("What is your name?")
