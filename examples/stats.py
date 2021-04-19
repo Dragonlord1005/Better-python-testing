@@ -33,10 +33,11 @@ class enemy:
         self.type = type
         self.attack = attack
         self.health = health
-  #this doesn't work yet
+
+#this doesn't work yet
+
     def enemy_damage(self, target):
         self.health = self.health - target
-
 
 print("What is your name?")
 info = input(">")
