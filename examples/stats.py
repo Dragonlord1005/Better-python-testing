@@ -27,12 +27,14 @@ class player:
         self.health = self.health - 7
 
 
-# This is for enemies, it's not finished
+# This is for enemies, it's not finished, I dont know if it works yet
 class enemy:
     def __init__(self, type, attack, health):
         self.type = type
         self.attack = attack
         self.health = health
+    def enemy_damage(self, target):
+      self.health = self.health - target
 
 
 print("What is your name?")
