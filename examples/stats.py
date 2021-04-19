@@ -1,18 +1,19 @@
 # This is a new version of stats from the combat but instead it uses classes which I hope will make things easier
 
+
 class npc:
-  def __init__(self, type, attack, health):
-    self.type = type
-    self.attack = attack
-    self.health = health
+    def __init__(self, type, attack, health):
+        self.type = type
+        self.attack = attack
+        self.health = health
 
-  # this makes the npc take damage
-  def enemy_damage(self, damage):
-    self.health = self.health - damage
+    # this makes the npc take damage
+    def enemy_damage(self, damage):
+        self.health = self.health - damage
 
-  # This gets the npc's health
-  def enemy_health(self):
-    return self.health
+    # This gets the npc's health
+    def enemy_health(self):
+        return self.health
 
 
 class player:
