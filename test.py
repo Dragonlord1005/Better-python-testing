@@ -1,11 +1,6 @@
 from random import randint
 import time
 import sys
-import curses
-
-curses.initscr()
-
-
 def typingprint(text):
     for character in text:
         sys.stdout.write(character)
