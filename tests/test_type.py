@@ -2,6 +2,7 @@
 
 import time, sys
 
+
 def typingprint(text):
     for character in text:
         sys.stdout.write(character)
@@ -19,5 +20,5 @@ def typingInput(text):
 
 
 def test_typingprint():
-  x = 10000
-  typingprint(str(x))
+    x = 10000
+    typingprint(str(x))
