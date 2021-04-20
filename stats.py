@@ -3,7 +3,6 @@ import sys
 import time
 
 
-
 class npc:
     def __init__(self, type, attack, health):
         self.type = type
@@ -80,5 +79,5 @@ print("You are at", player_info.get_health(), "health")
 guard = enemy("guard", 7, 50)
 guard.enemy_damage(player_info.get_attack())
 sys.stdout.write("The enemy is at")
-sys.stdout.write(str(guard.enemy_health())) 
+sys.stdout.write(str(guard.enemy_health()))
 sys.stdout.write(" health")

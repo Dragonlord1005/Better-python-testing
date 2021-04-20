@@ -18,5 +18,6 @@ def typingInput(text):
     value = input()
     return value
 
+
 x = 100000
 typingPrint(str(x))
