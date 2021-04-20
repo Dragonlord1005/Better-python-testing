@@ -1,7 +1,6 @@
 # This is an inventory system, changes made here might change at any time, this is not finished
 print("go away this isnt finished")
-
-
+import pytest
 class Item(object):
     def __init__(self, name, attack, armor, weight, price):
         self.name = name
@@ -9,7 +8,6 @@ class Item(object):
         self.armor = armor
         self.weight = weight
         self.price = price
-
 
 class Inventory(object):
     def __init__(self):
@@ -32,3 +30,8 @@ inventory = Inventory()
 inventory.add_item(Item('Sword', 5, 1, 15, 2))
 inventory.add_item(Item('Armor', 0, 10, 25, 5))
 print(inventory)
+def test_inventory():
+  inventory = Inventory()
+  pass
+  
+  

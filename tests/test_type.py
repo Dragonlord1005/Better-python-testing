@@ -1,9 +1,9 @@
 # This is a typing effect I found online, havn't beem able to make it print variables though
 
 import time, sys
-
-
-def typingPrint(text):
+import pytest
+@pytest.fixture
+def typingprint(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -19,5 +19,6 @@ def typingInput(text):
     return value
 
 
-x = 100000
-typingPrint(str(x))
+def test_typingprint():
+  x = 10000
+  typingprint(str(x))
