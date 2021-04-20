@@ -2,7 +2,6 @@ from random import randint
 import time
 import sys
 
-
 def typingprint(text):
     for character in text:
         sys.stdout.write(character)
