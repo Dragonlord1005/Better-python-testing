@@ -7,7 +7,7 @@ def typingprint(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.05)
+        time.sleep(0.03)
 
 
 def typinginput(text):
@@ -46,11 +46,10 @@ def combat():
                 info["enemy_health"] = info[
                     "enemy_health"] - info["player_attack"] / 2
                 info["enemy_defending"] = 0
-            typingprint("you successfully attacked\n")
-            typingprint("the enemy is now at\n")
-            print(info["enemy_health"])
-            typingprint("health!!!\n")
-            time.sleep(8)
+            typingprint("you successfully attacked")
+            typingprint(" the enemy is now at")
+            typingprint(str(info["enemy_health"]))
+            typingprint(" health!!!\n")
             info["turn"] = 1
 
         # this is for player defending
@@ -95,10 +94,9 @@ def combat():
             elif info["enemy_choice"]:
                 info["enemy_defending"] = 1
                 typingprint("The enemy is defending\n")
-            typingprint("You are now at\n")
-            print(info["player_health"])
-            typingprint("Health!!!\n")
-            time.sleep(5)
+            typingprint("You are now at ")
+            typingprint(str(info["player_health"]))
+            typingprint(" health!!!\n")
             info["turn"] = 0
 
 

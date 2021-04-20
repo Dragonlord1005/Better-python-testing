@@ -1,4 +1,7 @@
 # This is a new version of stats from the combat but instead it uses classes which I hope will make things easier
+import sys
+import time
+
 
 
 class npc:
@@ -76,4 +79,6 @@ player_info.math_health(7)
 print("You are at", player_info.get_health(), "health")
 guard = enemy("guard", 7, 50)
 guard.enemy_damage(player_info.get_attack())
-print("The enemy is at", guard.enemy_health(), "health")
+sys.stdout.write("The enemy is at")
+sys.stdout.write(str(guard.enemy_health())) 
+sys.stdout.write(" health")
