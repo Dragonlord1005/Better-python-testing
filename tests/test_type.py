@@ -1,8 +1,7 @@
-# This is a typing effect I found online, havn't beem able to make it print variables though
+# This is a typing effect
 
 import time, sys
-import pytest
-@pytest.fixture
+
 def typingprint(text):
     for character in text:
         sys.stdout.write(character)
