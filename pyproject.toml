@@ -13,5 +13,6 @@ python = "^3.8"
 pip = "^21.0.1"
 yapf = "^0.31.0"
 pytest = "^6.2.3"
-pytest-parallel = "^0.1.0"
+pytest-xdist = "^2.2.1"
+pytest-sugar = "^0.9.4"
 [tool.poetry.dev-dependencies]
