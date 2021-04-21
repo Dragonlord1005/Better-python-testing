@@ -13,10 +13,6 @@ python = "^3.8"
 yapf = "^0.31.0"
 pytest-xdist = "^2.2.1"
 pytest = {version = "^6.2.3", allow-prereleases = true}
-flake8 = "^3.9.1"
-pytest-pep8 = "^1.0.6"
-setuptools = "^56.0.0"
 pytest-benchmark = "^3.4.1"
-tox = "^3.23.0"
-[tool.poetry.dev-dependencies]
 pytest-sugar = "^0.9.4"
+[tool.poetry.dev-dependencies]
