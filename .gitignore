@@ -135,3 +135,4 @@ sloccount.sc
 output.xml
 coverage.xml
 xunit.xml
+stats.py,cover
