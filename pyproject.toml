@@ -15,4 +15,5 @@ pytest-xdist = "^2.2.1"
 pytest = {version = "^6.2.3", allow-prereleases = true}
 pytest-benchmark = "^3.4.0"
 pytest-sugar = "^0.9.4"
+pyinstaller = "^4.3"
 [tool.poetry.dev-dependencies]
