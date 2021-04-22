@@ -128,3 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# logs
+pyflakes.log
+pylint.log
+sloccount.sc
+output.xml
+coverage.xml
+xunit.xml
