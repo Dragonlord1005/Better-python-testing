@@ -6,7 +6,7 @@ requires = ["poetry-core>=1.0.0"]
 [tool.poetry]
 authors = ["Dragonlord1005"]
 description = ""
-name = "Python text based game framework"
+name = "Python-text-based-game-framework"
 version = "0.1.0"
 [tool.poetry.dependencies]
 python = "^3.8"
