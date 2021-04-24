@@ -28,7 +28,7 @@ class Inventory(object):
         return out
 
 
-inventory = Inventory()
+_inventory = Inventory()
 inventory.add_item(Item('Sword', 5, 1, 15, 2))
 inventory.add_item(Item('Armor', 0, 10, 25, 5))
 print(inventory)
