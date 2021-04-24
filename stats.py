@@ -1,6 +1,5 @@
 # This is a new version of stats from the combat but instead it uses classes which I hope will make things easier
 import sys
-import time
 
 
 class npc:

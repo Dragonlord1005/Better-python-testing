@@ -1,6 +1,5 @@
 # This is an inventory system, changes made here might change at any time, this is not finished
 print("go away this isnt finished")
-import pytest
 
 
 class Item(object):
