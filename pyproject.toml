@@ -1,6 +1,6 @@
 [build-system]
 build-backend = "poetry.core.masonry.api"
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry>=1.1.6"]
 
 [tool]
 [tool.poetry]
@@ -8,12 +8,15 @@ authors = ["Dragonlord1005"]
 description = ""
 name = "Python-text-based-game-framework"
 version = "0.1.0"
+readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
-yapf = "^0.31.0"
 pytest-xdist = "^2.2.1"
 pytest = {version = "^6.2.3", allow-prereleases = true}
 pytest-benchmark = "^3.4.0"
 pytest-sugar = "^0.9.4"
 pyinstaller = "^4.3"
+yapf = {version = "^0.31.0", allow-prereleases = true}
 [tool.poetry.dev-dependencies]
+[tool.poetry.scripts]
+test = "test.py"
