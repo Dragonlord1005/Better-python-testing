@@ -1,6 +1,7 @@
 # This is a typing effect
 
-import time, sys
+import time
+import sys
 
 
 def typingprint(text):
