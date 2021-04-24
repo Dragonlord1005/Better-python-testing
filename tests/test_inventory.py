@@ -35,4 +35,4 @@ print(inventory)
 
 
 def test_inventory():
-    inventory = Inventory()
+    _inventory = Inventory()
