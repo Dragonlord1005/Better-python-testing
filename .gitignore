@@ -26,6 +26,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+playground.py
+.upm/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -136,3 +138,4 @@ output.xml
 coverage.xml
 xunit.xml
 stats.py,cover
+.spec
