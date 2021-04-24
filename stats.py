@@ -1,7 +1,8 @@
-# This is a new version of stats from the 
+# This is a new version of stats from the
 # combat but instead it uses classes which I hope will
 #  make things easier
 import sys
+
 
 class npc:
     def __init__(self, type, attack, health):
@@ -81,7 +82,3 @@ guard.enemy_damage(player_info.get_attack())
 sys.stdout.write("The enemy is at")
 sys.stdout.write(str(guard.enemy_health()))
 sys.stdout.write(" health")
-
-
-
-
