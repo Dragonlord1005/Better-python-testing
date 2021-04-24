@@ -36,4 +36,3 @@ print(inventory)
 
 def test_inventory():
     inventory = Inventory()
-    pass
