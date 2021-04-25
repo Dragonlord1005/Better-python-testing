@@ -20,6 +20,6 @@ def typingInput(text):
     return value
 
 
-def test_typingprint(benchmark):
+def test_typingprint():
     x = 10000
     typingprint(str(x))
