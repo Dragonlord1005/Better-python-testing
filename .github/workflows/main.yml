@@ -30,6 +30,7 @@ jobs:
       - name: Report results to DeepSource
         run: |
           # Generate coverage report in xml format
+            pip install coverage
             coverage xml
 
           # Install deepsource CLI
