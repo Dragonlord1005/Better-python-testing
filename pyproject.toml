@@ -18,6 +18,7 @@ pytest-benchmark = "^3.4.0"
 pytest-sugar = "^0.9.4"
 pyinstaller = "^4.3"
 yapf = {version = "^0.31.0", allow-prereleases = true}
+coverage = "^5.5"
 [tool.poetry.dev-dependencies]
 autopep8 = "^1.5.6"
 [tool.poetry.scripts]
