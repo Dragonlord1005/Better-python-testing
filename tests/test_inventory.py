@@ -7,8 +7,8 @@ class object():
         self.weight = weight
         self.price = price
 
-        def get_name(self):
-            return self.name
+    def get_name(self):
+      return self.name
 
-        def get_weight(self):
-            return self.weight
+      def get_weight(self):
+        return self.weight
