@@ -1,38 +1,14 @@
-# This is an inventory system, changes made here might change at any time, this is not finished
-print("go away this isnt finished")
+# This is an inventory system
 
 
-class Item(object):
-    def __init__(self, name, attack, armor, weight, price):
+class object():
+    def __init__(self, name, weight, price):
         self.name = name
-        self.attack = attack
-        self.armor = armor
         self.weight = weight
         self.price = price
 
+        def get_name(self):
+            return self.name
 
-class Inventory(object):
-    def __init__(self):
-        self.items = {}
-
-    def add_item(self, item):
-        self.items[item.name] = item
-
-    def __str__(self):
-        out = '\t'.join(['Name', 'Attack', 'Armor', 'Weight', 'Value'])
-        for item in self.items.values():
-            out += '\n' + '\t'.join([
-                str(x) for x in
-                [item.name, item.attack, item.armor, item.weight, item.price]
-            ])
-        return out
-
-
-_inventory = Inventory()
-_inventory.add_item(Item('Sword', 5, 1, 15, 2))
-_inventory.add_item(Item('Armor', 0, 10, 25, 5))
-print(_inventory)
-
-
-def test_inventory():
-    _inventory = Inventory()
+        def get_weight(self):
+            return self.weight
