@@ -4,5 +4,4 @@ def returnprint(x):
 
 
 def test_returnprint():
-    if returnprint("hi") != "hi":
-        raise AssertionError
+    assert returnprint("hi") == "hi"
