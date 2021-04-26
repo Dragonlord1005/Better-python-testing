@@ -9,6 +9,7 @@ test_patterns = [
 [[analyzers]]
 name = "python"
 enabled = true
+skip_doc_coverage = ["module", "init", "class"]
 
   [analyzers.meta]
   runtime_version = "3.x.x"
