@@ -2,6 +2,7 @@
 
 
 class object():
+    # Initiates
     def __init__(self, name, weight, price):
         self.name = name
         self.weight = weight
