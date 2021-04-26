@@ -1,7 +1,7 @@
 # This is an inventory system
 
 
-class object():
+class item():
     # Initiates
     def __init__(self, name, weight, price):
         self.name = name

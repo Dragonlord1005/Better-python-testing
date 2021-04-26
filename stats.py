@@ -5,7 +5,7 @@ import sys
 
 
 class npc:
-    def __init__(self, type, attack, health):
+    def __init__(self, race, attack, health):
         self.type = type
         self.attack = attack
         self.health = health
@@ -53,7 +53,7 @@ class player:
 
 # This is for enemies, will make it inherit from another class soon
 class enemy:
-    def __init__(self, type, attack, health):
+    def __init__(self, monster, attack, health):
         self.type = type
         self.attack = attack
         self.health = health
