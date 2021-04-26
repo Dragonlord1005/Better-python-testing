@@ -10,5 +10,5 @@ class object():
     def get_name(self):
         return self.name
 
-        def get_weight(self):
-            return self.weight
+    def get_weight(self):
+        return self.weight
