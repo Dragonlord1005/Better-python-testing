@@ -27,7 +27,11 @@ class weapon(item):
 
     def get_attack(self):
         return self.attack
+    def damage(self, input):
+      return self.attack - input
 
 
 yep = weapon("Sword", 23, 21, 53)
 print(yep.get_name())
+print(yep.damage(10))
+
