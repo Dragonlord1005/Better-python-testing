@@ -13,3 +13,21 @@ class item():
 
     def get_weight(self):
         return self.weight
+
+    def get_price(self):
+        return self.price
+
+
+class weapon(item):
+    def __init__(self, name, attack, weight, price):
+        self.name = name
+        self.attack = attack
+        self.weight = weight
+        self.price = price
+
+    def get_attack(self):
+        return self.attack
+
+
+yep = weapon("Sword", 23, 21, 53)
+print(yep.get_name())
