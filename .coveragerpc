@@ -1,3 +1,4 @@
 [run]
 omit = tests/attack.py
 source = tests/
+include = tests/test_inventory.py, tests/test_sneak.py, tests/test_type.py
