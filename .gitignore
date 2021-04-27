@@ -141,3 +141,6 @@ output.xml
 coverage.xml
 xunit.xml
 stats.py,cover
+
+# poetry lock
+poetry.lock
