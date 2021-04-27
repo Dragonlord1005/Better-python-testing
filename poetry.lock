@@ -59,7 +59,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.4.4"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Code coverage measurement for Python"
 name = "coverage"
 optional = false
@@ -245,7 +245,7 @@ elasticsearch = ["elasticsearch"]
 histogram = ["pygal", "pygaljs"]
 
 [[package]]
-category = "main"
+category = "dev"
 description = "Pytest plugin for measuring coverage."
 name = "pytest-cov"
 optional = false
@@ -327,7 +327,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "0.10.2"
 
 [[package]]
-category = "main"
+category = "dev"
 description = "A formatter for Python code."
 name = "yapf"
 optional = false
@@ -335,7 +335,7 @@ python-versions = "*"
 version = "0.31.0"
 
 [metadata]
-content-hash = "013f944b71dea56280154fe24c9871f55ef5997215600c079750a700d13a27f8"
+content-hash = "47ccb4ba675b9e6fb18ad90c1eb0953bb6f774ac6225e45b93d8ac92fb4ef110"
 python-versions = "^3.8"
 
 [metadata.files]
