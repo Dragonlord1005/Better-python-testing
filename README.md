@@ -7,7 +7,7 @@
 - [x] Stealth
 - [x] Fully working combat system (that doesnt keep breaking)
 - [ ] Inventory system
-- [ ] Redone stats
+- [ ] Redo stats
 - [ ] Exp
 - [ ] Classes
 - [ ] NPC's 
