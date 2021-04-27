@@ -7,6 +7,7 @@
 - [x] Stealth
 - [x] Fully working combat system (that doesnt keep breaking)
 - [ ] Inventory system
+- [ ] shops
 - [ ] Redo stats
 - [ ] Exp
 - [ ] Classes
