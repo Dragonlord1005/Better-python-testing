@@ -14,5 +14,6 @@ class item():
     def get_weight(self):
         return self.weight
 
+
 def test_item():
     weewoo = item("sword", 13, 32)
