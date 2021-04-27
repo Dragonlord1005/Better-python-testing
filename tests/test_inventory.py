@@ -13,6 +13,3 @@ class item():
 
     def get_weight(self):
         return self.weight
-
-
-
