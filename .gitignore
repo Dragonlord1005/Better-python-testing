@@ -27,9 +27,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 playground.py
-.upm/
 .vscode/
-poetry.lock
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -141,6 +139,3 @@ output.xml
 coverage.xml
 xunit.xml
 stats.py,cover
-
-# poetry lock
-poetry.lock

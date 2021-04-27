@@ -1,6 +1,6 @@
 [build-system]
 build-backend = "poetry.core.masonry.api"
-requires = ["poetry>=1.1.6"]
+requires = ["poetry>=1.0"]
 
 [tool]
 [tool.poetry]
@@ -21,6 +21,5 @@ pyinstaller = "^4.3"
 yapf = {version = "^0.31.0", allow-prereleases = true}
 coverage = "^5.5"
 pytest-cov = "^2.11.1"
-autopep8 = "^1.5.6"
 [tool.poetry.scripts]
 test = "test.py"
