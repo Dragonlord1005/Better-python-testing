@@ -1,4 +1,4 @@
 layout: page
 title: "homepage"
-permalink: /homepage/
+permalink: /doc/homepage/
 hi
