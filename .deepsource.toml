@@ -4,6 +4,7 @@ test_patterns = [
     "tests/**",
     "test.py",
     ".style.py",
+    "typey.py"
 ]
 
 [[analyzers]]

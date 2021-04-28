@@ -1,5 +1,5 @@
 # This is an inventory system
-
+import test_type as typer
 
 class item():
     # Initiates
@@ -32,6 +32,10 @@ class weapon(item):
         return self.attack - deal
 
 
-yep = weapon("Sword", 23, 21, 53)
+yep = weapon("Sword", 12, 12, 53)
 print(yep.get_name())
-print(yep.damage(10))
+print(yep.get_attack())
+y = 50
+print(y)
+y = y - yep.get_attack()
+typer.typingprint(str(y))
