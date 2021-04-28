@@ -1,4 +1,2 @@
----
-title: "homepage"
----
+# hey
 hi
