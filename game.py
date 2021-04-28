@@ -10,7 +10,6 @@ def typingprint(text):
         time.sleep(0.05)
 
 
-
 # This is for combat
 info = {
     "player_health": 50,
