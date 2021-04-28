@@ -1,7 +1,4 @@
 layout: page
-title: "Homepage"
+title: "homepage"
 permalink: /homepage/
-
-# Testing
-
-This github pages thing is not finished and may be buggy
+hi
