@@ -1,6 +1,7 @@
 # This is an inventory system
 import test_type as typer
 
+
 class item():
     # Initiates
     def __init__(self, name, weight, price):
@@ -32,13 +33,11 @@ class weapon(item):
         return self.attack - deal
 
 
-
-
 def test_bobby():
-  yep = weapon("Sword", 12, 12, 53)
-  print(yep.get_name())
-  print(yep.get_attack())
-  y = 50
-  print(y)
-  y = y - yep.get_attack()
-  typer.typingprint(str(y))
+    yep = weapon("Sword", 12, 12, 53)
+    print(yep.get_name())
+    print(yep.get_attack())
+    y = 50
+    print(y)
+    y = y - yep.get_attack()
+    typer.typingprint(str(y))
