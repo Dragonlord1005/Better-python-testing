@@ -16,7 +16,7 @@ pytest-xdist = "^2.2.1"
 pytest-sugar = "^0.9.4"
 pyinstaller = "^4.3"
 pytest = "^6.2.3"
+yapf = "^0.31.0"
 [tool.poetry.dev-dependencies]
-yapf = {version = "^0.31.0", allow-prereleases = true}
 coverage = "^5.5"
 pytest-cov = "^2.11.1"

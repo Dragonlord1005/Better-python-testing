@@ -282,7 +282,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "0.10.2"
 
 [[package]]
-category = "dev"
+category = "main"
 description = "A formatter for Python code."
 name = "yapf"
 optional = false
@@ -290,7 +290,7 @@ python-versions = "*"
 version = "0.31.0"
 
 [metadata]
-content-hash = "5c7db66d3b269ac2a1581ee21a8f1654377a6b48e48e9a6360860f62018da551"
+content-hash = "61e190dafd37ea898504bf85d49baa8d5b63872c0c388abde98ff1067eabde0a"
 python-versions = "^3.8"
 
 [metadata.files]
