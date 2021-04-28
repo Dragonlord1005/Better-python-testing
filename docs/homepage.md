@@ -1,6 +1,6 @@
 ---
 layout: page
 title: "homepage"
-permalink: /doc/homepage/
+permalink: /homepage/
 ---
 hi
