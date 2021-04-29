@@ -13,12 +13,12 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ the-game ]
+    branches: [ the-game, main ]
     paths:
     - '**.py'
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ the-game ]
+    branches: [ the-game, main ]
   schedule:
     - cron: '23 10 * * 2'
 
