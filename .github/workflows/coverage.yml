@@ -30,7 +30,7 @@ jobs:
             Generate coverage report in xml format
             pip install pytest
             pip install pytest-cov
-            pytest --cov-report xml --cov 
+            pytest --cov-report xml --cov=tests/
             curl https://deepsource.io/cli | sh
             ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
         env: 
