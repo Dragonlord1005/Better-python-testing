@@ -2,7 +2,7 @@ version = 1
 
 test_patterns = [
     "tests/**",
-    "test.py",
+    "gametest.py",
     ".style.py",
     "typey.py",
     "playground.py"
