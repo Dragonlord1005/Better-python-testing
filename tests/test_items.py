@@ -49,7 +49,7 @@ def test_weapon():
     print(yep.get_name())
     print(yep.get_attack())
     y = 50
-    print(y)
+    typer.typingprint(str(y))
     y = y - yep.get_attack()
     typer.typingprint(str(y))
 
