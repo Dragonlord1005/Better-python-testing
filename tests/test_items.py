@@ -32,16 +32,16 @@ class weapon(item):
     def damage(self, deal):
         return self.attack - deal
 
-class armor(item):
-  def __init__(self, name, armor, weight, price):
-    self.name = name
-    self.armor = armor
-    self.weight = weight
-    self.price = price
-  
-  def get_armor(self):
-    return self.armor
 
+class armor(item):
+    def __init__(self, name, armor, weight, price):
+        self.name = name
+        self.armor = armor
+        self.weight = weight
+        self.price = price
+
+    def get_armor(self):
+        return self.armor
 
 
 def test_weapon():
@@ -53,9 +53,8 @@ def test_weapon():
     y = y - yep.get_attack()
     typer.typingprint(str(y))
 
+
 def test_armor():
-  hi = armor("Iron Armor", 13, 31, 78)
-  print(hi.get_name())
-  print(hi.get_armor())
-
-
+    hi = armor("Iron Armor", 13, 31, 78)
+    print(hi.get_name())
+    print(hi.get_armor())
