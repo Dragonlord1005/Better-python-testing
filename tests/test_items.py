@@ -34,14 +34,14 @@ class weapon(item):
 
 
 class armor(item):
-    def __init__(self, name, armor, weight, price):
+    def __init__(self, name, defense, weight, price):
         self.name = name
-        self.armor = armor
+        self.defense = defense
         self.weight = weight
         self.price = price
 
-    def get_armor(self):
-        return self.armor
+    def get_defense(self):
+        return self.defense
 
 
 def test_weapon():
@@ -57,4 +57,4 @@ def test_weapon():
 def test_armor():
     hi = armor("Iron Armor", 13, 31, 78)
     print(hi.get_name())
-    print(hi.get_armor())
+    print(hi.get_defense())
