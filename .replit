@@ -1,2 +1,2 @@
 language = "python3"
-run = "pytest --cov-config=.coveragerpc --cov-report term --cov --cov-branch"
+run = "pytest --cov-config=.coveragerpc --cov-report html --cov --cov-branch"
