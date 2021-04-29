@@ -27,15 +27,11 @@ jobs:
 
       - name: Report results to DeepSource
         run: |
-          # Generate coverage report in xml format
-            pip install coverage
-            coverage xml
-
-          # Install deepsource CLI
+            Generate coverage report in xml format
+            pip install pytest
+            pip install pytest-cov
+            pytest --cov-report xml --cov=tests/
             curl https://deepsource.io/cli | sh
-
-          # From the root directory, run the report coverage command
             ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
-
-          env: 
-            DEEPSOURCE_DSN: ${{ secrets.DEEPSOURCE_DSN }}
+        env: 
+          DEEPSOURCE_DSN: ${{ secrets.DEEPSOURCE_DSN }}
