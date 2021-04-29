@@ -1,14 +1,5 @@
+# this is the combat module
 from random import randint
-import time
-import sys
-
-
-def typingprint(text):
-    for character in text:
-        sys.stdout.write(character)
-        sys.stdout.flush()
-        time.sleep(0.05)
-
 
 # This is for combat
 info = {
@@ -31,35 +22,30 @@ def combat():
         def attack():
             enemy_defending = info["enemy_defending"]
             if enemy_defending == 0:
-                info["enemy_health"] = info["enemy_health"] - info[
-                    "player_attack"]
+                print("hey")
             elif enemy_defending == 1:
                 info["enemy_health"] = info[
                     "enemy_health"] - info["player_attack"] / 2
                 info["enemy_defending"] = 0
-            typingprint("you successfully attacked\n")
-            typingprint("the enemy is now at\n")
-            print(info["enemy_health"])
-            typingprint("health!!!\n")
-            time.sleep(8)
             info["turn"] = 1
+            print("you successfully attacked")
+            print("the enemy is now at", info["enemy_health"], "health!")
 
         # this is for player defending
         def defend():
-            typingprint("you are defending\n")
             info["turn"] = 1
 
         if info["player_health"] <= 0:
-            typingprint("You lose, keep trying!\n")
+            print("You lose, keep trying!")
             info["winner"] = 2
             break
         if info["enemy_health"] <= 0:
-            typingprint("you win, this doesnt progress the story yet\n")
+            print("you win, this doesnt progress the story yet")
             info["winner"] = 1
             break
 
         if info["turn"] == 0:
-            typingprint("You can attack or defend\n")
+            print("You can attack or defend")
             battle = input(">")
             if battle == ("attack"):
                 attack()
@@ -74,8 +60,9 @@ def combat():
             # this is for the enemys turn
         if info["turn"] == 1:
             info["enemy_choice"] = randint(1, 10)
+            print("works")
             if info["enemy_choice"] == (1 or 2 or 3 or 4 or 5):
-                typingprint("the enemy is going to attack you!\n")
+                print("the enemy is going to attack you!")
                 if info["player_defending"] == 0:
                     info["player_health"] = info["player_health"] - info[
                         "enemy_attack"]
@@ -85,36 +72,9 @@ def combat():
                     info["player_defending"] = 0
             elif info["enemy_choice"]:
                 info["enemy_defending"] = 1
-                typingprint("The enemy is defending\n")
-            typingprint("You are now at\n")
-            print(info["player_health"])
-            typingprint("Health!!!\n")
-            time.sleep(5)
+                print("The enemy is defending")
+            print("You are now at", info["player_health"], "health!!!!")
             info["turn"] = 0
 
 
-# This is for sneaking
-def stealth():
-    sneak = randint(1, 20)
-    if sneak == (12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20):
-        typingprint("You sneak past\n")
-    elif sneak:
-        typingprint("You don't sneak past and are caught,\n")
-        combat()
-
-
-typingprint("A guard stands before you\n")
-typingprint("you can sneak, attack, or run\n")
-typingprint("type your response\n")
-option = input(">")
-if option == ("sneak"):
-    stealth()
-if option == ("attack"):
-    typingprint("You atttack the guard, the battle begins!!!!\n")
-    combat()
-if option == ("run"):
-    typingprint(
-        "You run away, flailing your arms, while screaming like a coward\n")
-    typingprint(
-        "You end up attracting too much attention, and are thrown in jail\n")
-    typingprint("You lose\n")
+combat()

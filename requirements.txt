@@ -1,1 +1,7 @@
-
+pytest== 6.2.3
+pytest-xdist== 2.2.1
+pytest-sugar== 0.9.4
+pyinstaller== 4.3
+yapf== 0.31.0
+pytest-cov== 2.11.1
+pytest-randomly== 3.7.0

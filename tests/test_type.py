@@ -1,14 +1,10 @@
-import sys
+# This is a typing effect
+
 import time
-
-words = "This is just a test :P\n"
-for char in words:
-    sleep(0.2)
-    sys.stdout.write(char)
-    sys.stdout.flush()
+import sys
 
 
-def typingPrint(text):
+def typingprint(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -22,3 +18,8 @@ def typingInput(text):
         time.sleep(0.05)
     value = input()
     return value
+
+
+def test_typingprint():
+    x = 10000
+    typingprint(str(x))

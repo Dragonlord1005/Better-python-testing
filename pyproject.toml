@@ -1,14 +1,22 @@
-[tool.poetry]
-name = "bettery-python-testing"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry>=1.0"]
 
+[tool]
+[tool.poetry]
+authors = ["Dragonlord1005"]
+description = ""
+name = "Python-text-based-game-framework"
+version = "0.0.3"
+readme = "README.md"
+license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
-
+pytest-sugar = "^0.9.4"
+pyinstaller = "^4.3"
+pytest = "^6.2.3"
+yapf = "^0.31.0"
+coverage = "^5.5"
+pytest-cov = "^2.11.1"
+pytest-randomly = "^3.7.0"
 [tool.poetry.dev-dependencies]
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
