@@ -30,7 +30,7 @@ jobs:
             Generate coverage report in xml format
             pip install pytest
             pip install pytest-cov
-            pytest --cov-config=.coveragerpc --cov-report xml --cov --cov-branch
+            pytest --cov-config=.coveragerpc --cov-report xml --cov
 
           # Install deepsource CLI
             curl https://deepsource.io/cli | sh
