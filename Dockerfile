@@ -1,3 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM scratch
-RUN echo 'hi'
+FROM python:3.8.9
+RUN 'pip install pytest'
+RUN 'pytest'
+
