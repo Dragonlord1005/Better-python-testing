@@ -17,7 +17,7 @@ pipeline {
 
     stage('Build') {
         steps {
-        // One or more steps need to be included within the steps block.
+            bat 'poetry run pyinstaller gametest.py'
         }
     }
 
