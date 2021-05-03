@@ -13,4 +13,7 @@
 - [ ] Classes
 - [ ] NPC's 
 - [ ] Story
-- [ ] Sound and Music (not high priority)
+# Additional goals 
+these are not high priority
+- [ ] Sound and Music
+- [ ] Maybe rewrite some things into modules instead for better reuse. Already done with typing effect
