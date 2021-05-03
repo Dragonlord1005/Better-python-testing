@@ -8,13 +8,13 @@ class item():
         self.name = name
         self.weight = weight
         self.price = price
-
+    # Get name
     def get_name(self):
         return self.name
-
+    # Get the weight
     def get_weight(self):
         return self.weight
-
+    # Get the price
     def get_price(self):
         return self.price
 
@@ -46,8 +46,8 @@ class armor(item):
 
 def test_weapon():
     yep = weapon("Sword", 12, 12, 53)
-    print(yep.get_name())
-    print(yep.get_attack())
+    typer.typingprint(str(yep.get_name()))
+    typer.typingprint(str(yep.get_attack()))
     y = 50
     typer.typingprint(str(y))
     y = y - yep.get_attack()
@@ -56,5 +56,5 @@ def test_weapon():
 
 def test_armor():
     hi = armor("Iron Armor", 13, 31, 78)
-    print(hi.get_name())
-    print(hi.get_defense())
+    typer.typingprint(str(hi.get_name()))
+    typer.typingprint(str(hi.get_defense()))
