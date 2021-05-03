@@ -2,6 +2,7 @@ from random import randint
 import time
 import sys
 
+
 # Reformatt all of this to reuse typey instead
 def typingprint(text):
     for character in text:
@@ -22,6 +23,7 @@ info = {
     "enemy_choice": 0,
     "winner": 0
 }
+
 
 # The actual combat system (could this be redone into a module?)
 def combat():
