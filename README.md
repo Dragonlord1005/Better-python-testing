@@ -7,10 +7,10 @@
 - [x] Stealth
 - [x] Fully working combat system (that doesnt keep breaking)
 - [ ] Inventory system
-- [ ] Sound and Music (not high priority)
 - [ ] shops
 - [ ] Redo stats
 - [ ] Exp
 - [ ] Classes
 - [ ] NPC's 
 - [ ] Story
+- [ ] Sound and Music (not high priority)

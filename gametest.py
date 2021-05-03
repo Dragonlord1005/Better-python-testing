@@ -15,7 +15,7 @@ info = {
     "player_health": 50,
     "player_attack": 7,
     "player_defending": 0,
-    "enemy_health": 50,
+    "enemy_health": 30,
     "enemy_attack": 7,
     "enemy_defending": 0,
     "turn": 0,
@@ -38,7 +38,7 @@ def combat():
                     "enemy_health"] - info["player_attack"] / 2
                 info["enemy_defending"] = 0
             typingprint("you successfully attacked")
-            typingprint(" the enemy is now at")
+            typingprint(" the enemy is now at ")
             typingprint(str(info["enemy_health"]))
             typingprint(" health!!!\n")
             info["turn"] = 1
