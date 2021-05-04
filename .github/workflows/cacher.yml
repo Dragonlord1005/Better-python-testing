@@ -41,5 +41,3 @@ jobs:
           ${{ runner.os }}-pip-
           ${{ runner.os }}-
           
-    - name: Install depedencies
-      run: pip install -r requirements.txt
