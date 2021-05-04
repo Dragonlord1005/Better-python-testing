@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the the-game branch
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+
+      # Runs a single command using the runners shell
+      - name: Install dependencies
+        run: pip install --no-cache-dir -r requirements.txt
+
+      # Runs a set of commands using the runners shell
+      - name: build the thing
+        run: |
+          pyinstaller -F game.py
+ 
+      - name: Cache
+        uses: actions/cache@v2.1.5
+        with:
+          # A list of files, directories, and wildcard patterns to cache and restore
+          path: dist/
+          # An explicit key for restoring and saving the cache
+          key: hi
+          # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+         
+          # The chunk size used to split up large files during upload, in bytes
