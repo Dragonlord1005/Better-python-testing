@@ -38,6 +38,8 @@ jobs:
           path: dist/game.exe
           # An explicit key for restoring and saving the cache
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
-         
-          # The chunk size used to split up large files during upload, in bytes
+      - name: Artifact
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Result
+          path: dist/
