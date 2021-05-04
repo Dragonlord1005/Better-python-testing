@@ -31,15 +31,9 @@ jobs:
         run: |
           pyinstaller -F game.py
  
-      - name: Cache
-        uses: actions/cache@v2.1.5
-        with:
-          # A list of files, directories, and wildcard patterns to cache and restore
-          path: dist/game.exe
-          # An explicit key for restoring and saving the cache
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+
       - name: Artifact
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: Result
           path: dist/
