@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Builder
+name: WIndows-Builder
 
 # Controls when the action will run. 
 on:
@@ -21,10 +21,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-
-      # Runs a single command using the runners shell
-      - name: Install dependencies
-        run: pip install --no-cache-dir -r requirements.txt
+      - name: Get the requirements
+      run: pip install -r requirements.txt
 
       # Runs a set of commands using the runners shell
       - name: build the thing
