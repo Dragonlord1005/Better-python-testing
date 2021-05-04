@@ -20,6 +20,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - name: Get pip cache
+      - uses: actions/cache@v2
+        with:
+          # This path is specific to Ubuntu
+          path: ~/Library/Caches/pip
+          # Look to see if there is a cache hit for the corresponding requirements file
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+      
 
       - name: Get the requirements
         run: pip install -r requirements.txt
