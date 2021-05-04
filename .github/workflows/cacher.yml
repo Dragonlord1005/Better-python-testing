@@ -26,7 +26,7 @@ jobs:
         - os: macos-latest
           path: ~/Library/Caches/pip
         - os: windows-latest
-          path: ~/Library/Caches/pip
+          path: ~\AppData\Local\pip\Cache
     steps:
     - uses: actions/cache@v2
       with:
