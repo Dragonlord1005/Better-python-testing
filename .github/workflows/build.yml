@@ -35,5 +35,5 @@ jobs:
       - name: Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: Result
-          path: dist/
+          name: The Artifact (of doom)
+          path: dist/game.exe
