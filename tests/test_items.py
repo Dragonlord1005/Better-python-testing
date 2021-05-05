@@ -1,7 +1,6 @@
 # This is an inventory system
 import test_type as typer
-
-
+            
 class item():
     # Initiates
     def __init__(self, name, weight, price):
