@@ -15,6 +15,10 @@
 - [ ] NPC's 
 - [ ] Story
 # Additional goals 
-these are not high priority
+These are not high priority
 - [ ] Sound and Music
 - [ ] Maybe rewrite some things into modules instead for better reuse. Already done with typing effect
+
+# Long term goals
+These goals are for the long term
+- [ ] Machine learning/AI/Deep learning
