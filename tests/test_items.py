@@ -46,14 +46,16 @@ class armor(item):
     def get_defense(self):
         return self.defense
 
+
 class potion(item):
-  def __init__(self, name, heal_level, weight, price):
-    self.name = name
-    self.heal_level = heal_level
-    self.weight = weight
-    self.price = price
-  def get_heal(self):
-    return self.heal_level
+    def __init__(self, name, heal_level, weight, price):
+        self.name = name
+        self.heal_level = heal_level
+        self.weight = weight
+        self.price = price
+
+    def get_heal(self):
+        return self.heal_level
 
 
 def test_weapon():
@@ -73,7 +75,7 @@ def test_armor():
 
 
 def test_potion():
-  # The nights of NEA will find you
-  NEA = potion("nea_potion", 7, 12, 492)
-  typer.typingprint(str(NEA.get_name()))
-  typer.typingprint(str(NEA.get_heal()))
+    # The nights of NEA will find you
+    NEA = potion("nea_potion", 7, 12, 492)
+    typer.typingprint(str(NEA.get_name()))
+    typer.typingprint(str(NEA.get_heal()))
