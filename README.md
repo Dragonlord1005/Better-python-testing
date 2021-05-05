@@ -1,6 +1,6 @@
 [![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonlord1005/python-text-based-game-framework)
+![GitHub repo size](https://img.shields.io/github/repo-size/Dragonlord1005/Python-text-based-game-framework?logo=github)
 ![GitHub deployments](https://img.shields.io/github/deployments/Dragonlord1005/python-text-based-game-framework/github-pages?label=Pages&logo=Github)
 ![GitHub release (latest by date)](https://img.shields.io/github/downloads/Dragonlord1005/Python-text-based-game-framework/latest/total?logo=github)
 # Better-python-testing
