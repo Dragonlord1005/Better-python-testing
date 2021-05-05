@@ -1,5 +1,6 @@
 [![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dragonlord1005/python-text-based-game-framework)
 # Better-python-testing
   This is actually a project I'm woring on, I'm trying to make the framework of a text based python game, feel free to use it. This does not have any form of gui and uses solely the command line to interface with the game. Releases (when I have time to make one) will be based off the main branch, not the current default branch.
 # Goals
