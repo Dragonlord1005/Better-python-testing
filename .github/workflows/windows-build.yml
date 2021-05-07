@@ -33,7 +33,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: build the thing
         run: |
-          pyinstaller -F game.py -n ${{ matrix.os }}game.py
+          pyinstaller -F game.py -n ${{ matrix.os }}game
  
 
       - name: Artifact
