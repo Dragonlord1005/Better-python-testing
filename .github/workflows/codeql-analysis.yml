@@ -12,6 +12,12 @@
 name: "CodeQL"
 
 on:
+  push:
+    paths-ignore:
+    - '**.md'
+    - '**.yml'
+    # The one below could change
+    - '**.json'
   pull_request:
   schedule:
     - cron: '23 10 * * 2'
