@@ -1,7 +1,0 @@
-paths:
-  - 'tests/'
-  - gametest.py
-paths-ignore:
-  - '.style.py'
-  - 'vscode/'
-  - 'docs/'
