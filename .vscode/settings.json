@@ -1,5 +1,9 @@
 {
     "terminal.explorerKind": "external",
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "Dracula"
+    "workbench.colorTheme": "Dracula",
+    "python.formatting.provider": "yapf",
+    "python.linting.pylintArgs": [
+        "test/"
+    ]
 }

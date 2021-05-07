@@ -4,6 +4,7 @@ on:
   push:
     paths:
     - '**.py'
+  pull_request:
 jobs:
   autoyapf:
     runs-on: ubuntu-latest
@@ -23,7 +24,7 @@ jobs:
         if: steps.git-check.outputs.modified == 'true'
         run: |
           git config --global user.name 'Dragonlord1005'
-          git config --global user.email 'github_user_name_of_maintainer@users.noreply.github.com'
+          git config --global user.email '68302450+Dragonlord1005@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git commit -am "Automated autoyapf fixes"
           git push

@@ -4,10 +4,13 @@ import test_type as typer
 
 class item():
     # Initiates
-    def __init__(self, name, weight, price):
+    def __init__(self, name, attack, defense, heal_level, weight, price):
         self.name = name
         self.weight = weight
         self.price = price
+        self.attack = attack
+        self.defense = defense
+        self.heal_level = heal_level
 
     # Get name
     def get_name(self):
@@ -23,12 +26,6 @@ class item():
 
 
 class weapon(item):
-    def __init__(self, name, attack, weight, price):
-        self.name = name
-        self.attack = attack
-        self.weight = weight
-        self.price = price
-
     def get_attack(self):
         return self.attack
 
@@ -37,29 +34,17 @@ class weapon(item):
 
 
 class armor(item):
-    def __init__(self, name, defense, weight, price):
-        self.name = name
-        self.defense = defense
-        self.weight = weight
-        self.price = price
-
     def get_defense(self):
         return self.defense
 
 
 class potion(item):
-    def __init__(self, name, heal_level, weight, price):
-        self.name = name
-        self.heal_level = heal_level
-        self.weight = weight
-        self.price = price
-
     def get_heal(self):
         return self.heal_level
 
 
 def test_weapon():
-    yep = weapon("Sword", 12, 12, 53)
+    yep = weapon("Sword", 12, 0, 0, 21, 32)
     typer.typingprint(str(yep.get_name()))
     typer.typingprint(str(yep.get_attack()))
     y = 50
@@ -69,13 +54,14 @@ def test_weapon():
 
 
 def test_armor():
-    hi = armor("Iron Armor", 13, 31, 78)
+    hi = armor("Iron Armor", 0, 13, 0, 21, 27)
     typer.typingprint(str(hi.get_name()))
     typer.typingprint(str(hi.get_defense()))
 
 
 def test_potion():
-    # The nights of NEA will find you
-    NEA = potion("nea_potion", 7, 12, 492)
+    # The knights of NEA will find you
+    # Also I havn't decided on a price for it yet so yeah.
+    NEA = potion("nea_potion", 0, 0, 21, 2, 500)
     typer.typingprint(str(NEA.get_name()))
     typer.typingprint(str(NEA.get_heal()))
