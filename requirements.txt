@@ -6,4 +6,4 @@ yapf== 0.31.0
 coverage== 5.5
 pytest-cov== 2.11.1
 pytest-randomly== 3.7.0
-Gooey== 1.0.8
+howdoi== 2.0.15
