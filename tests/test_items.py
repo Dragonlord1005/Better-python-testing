@@ -60,7 +60,8 @@ def test_armor():
 
 
 def test_potion():
-    # The nights of NEA will find you
-    NEA = potion("nea_potion", 7, 12, 492)
+    # The knights of NEA will find you
+    # Also I havn't decided on a price for it yet so yeah.
+    NEA = potion("nea_potion", 0, 0, 21, 2, 500)
     typer.typingprint(str(NEA.get_name()))
     typer.typingprint(str(NEA.get_heal()))
