@@ -25,7 +25,6 @@ class item():
 
 
 class weapon(item):
-
     def get_attack(self):
         return self.attack
 
@@ -34,7 +33,6 @@ class weapon(item):
 
 
 class armor(item):
-
     def get_defense(self):
         return self.defense
 
