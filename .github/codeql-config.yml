@@ -1,6 +1,6 @@
 paths:
   - 'tests/'
-  - 'gametest.py'
+  - gametest.py
 paths-ignore:
   - '.style.py'
   - 'vscode/'
