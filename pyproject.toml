@@ -21,3 +21,4 @@ pytest-cov = "^2.11.1"
 pytest-randomly = "^3.7.0"
 howdoi = "^2.0.15"
 [tool.poetry.dev-dependencies]
+yapf = "^0.31.0"

@@ -6,11 +6,11 @@ name: Pytest
 on:
   # Triggers the workflow on push or pull request events but only for the the-game branch
   push:
-    branches: [ the-game, main ]
+    branches:
     paths:
     - '**.py'
   pull_request:
-    branches: [ the-game, main ]
+    branches:
     paths:
     - '**.py'
 
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: syphar/restore-pip-download-cache@v1
       
-      - name: Run the requirements.
+      - name: Install the requirements.
         run: |
           pip install -r requirements.txt
       # Runs a set of commands using the runners shell
