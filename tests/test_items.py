@@ -4,12 +4,13 @@ import test_type as typer
 
 class item():
     # Initiates
-    def __init__(self, name, attack, defense, weight, price):
+    def __init__(self, name, attack, defense, heal_level, weight, price):
         self.name = name
         self.weight = weight
         self.price = price
         self.attack = attack
         self.defense = defense
+        self.heal_level = heal_level
 
     # Get name
     def get_name(self):
@@ -38,18 +39,13 @@ class armor(item):
 
 
 class potion(item):
-    def __init__(self, name, heal_level, weight, price):
-        self.name = name
-        self.heal_level = heal_level
-        self.weight = weight
-        self.price = price
 
     def get_heal(self):
         return self.heal_level
 
 
 def test_weapon():
-    yep = weapon("Sword", 7, 0, 13, 12)
+    yep = weapon("Sword", 12, 0, 0, 21, 32)
     typer.typingprint(str(yep.get_name()))
     typer.typingprint(str(yep.get_attack()))
     y = 50
@@ -59,7 +55,7 @@ def test_weapon():
 
 
 def test_armor():
-    hi = armor("Iron Armor", 0, 13, 21, 32)
+    hi = armor("Iron Armor", 0, 13, 0, 21, 27)
     typer.typingprint(str(hi.get_name()))
     typer.typingprint(str(hi.get_defense()))
 
