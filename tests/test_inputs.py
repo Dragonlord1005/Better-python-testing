@@ -1,4 +1,6 @@
 from gooey import Gooey, GooeyParser
+import argparse
 @Gooey
-def main():
-    parser = ArgumentParser(...)
+def bob():
+    parser = GooeyParser()
+ 
