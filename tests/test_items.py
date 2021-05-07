@@ -39,7 +39,6 @@ class armor(item):
 
 
 class potion(item):
-
     def get_heal(self):
         return self.heal_level
 
