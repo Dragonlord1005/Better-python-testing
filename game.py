@@ -116,5 +116,3 @@ if option == ("run"):
     typingprint(
         "You end up attracting too much attention, and are thrown in jail\n")
     typingprint("You lose\n")
-
-    
