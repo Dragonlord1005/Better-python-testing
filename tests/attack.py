@@ -1,5 +1,6 @@
 # this is the combat module
 from random import randint
+import test_type as typey
 
 # This is for combat
 info = {
@@ -22,30 +23,34 @@ def combat():
         def attack():
             enemy_defending = info["enemy_defending"]
             if enemy_defending == 0:
-                print("hey")
+                info["enemy_health"] = info["enemy_health"] - info[
+                    "player_attack"]
             elif enemy_defending == 1:
                 info["enemy_health"] = info[
                     "enemy_health"] - info["player_attack"] / 2
                 info["enemy_defending"] = 0
+            typey.typingprint("you successfully attacked")
+            typey.typingprint(" the enemy is now at ")
+            typey.typingprint(str(info["enemy_health"]))
+            typey.typingprint(" health!!!\n")
             info["turn"] = 1
-            print("you successfully attacked")
-            print("the enemy is now at", info["enemy_health"], "health!")
 
         # this is for player defending
         def defend():
+            typey.typingprint("you are defending\n")
             info["turn"] = 1
 
         if info["player_health"] <= 0:
-            print("You lose, keep trying!")
+            typey.typingprint("You lose, keep trying!\n")
             info["winner"] = 2
             break
         if info["enemy_health"] <= 0:
-            print("you win, this doesnt progress the story yet")
+            typey.typingprint("you win, this doesnt progress the story yet\n")
             info["winner"] = 1
             break
 
         if info["turn"] == 0:
-            print("You can attack or defend")
+            typey.typingprint("You can attack or defend\n")
             battle = input(">")
             if battle == ("attack"):
                 attack()
@@ -60,9 +65,8 @@ def combat():
             # this is for the enemys turn
         if info["turn"] == 1:
             info["enemy_choice"] = randint(1, 10)
-            print("works")
             if info["enemy_choice"] == (1 or 2 or 3 or 4 or 5):
-                print("the enemy is going to attack you!")
+                typey.typingprint("the enemy is going to attack you!\n")
                 if info["player_defending"] == 0:
                     info["player_health"] = info["player_health"] - info[
                         "enemy_attack"]
@@ -72,9 +76,8 @@ def combat():
                     info["player_defending"] = 0
             elif info["enemy_choice"]:
                 info["enemy_defending"] = 1
-                print("The enemy is defending")
-            print("You are now at", info["player_health"], "health!!!!")
+                typey.typingprint("The enemy is defending\n")
+            typey.typingprint("You are now at ")
+            typey.typingprint(str(info["player_health"]))
+            typey.typingprint(" health!!!\n")
             info["turn"] = 0
-
-
-combat()
