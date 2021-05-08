@@ -14,8 +14,8 @@
 - [x] Fully working combat system (that doesnt keep breaking)
 - [x] Make the automated code fixes not say maintainer name
 - [ ] Inventory system
-- [ ] shops
 - [ ] Redo stats
+- [ ] shops
 - [ ] Exp
 - [ ] Classes
 - [ ] NPC's
