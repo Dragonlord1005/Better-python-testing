@@ -26,7 +26,7 @@
 These are not high priority
 
 - [ ] Sound and Music
-- [ ] Maybe rewrite some things into modules instead for better reuse. Already done with typing effect
+- [ ] Maybe rewrite some things into modules instead for better reuse. Already done with typing effect and attack
 
 #### Long term goals
 
