@@ -4,7 +4,6 @@ from tests import typey
 from tests import attack
 
 
-
 # This is for sneaking
 def stealth():
     sneak = randint(1, 20)

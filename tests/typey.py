@@ -8,4 +8,3 @@ def typingprint(text):
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(0.05)
-
