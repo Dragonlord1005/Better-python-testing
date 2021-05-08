@@ -1,5 +1,4 @@
 # This is a typing effect
-
 import time
 import sys
 

@@ -1,3 +1,3 @@
 [run]
-omit = tests/attack.py
+omit = tests/attack.py, tests/typey.py
 source = tests/
