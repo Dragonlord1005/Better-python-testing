@@ -1,6 +1,8 @@
 {
     "recommendations": [
         "kiteco.kite",
-        "icrawl.discord-vscode"
+        "icrawl.discord-vscode",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance"
     ]
 }
