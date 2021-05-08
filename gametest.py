@@ -1,4 +1,4 @@
-# All the depedencies below are for typing effect
+# Random is for well combat stuff and typey is for typing
 from random import randint
 import typey
 
