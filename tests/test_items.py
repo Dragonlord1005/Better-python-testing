@@ -1,6 +1,6 @@
 # This is an inventory system
 # Also prices aren't final
-import test_type as typer
+import test_type as typey
 
 
 class item():
@@ -46,23 +46,23 @@ class potion(item):
 
 def test_weapon():
     yep = weapon("Sword", 12, 0, 0, 21, 32)
-    typer.typingprint(str(yep.get_name()))
-    typer.typingprint(str(yep.get_attack()))
+    typey.typingprint(str(yep.get_name()))
+    typey.typingprint(str(yep.get_attack()))
     y = 50
-    typer.typingprint(str(y))
+    typey.typingprint(str(y))
     y = y - yep.get_attack()
-    typer.typingprint(str(y))
+    typey.typingprint(str(y))
 
 
 def test_armor():
     hi = armor("Iron Armor", 0, 13, 0, 21, 27)
-    typer.typingprint(str(hi.get_name()))
-    typer.typingprint(str(hi.get_defense()))
+    typey.typingprint(str(hi.get_name()))
+    typey.typingprint(str(hi.get_defense()))
 
 
 def test_potion():
     # The knights of NEA will find you
     # Also I havn't decided on a price for it yet so yeah.
     NEA = potion("nea_potion", 0, 0, 21, 2, 500)
-    typer.typingprint(str(NEA.get_name()))
-    typer.typingprint(str(NEA.get_heal()))
+    typey.typingprint(str(NEA.get_name()))
+    typey.typingprint(str(NEA.get_heal()))
