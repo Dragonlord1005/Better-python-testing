@@ -1,6 +1,7 @@
 # this is the combat module
+# Currently it is difficult to run without modifying, not changing for a while
 from random import randint
-import test_type as typey
+from tests import typey
 
 # This is for combat
 info = {

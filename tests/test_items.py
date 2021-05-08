@@ -1,6 +1,6 @@
 # This is an inventory system
 # Also prices aren't final
-import test_type as typey
+import typey
 
 
 class item():
