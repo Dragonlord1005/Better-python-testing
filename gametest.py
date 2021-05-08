@@ -2,7 +2,6 @@
 from random import randint
 import typey
 
-
 # This is for combat
 info = {
     "player_health": 50,
