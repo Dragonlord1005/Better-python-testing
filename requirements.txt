@@ -7,4 +7,3 @@ coverage== 5.5
 pytest-cov== 2.11.1
 pytest-randomly== 3.7.0
 howdoi== 2.0.15
-pylint== 2.8.2
