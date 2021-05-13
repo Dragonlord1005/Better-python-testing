@@ -9,7 +9,7 @@
 
 ## Goals
 
-- [x] Automated code fixes
+- [x] Automated code formatting
 - [x] Stealth
 - [x] Fully working combat system (that doesnt keep breaking)
 - [x] Make the automated code fixes not say maintainer name
