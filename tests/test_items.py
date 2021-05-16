@@ -4,7 +4,7 @@ import typey
 
 
 class item():
-    ''' Defines item class which is used for a lot of things '''
+    '''Defines item class which is used for a lot of things'''
     def __init__(self, name, attack, defense, heal_level, weight, price):
         self.name = name
         self.weight = weight
@@ -13,21 +13,21 @@ class item():
         self.defense = defense
         self.heal_level = heal_level
 
-    # Get name
+    '''Get name'''
     def get_name(self):
         return self.name
 
-    # Get the weight
+    '''Get the weight'''
     def get_weight(self):
         return self.weight
 
-    # Get the price
+    '''Get the price'''
     def get_price(self):
         return self.price
 
 
 class Weapon(item):
-    ''' Defines Weopon class '''
+    '''Defines Weopon class'''
     def get_attack(self):
         return self.attack
 
@@ -36,19 +36,19 @@ class Weapon(item):
 
 
 class Armor(item):
-    ''' Defines armor class'''
+    '''Defines armor class'''
     def get_defense(self):
         return self.defense
 
 
 class Potion(item):
-    ''' Defines potion class '''
+    '''Defines potion class'''
     def get_heal(self):
         return self.heal_level
 
 
 class Inventory():
-    ''' Defines inventory class '''
+    '''Defines inventory class'''
     def __init__(self, placeholder):
         self.placeholder = placeholder
 
