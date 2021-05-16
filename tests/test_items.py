@@ -55,6 +55,7 @@ class Potion(item):
 class Inventory():
     '''Defines inventory class'''
     def __init__(self, placeholder):
+        '''Initiates the stuff for inventory'''
         self.placeholder = placeholder
 
 
