@@ -30,21 +30,25 @@ class item():
 class Weapon(item):
     '''Defines Weopon class'''
     def get_attack(self):
+        '''Gets the level of attack for the weopon'''
         return self.attack
 
     def damage(self, deal):
+        '''Deals damage'''
         return self.attack - deal
 
 
 class Armor(item):
     '''Defines armor class'''
     def get_defense(self):
+        '''Gets the defense value'''
         return self.defense
 
 
 class Potion(item):
     '''Defines potion class'''
     def get_heal(self):
+        '''Gets the heal level'''
         return self.heal_level
 
 
@@ -55,6 +59,7 @@ class Inventory():
 
 
 def test_weapon():
+    '''Initiates the testing powers for weopons'''
     weapon = Weapon("Sword", 12, 0, 0, 21, 32)
     typey.typingprint(str(weapon.get_name()))
     typey.typingprint(str(weapon.get_attack()))
@@ -65,13 +70,17 @@ def test_weapon():
 
 
 def test_armor():
+    '''Initiates the testing powers for armors'''
     armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
     typey.typingprint(str(armor.get_name()))
     typey.typingprint(str(armor.get_defense()))
 
 
 def test_potion():
-    # I havn't decided on a price for it yet.
+    '''
+    Activates the awesomeness of test_potion
+    I havn't decided on a price for it yet.
+    '''
     potion = Potion("nea_potion", 0, 0, 21, 2, 500)
     typey.typingprint(str(potion.get_name()))
     typey.typingprint(str(potion.get_heal()))
