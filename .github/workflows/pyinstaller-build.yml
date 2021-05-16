@@ -33,7 +33,7 @@ jobs:
           python-version: 3.8.9
       
       - name: Get the requirements
-        run: pip install -r requirements.txt
+        run: pip install -r dev-requirements.txt
 
       # Runs a set of commands using the runners shell
       - name: build the thing
