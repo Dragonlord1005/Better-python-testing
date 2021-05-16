@@ -5,65 +5,67 @@ import sys
 
 
 class npc:
+    '''Defines the class for the NPC'''
     def __init__(self, race, attack, health):
         self.race = race
         self.attack = attack
         self.health = health
 
-    # this makes the npc take damage
     def enemy_damage(self, damage):
+        '''This makes the NPC take damage'''
         self.health = self.health - damage
 
-    # This gets the npc's health
     def enemy_health(self):
+        '''This gets the npc's health'''
         return self.health
 
 
 class player:
+    '''Defines the class for the player'''
     def __init__(self, name, age, attack, health):
         self.name = name
         self.age = age
         self.attack = attack
         self.health = health
 
-    # will get the name of the player
     def get_name(self):
+        '''Will get the name of the player'''
         return self.name
 
-    # Will get the value of attack from the player
     def get_attack(self):
+        '''Will get the value of attack from the player'''
         return self.attack
 
-    # will get the age of the player
     def get_age(self):
+        '''Will get the age of the player'''
         return self.age
 
-    # Will grab healths value from player
     def get_health(self):
+        '''Will grab healths value from player'''
         return self.health
 
-    # Sets health for player, don't know what to use it for yet
     def set_health(self, health):
+        '''Sets health for player, don't know what to use it for yet'''
         self.health = health
 
-    # This subtracts health from the player, need to get it to take input
     def math_health(self, damage):
+        '''This subtracts health from the player, need to get it to take input'''
         self.health = self.health - damage
 
 
-# This is for enemies, will make it inherit from another class soon
 class enemy:
+    '''This is for enemies, will make it inherit from another class soon'''
     def __init__(self, monster, attack, health):
         self.monster = monster
         self.attack = attack
         self.health = health
 
-    # this makes the enemy take damage
     def enemy_damage(self, damage):
+        '''This makes the enemy take damage'''
         self.health = self.health - damage
 
-    # This gets the enemys health
     def enemy_health(self):
+        '''This gets the enemys health'''
         return self.health
 
 
