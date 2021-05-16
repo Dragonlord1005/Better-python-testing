@@ -29,7 +29,6 @@ class item():
 
 class Weapon(item):
     '''Defines Weopon class'''
-    
     def get_attack(self):
         return self.attack
 
