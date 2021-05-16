@@ -1,7 +1,7 @@
 {
     "recommendations": [
         "kiteco.kite",
-        "ms-toolsai.jupyter",
-        "ms-python.vscode-pylance"
+        "ms-python.vscode-pylance",
+        "aaron-bond.better-comments"
     ]
 }
