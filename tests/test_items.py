@@ -14,14 +14,17 @@ class item():
         self.heal_level = heal_level
 
     '''Get name'''
+
     def get_name(self):
         return self.name
 
     '''Get the weight'''
+
     def get_weight(self):
         return self.weight
 
     '''Get the price'''
+
     def get_price(self):
         return self.price
 
