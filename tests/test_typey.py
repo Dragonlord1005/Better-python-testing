@@ -8,6 +8,7 @@ def typingprint(text):
         sys.stdout.flush()
         time.sleep(0.05)
 
+
 def test_typingprint():
     x = 32
     typingprint(str(x))
