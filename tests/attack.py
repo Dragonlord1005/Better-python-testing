@@ -18,6 +18,7 @@ info = {
 
 
 def combat():
+    '''defines combat, needs no other input'''
     info["winner"] = 3
     while info["winner"] == 3:
         # this is for player attacking
