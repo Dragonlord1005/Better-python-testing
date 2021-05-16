@@ -5,6 +5,7 @@ import typey
 
 class item():
     ''' Defines item class which is used for a lot of things '''
+    
     def __init__(self, name, attack, defense, heal_level, weight, price):
         self.name = name
         self.weight = weight
@@ -28,6 +29,7 @@ class item():
 
 class Weapon(item):
     ''' Defines Weopon class '''
+
     def get_attack(self):
         return self.attack
 
@@ -37,18 +39,21 @@ class Weapon(item):
 
 class Armor(item):
     ''' Defines armor class'''
+
     def get_defense(self):
         return self.defense
 
 
 class Potion(item):
     ''' Defines potion class '''
+
     def get_heal(self):
         return self.heal_level
 
 
 class Inventory():
     ''' Defines inventory class '''
+
     def __init__(self, placeholder):
         self.placeholder = placeholder
 
