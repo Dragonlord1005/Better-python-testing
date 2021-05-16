@@ -5,7 +5,7 @@ import typey
 
 class item():
     ''' Defines item class which is used for a lot of things '''
-
+    
     def __init__(self, name, attack, defense, heal_level, weight, price):
         self.name = name
         self.weight = weight
@@ -76,6 +76,6 @@ def test_armor():
 
 def test_potion():
     # I havn't decided on a price for it yet.
-    potion = Potion("healing-potion", 0, 0, 21, 2, 500)
+    potion = Potion("nea_potion", 0, 0, 21, 2, 500)
     typey.typingprint(str(potion.get_name()))
     typey.typingprint(str(potion.get_heal()))
