@@ -44,7 +44,7 @@ class Potion(item):
         return self.heal_level
 
 
-class inventory():
+class Inventory():
     def __init__(self, placeholder):
         self.placeholder = placeholder
 
