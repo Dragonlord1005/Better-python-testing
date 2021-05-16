@@ -3,6 +3,7 @@ import sys
 
 
 def typingprint(text):
+    '''Typingprint types out stuff'''
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -10,5 +11,6 @@ def typingprint(text):
 
 
 def test_typingprint():
+    '''Tests it'''
     x = 32
     typingprint(str(x))
