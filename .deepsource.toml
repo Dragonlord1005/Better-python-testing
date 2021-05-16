@@ -5,6 +5,10 @@ test_patterns = [
     "gametest.py"
 ]
 
+exclude_patterns = [
+    ".style.py"
+]
+
 [[analyzers]]
 name = "python"
 enabled = true
