@@ -43,6 +43,12 @@ class potion(item):
     def get_heal(self):
         return self.heal_level
 
+class inventory():
+    def __init__(self, placeholder):
+        self.placeholder = placeholder
+        
+
+
 
 def test_weapon():
     yep = weapon("Sword", 12, 0, 0, 21, 32)
