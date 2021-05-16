@@ -6,6 +6,7 @@ import typey
 class item():
     '''Defines item class which is used for a lot of things'''
     def __init__(self, name, attack, defense, heal_level, weight, price):
+        '''Initializes and gathers all the info needed for an item'''
         self.name = name
         self.weight = weight
         self.price = price
@@ -13,16 +14,16 @@ class item():
         self.defense = defense
         self.heal_level = heal_level
 
-    '''Get name'''
     def get_name(self):
+        '''Get the name of an item'''
         return self.name
 
-    '''Get the weight'''
     def get_weight(self):
+        '''Get the weight of an item'''
         return self.weight
 
-    '''Get the price'''
     def get_price(self):
+        '''Get the price of an item'''
         return self.price
 
 
