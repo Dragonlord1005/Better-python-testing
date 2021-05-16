@@ -26,7 +26,7 @@ class item():
         return self.price
 
 
-class weapon(item):
+class Weapon(item):
     def get_attack(self):
         return self.attack
 
@@ -34,12 +34,12 @@ class weapon(item):
         return self.attack - deal
 
 
-class armor(item):
+class Armor(item):
     def get_defense(self):
         return self.defense
 
 
-class potion(item):
+class Potion(item):
     def get_heal(self):
         return self.heal_level
 
@@ -50,24 +50,23 @@ class inventory():
 
 
 def test_weapon():
-    yep = weapon("Sword", 12, 0, 0, 21, 32)
-    typey.typingprint(str(yep.get_name()))
-    typey.typingprint(str(yep.get_attack()))
+    weapon = Weapon("Sword", 12, 0, 0, 21, 32)
+    typey.typingprint(str(weapon.get_name()))
+    typey.typingprint(str(weapon.get_attack()))
     y = 50
     typey.typingprint(str(y))
-    y = y - yep.get_attack()
+    y = y - weapon.get_attack()
     typey.typingprint(str(y))
 
 
 def test_armor():
-    hi = armor("Iron Armor", 0, 13, 0, 21, 27)
-    typey.typingprint(str(hi.get_name()))
-    typey.typingprint(str(hi.get_defense()))
+    armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
+    typey.typingprint(str(armor.get_name()))
+    typey.typingprint(str(armor.get_defense()))
 
 
 def test_potion():
-    # The knights of NEA will find you
-    # Also I havn't decided on a price for it yet so yeah.
-    NEA = potion("nea_potion", 0, 0, 21, 2, 500)
-    typey.typingprint(str(NEA.get_name()))
-    typey.typingprint(str(NEA.get_heal()))
+    # I havn't decided on a price for it yet.
+    potion = Potion("nea_potion", 0, 0, 21, 2, 500)
+    typey.typingprint(str(potion.get_name()))
+    typey.typingprint(str(potion.get_heal()))
