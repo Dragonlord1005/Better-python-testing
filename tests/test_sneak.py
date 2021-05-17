@@ -3,8 +3,7 @@ import random
 
 
 def stealth():
-    """[Defines stealth, needs no additional arguments.]
-    """
+    """[Defines stealth, needs no additional arguments.]"""
     sneak = random.randint(1, 10)
     if sneak == (1 or 2 or 3 or 4 or 5):
         print("You sneak past")
