@@ -4,7 +4,7 @@ requires = ["poetry>=1.0"]
 
 [tool]
 [tool.poetry]
-authors = ["Dragonlord1005"]
+authors = ["Dragonlord1005 68302450+Dragonlord1005@users.noreply.github.com"]
 description = ""
 name = "Python-text-based-game-framework"
 version = "0.0.2"
