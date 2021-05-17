@@ -3,7 +3,11 @@ import sys
 
 
 def typingprint(text):
-    '''Typingprint types out stuff'''
+    """[types out whatever is given in text]
+
+    Args:
+        text ([type]): [description]
+    """
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
