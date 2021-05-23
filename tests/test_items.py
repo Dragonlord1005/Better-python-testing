@@ -84,6 +84,7 @@ class Inventory():
     def add_item(self):
         self.item += 1
 
+
 def test_weapon():
     '''Initiates the testing powers for weopons'''
     sword = Weapon("Sword", 12, 21, 32)
