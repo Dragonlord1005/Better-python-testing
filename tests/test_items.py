@@ -55,6 +55,7 @@ class Armor(item):
 class Potion(item):
     '''Defines potion class'''
     def __init__(self, name, heal_level, weight, price):
+        '''Initializes the super method'''
         super().__init__(name, weight, price)
         self.heal_level = heal_level
     def get_heal(self):
