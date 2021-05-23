@@ -78,8 +78,11 @@ class Inventory():
         self.amount = amount
 
     def get_amount(self):
+        '''Gets the amount of items in the inventory currently'''
         return self.amount
 
+    def add_item(self):
+        self.item += 1
 
 def test_weapon():
     '''Initiates the testing powers for weopons'''
