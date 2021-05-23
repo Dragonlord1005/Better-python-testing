@@ -50,7 +50,6 @@ class Potion(item):
     def get_heal(self):
         '''Gets the heal level'''
         return self.heal_level
-        
 
 
 class Inventory():
