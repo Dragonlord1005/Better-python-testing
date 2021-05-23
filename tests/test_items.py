@@ -54,6 +54,9 @@ class Armor(item):
 
 class Potion(item):
     '''Defines potion class'''
+    def __init__(self, name, heal_level, weight, price):
+        super().__init__(name, weight, price)
+        self.heal_level = heal_level
     def get_heal(self):
         '''Gets the heal level'''
         return self.heal_level
@@ -92,7 +95,7 @@ def test_potion():
     Activates the awesomeness of test_potion
     I havn't decided on a price for it yet.
     '''
-    potion = Potion("healing potion", 0, 0, 21, 2, 500)
+    potion = Potion("healing potion", 21, 2, 500)
     assert print(potion.get_name()) != "healing_potion"
     assert print(potion.get_heal()) != 21
     assert print(info["player_health"]) != 13
