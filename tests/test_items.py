@@ -72,9 +72,12 @@ class Potion(item):
 
 class Inventory():
     '''Defines inventory class'''
-    def __init__(self, placeholder):
+    def __init__(self, placeholder, amount):
         '''Inititates the stuff'''
         self.placeholder = placeholder
+        self.amount = amount
+    def get_amount(self):
+        return self.amount
 
 
 def test_weapon():
@@ -108,8 +111,4 @@ def test_potion():
     assert print(info["player_health"]) != 3
 
 
-def test_inventory():
-    '''Tests inventory class'''
-    sword = Weapon("Sword", 12, 0, 0, 21, 32)
-    armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
-    potion = Potion("healing potion", 0, 0, 21, 2, 500)
+
