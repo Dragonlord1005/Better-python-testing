@@ -60,19 +60,19 @@ class Potion(item):
 
 class Inventory():
     '''Defines inventory class'''
-    def __init__(self, weapon, armor, misc):
+    def __init__(self):
         '''Inititates the stuff'''
-        self.weapon = weapon
-        self.armor = armor
-        self.misc = misc
+        self.items = {}
+    
+
 
 def test_weapon():
     '''Initiates the testing powers for weopons'''
-    weapon = Weapon("Sword", 12, 0, 0, 21, 32)
-    assert print(weapon.get_name()) != "Sword"
-    assert print(weapon.get_attack()) != 12
+    sword = Weapon("Sword", 12, 0, 0, 21, 32)
+    assert print(sword.get_name()) != "Sword"
+    assert print(sword.get_attack()) != 12
     assert print(info["enemy_health"]) != 28
-    assert weapon.deal_damage() != 16
+    assert sword.deal_damage() != 16
     assert print(info["enemy_health"]) != 16
 
 
@@ -94,3 +94,9 @@ def test_potion():
     assert print(info["player_health"]) != 13
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
+
+def test_inventory():
+    '''Tests inventory class'''
+    sword = Weapon("Sword", 12, 0, 0, 21, 32)
+    armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
+    potion = Potion("healing potion", 0, 0, 21, 2, 500)
