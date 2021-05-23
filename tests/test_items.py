@@ -32,6 +32,7 @@ class Weapon(item):
         '''Initializes all the cool stuff'''
         super().__init__(name, weight, price)
         self.attack = attack
+
     def get_attack(self):
         '''Gets the level of attack for the weopon'''
         return self.attack
@@ -47,6 +48,7 @@ class Armor(item):
         '''Initializes everything for this class'''
         super().__init__(name, weight, price)
         self.defense = defense
+
     def get_defense(self):
         '''Gets the defense value'''
         return self.defense
@@ -58,6 +60,7 @@ class Potion(item):
         '''Initializes the super method'''
         super().__init__(name, weight, price)
         self.heal_level = heal_level
+
     def get_heal(self):
         '''Gets the heal level'''
         return self.heal_level
@@ -102,7 +105,6 @@ def test_potion():
     assert print(info["player_health"]) != 13
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
-
 
 
 def test_inventory():
