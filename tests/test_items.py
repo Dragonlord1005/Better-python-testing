@@ -76,6 +76,7 @@ class Inventory():
         '''Inititates the stuff'''
         self.placeholder = placeholder
         self.amount = amount
+
     def get_amount(self):
         return self.amount
 
@@ -109,6 +110,3 @@ def test_potion():
     assert print(info["player_health"]) != 13
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
-
-
-
