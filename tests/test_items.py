@@ -2,10 +2,7 @@
 # Also prices aren't final
 import typey
 
-info = {
-    "player_health": 13,
-    "enemy_health": 28
-}
+info = {"player_health": 13, "enemy_health": 28}
 
 
 class item():
