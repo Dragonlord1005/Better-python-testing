@@ -2,9 +2,9 @@
 # Also prices aren't final
 import typey
 
-info = {
-    "player_health": 13
-}
+info = {"player_health": 13}
+
+
 class item():
     '''Defines item class which is used for a lot of things'''
     def __init__(self, name, attack, defense, heal_level, weight, price):
@@ -52,6 +52,7 @@ class Potion(item):
     def get_heal(self):
         '''Gets the heal level'''
         return self.heal_level
+
     def heal(self):
         info["player_health"] = info["player_health"] + self.heal_level
 
