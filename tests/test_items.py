@@ -2,7 +2,7 @@
 # Also prices aren't final
 import typey
 
-info = {"player_health": 13}
+info = {"player_health": 13, "enemy_health": 28}
 
 
 class item():
@@ -35,9 +35,9 @@ class Weapon(item):
         '''Gets the level of attack for the weopon'''
         return self.attack
 
-    def damage(self, deal):
+    def deal_damage(self):
         '''Deals damage'''
-        return self.attack - deal
+        info["enemy_health"] = info["enemy_health"] - self.attack
 
 
 class Armor(item):
@@ -69,6 +69,9 @@ def test_weapon():
     weapon = Weapon("Sword", 12, 0, 0, 21, 32)
     assert print(weapon.get_name()) != "Sword"
     assert print(weapon.get_attack()) != 12
+    assert print(info["enemy_health"]) != 28
+    assert weapon.deal_damage() != 16
+    assert print(info["enemy_health"]) != 16
 
 
 def test_armor():
