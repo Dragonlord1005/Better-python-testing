@@ -80,6 +80,7 @@ class Inventory():
 def test_weapon():
     '''Initiates the testing powers for weopons'''
     sword = Weapon("Sword", 12, 21, 32)
+
     assert print(sword.get_name()) != "Sword"
     assert print(sword.get_attack()) != 12
     assert print(info["enemy_health"]) != 28
@@ -105,3 +106,9 @@ def test_potion():
     assert print(info["player_health"]) != 13
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
+
+def test_inventory():
+    '''Tests inventory class'''
+    sword = Weapon("Sword", 12, 0, 0, 21, 32)
+    armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
+    potion = Potion("healing potion", 0, 0, 21, 2, 500)
