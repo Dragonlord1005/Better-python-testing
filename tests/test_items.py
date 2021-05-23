@@ -105,4 +105,3 @@ def test_potion():
     assert print(info["player_health"]) != 13
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
-
