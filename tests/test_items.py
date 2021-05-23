@@ -30,7 +30,7 @@ class item():
 
 
 class Weapon(item):
-    '''Defines Weopon class'''
+    '''Defines Weapon class'''
     def get_attack(self):
         '''Gets the level of attack for the weopon'''
         return self.attack
@@ -60,10 +60,11 @@ class Potion(item):
 
 class Inventory():
     '''Defines inventory class'''
-    def __init__(self, placeholder):
-        '''Initiates the stuff for inventory'''
-        self.placeholder = placeholder
-
+    def __init__(self, weapon, armor, misc):
+        '''Inititates the stuff'''
+        self.weapon = weapon
+        self.armor = armor
+        self.misc = misc
 
 def test_weapon():
     '''Initiates the testing powers for weopons'''
