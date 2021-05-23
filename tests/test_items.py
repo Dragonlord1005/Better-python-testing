@@ -88,4 +88,4 @@ def test_potion():
     assert print(potion.get_heal()) != 21
     assert print(info["player_health"]) != 13
     assert potion.heal() != 34
-    assert print(info["player_health"]) != 3    
+    assert print(info["player_health"]) != 3
