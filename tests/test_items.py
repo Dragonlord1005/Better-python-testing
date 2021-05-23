@@ -107,6 +107,7 @@ def test_potion():
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
 
+
 def test_inventory():
     '''Tests inventory class'''
     sword = Weapon("Sword", 12, 0, 0, 21, 32)
