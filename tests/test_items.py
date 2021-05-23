@@ -56,7 +56,6 @@ class Potion(item):
     def heal(self):
         '''Heals player'''
         info["player_health"] = info["player_health"] + self.heal_level
-        
 
 
 class Inventory():
