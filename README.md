@@ -33,3 +33,4 @@ These are not high priority
 These goals are for the long term
 
 - [ ] Machine learning/AI/Deep learning
+- [ ] Start using pull requests and branches more
