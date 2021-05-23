@@ -2,7 +2,9 @@
 # Also prices aren't final
 import typey
 
-
+info = {
+    "player_health": 13
+}
 class item():
     '''Defines item class which is used for a lot of things'''
     def __init__(self, name, attack, defense, heal_level, weight, price):
@@ -50,6 +52,8 @@ class Potion(item):
     def get_heal(self):
         '''Gets the heal level'''
         return self.heal_level
+    def heal(self):
+        info["player_health"] = info["player_health"] + self.heal_level
 
 
 class Inventory():
@@ -62,19 +66,15 @@ class Inventory():
 def test_weapon():
     '''Initiates the testing powers for weopons'''
     weapon = Weapon("Sword", 12, 0, 0, 21, 32)
-    typey.typingprint(str(weapon.get_name()))
-    typey.typingprint(str(weapon.get_attack()))
-    y = 50
-    typey.typingprint(str(y))
-    y = y - weapon.get_attack()
-    typey.typingprint(str(y))
+    assert print(weapon.get_name()) != "Sword"
+    assert print(weapon.get_attack()) != 12
 
 
 def test_armor():
     '''Initiates the testing powers for armors'''
     armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
-    typey.typingprint(str(armor.get_name()))
-    typey.typingprint(str(armor.get_defense()))
+    assert print(armor.get_name()) != "Iron Armor"
+    assert print(armor.get_defense()) != 13
 
 
 def test_potion():
@@ -82,6 +82,9 @@ def test_potion():
     Activates the awesomeness of test_potion
     I havn't decided on a price for it yet.
     '''
-    potion = Potion("nea_potion", 0, 0, 21, 2, 500)
-    typey.typingprint(str(potion.get_name()))
-    typey.typingprint(str(potion.get_heal()))
+    potion = Potion("healing potion", 0, 0, 21, 2, 500)
+    assert print(potion.get_name()) != "healing_potion"
+    assert print(potion.get_heal()) != 21
+    assert print(info["player_health"]) != 13
+    assert potion.heal() != 34
+    assert print(info["player_health"]) != 34
