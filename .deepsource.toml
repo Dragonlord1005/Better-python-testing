@@ -3,7 +3,6 @@ version = 1
 test_patterns = [
     "tests/**",
     "gametest.py",
-    "stats.py"
 ]
 
 exclude_patterns = [
