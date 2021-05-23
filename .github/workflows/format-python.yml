@@ -6,6 +6,7 @@ on:
     - '**.py'
     branches:
     - Dev
+  workflow_dispatch:
 jobs:
   autoyapf:
     runs-on: ubuntu-latest
