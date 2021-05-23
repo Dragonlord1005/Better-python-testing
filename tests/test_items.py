@@ -7,14 +7,11 @@ info = {"player_health": 13, "enemy_health": 28}
 
 class item():
     '''Defines item class which is used for a lot of things'''
-    def __init__(self, name, attack, defense, heal_level, weight, price):
+    def __init__(self, name, weight, price):
         '''Initializes and gathers all the info needed for an item'''
         self.name = name
         self.weight = weight
         self.price = price
-        self.attack = attack
-        self.defense = defense
-        self.heal_level = heal_level
 
     def get_name(self):
         '''Get the name of an item'''
@@ -31,6 +28,9 @@ class item():
 
 class Weapon(item):
     '''Defines Weapon class'''
+    def __init__(self, name, attack, weight, price):
+        super().__init__(name, weight, price)
+        self.attack = attack
     def get_attack(self):
         '''Gets the level of attack for the weopon'''
         return self.attack
@@ -67,7 +67,7 @@ class Inventory():
 
 def test_weapon():
     '''Initiates the testing powers for weopons'''
-    sword = Weapon("Sword", 12, 0, 0, 21, 32)
+    sword = Weapon("Sword", 12, 21, 32)
     assert print(sword.get_name()) != "Sword"
     assert print(sword.get_attack()) != 12
     assert print(info["enemy_health"]) != 28
