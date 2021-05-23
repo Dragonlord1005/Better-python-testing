@@ -29,6 +29,7 @@ class item():
 class Weapon(item):
     '''Defines Weapon class'''
     def __init__(self, name, attack, weight, price):
+        '''Initializes all the cool stuff'''
         super().__init__(name, weight, price)
         self.attack = attack
     def get_attack(self):
@@ -42,6 +43,10 @@ class Weapon(item):
 
 class Armor(item):
     '''Defines armor class'''
+    def __init__(self, name, defense, weight, price):
+        '''Initializes everything for this class'''
+        super().__init__(name, weight, price)
+        self.defense = defense
     def get_defense(self):
         '''Gets the defense value'''
         return self.defense
@@ -77,7 +82,7 @@ def test_weapon():
 
 def test_armor():
     '''Initiates the testing powers for armors'''
-    armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
+    armor = Armor("Iron Armor", 13, 21, 27)
     assert print(armor.get_name()) != "Iron Armor"
     assert print(armor.get_defense()) != 13
 
@@ -94,8 +99,3 @@ def test_potion():
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
 
-def test_inventory():
-    '''Tests inventory class'''
-    sword = Weapon("Sword", 12, 0, 0, 21, 32)
-    armor = Armor("Iron Armor", 0, 13, 0, 21, 27)
-    potion = Potion("healing potion", 0, 0, 21, 2, 500)
