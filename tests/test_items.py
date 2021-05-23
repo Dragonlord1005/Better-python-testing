@@ -80,7 +80,6 @@ class Inventory():
 def test_weapon():
     '''Initiates the testing powers for weopons'''
     sword = Weapon("Sword", 12, 21, 32)
-
     assert print(sword.get_name()) != "Sword"
     assert print(sword.get_attack()) != 12
     assert print(info["enemy_health"]) != 28
