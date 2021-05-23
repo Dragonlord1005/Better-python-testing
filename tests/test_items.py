@@ -39,7 +39,7 @@ class Weapon(item):
 
     def deal_damage(self):
         '''Deals damage'''
-        info["enemy_health"] = info["enemy_health"] - self.attack
+        info["enemy_health"] -= self.attack
 
 
 class Armor(item):
