@@ -82,7 +82,8 @@ class Inventory():
         return self.amount
 
     def add_item(self):
-        self.item += 1
+        '''Adds an item to amount'''
+        self.amount += 1
 
 
 def test_weapon():
