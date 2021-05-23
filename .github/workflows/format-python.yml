@@ -4,7 +4,11 @@ on:
   push:
     paths:
     - '**.py'
+    branches:
+    - Dev
   pull_request:
+    brances:
+    - Dev
 jobs:
   autoyapf:
     runs-on: ubuntu-latest
