@@ -22,3 +22,6 @@ pytest = "^6.2.4"
 coverage = "^5.5"
 pytest-cov = "^2.12"
 pytest-sugar = "^0.9.4"
+
+[tool.poe.tasks]
+test = "pytest --cov-config=.coveragerpc --cov-report term-missing --cov --cov-branch"
