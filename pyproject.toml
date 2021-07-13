@@ -12,7 +12,7 @@ readme = "README.md"
 license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
-pyinstaller = "^4.3"
+pyinstaller = "^4.4"
 pytest-randomly = "^3.8.0"
 poethepoet = "^0.10.0"
 [tool.poetry.dev-dependencies]
