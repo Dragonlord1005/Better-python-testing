@@ -26,7 +26,9 @@ if option == ("attack"):
     attack.combat()
 if option == ("run"):
     typey.typingprint(
-        "You run away, flailing your arms, while screaming like a coward\n")
+        "You run away, flailing your arms, while screaming like a coward\n"
+    )
     typey.typingprint(
-        "You end up attracting too much attention, and are thrown in jail\n")
+        "You end up attracting too much attention, and are thrown in jail\n"
+    )
     typey.typingprint("You lose\n")

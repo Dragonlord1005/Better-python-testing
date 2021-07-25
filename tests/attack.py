@@ -13,12 +13,12 @@ info = {
     "enemy_defending": 0,
     "turn": 0,
     "enemy_choice": 0,
-    "winner": 0
+    "winner": 0,
 }
 
 
 def combat():
-    '''Defines combat, needs no other input'''
+    """Defines combat, needs no other input"""
     info["winner"] = 3
     while info["winner"] == 3:
         # this is for player attacking

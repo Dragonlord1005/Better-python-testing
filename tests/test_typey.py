@@ -15,6 +15,6 @@ def typingprint(text):
 
 
 def test_typingprint():
-    '''Tests it'''
+    """Tests it"""
     x = 32
     typingprint(str(x))
