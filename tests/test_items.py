@@ -90,6 +90,10 @@ class Inventory:
         """Adds an item to amount"""
         self.amount += 1
 
+    def inventory_list(self):
+        """lists out all items"""
+        self.print("sorry, doesnt work yet")
+
 
 def test_weapon():
     """Initiates the testing powers for weopons"""
