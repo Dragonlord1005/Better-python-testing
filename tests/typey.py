@@ -4,7 +4,7 @@ import sys
 
 
 def typingprint(text):
-    '''Typingprint types out stuff'''
+    """Typingprint types out stuff"""
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()

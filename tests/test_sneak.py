@@ -13,5 +13,5 @@ def stealth():
 
 
 def test_stealth():
-    '''Tests stealth'''
+    """Tests stealth"""
     stealth()
