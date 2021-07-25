@@ -8,25 +8,25 @@ on:
     - Dev
   workflow_dispatch:
 jobs:
-  autoyapf:
+  format:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
         with:
-          ref: ${{ github.head_ref }}
-      - name: autoyapf
-        id: autoyapf
-        uses: mritunjaysharma394/autoyapf@v2
-        with:
-          args: --style pep8 --recursive --in-place .
-      - name: Check for modified files
-        id: git-check
-        run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
-      - name: Push changes
-        if: steps.git-check.outputs.modified == 'true'
+          python-version: 3.7
+      - name: Install Black
+        run: pip install black
+      - name: Run black --check .
+        run: black --check .
+      - name: If needed, commit black changes to the pull request
+        if: failure()
         run: |
-          git config --global user.name 'Dragonlord1005'
+          black .
+          git config --global user.name 'autoblack'
           git config --global user.email '68302450+Dragonlord1005@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git commit -am "Automated autoyapf fixes"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git checkout $GITHUB_HEAD_REF
+          git commit -am "fixup: Format Python code with Black"
           git push
