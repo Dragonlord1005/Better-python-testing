@@ -17,7 +17,7 @@ poethepoet = "^0.10.0"
 black = "^21.7b0"
 [tool.poetry.dev-dependencies]
 yapf = "^0.31.0"
-howdoi = "^2.0.16"
+howdoi = "^2.0.18"
 pytest = "^6.2.4"
 coverage = "^5.5"
 pytest-cov = "^2.12"
