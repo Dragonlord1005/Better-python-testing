@@ -34,3 +34,6 @@ These goals are for the long term
 
 - [ ] Machine learning/AI/Deep learning
 - [ ] Start using pull requests and branches more
+
+##### Status:
+Project is on hold for a month two most likely, development has been slow because lack of motivation.
