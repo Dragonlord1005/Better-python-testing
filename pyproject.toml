@@ -14,7 +14,7 @@ license = "MIT"
 python = "^3.8"
 pyinstaller = "^4.4"
 poethepoet = "^0.10.0"
-black = "^21.7b0"
+black = "^21.8b0"
 [tool.poetry.dev-dependencies]
 yapf = "^0.31.0"
 howdoi = "^2.0.18"
