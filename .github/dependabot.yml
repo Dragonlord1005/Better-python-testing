@@ -3,7 +3,7 @@ updates:
 - package-ecosystem: pip
   directory: "/"
   schedule:
-    interval: daily
+    interval: "daily"
     timezone: "America/Denver"
   
 - package-ecosystem: "github-actions"
