@@ -10,4 +10,3 @@ def stealth():
     elif sneak:
         print("You don't sneak past and are caught,")
         print("this does nothing in the example")
-        
