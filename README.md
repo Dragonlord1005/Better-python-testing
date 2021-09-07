@@ -39,4 +39,4 @@ These goals are for the long term
 - [ ] Start using pull requests and branches more
 
 ##### Status:
-Project is on hold for a month two most likely, development has been slow because lack of motivation.
+Progress is going to slower for a month or two most likely, development has been slow due to lack of motivation.
