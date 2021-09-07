@@ -6,6 +6,13 @@ on:
     - '**.py'
     branches:
     - Dev
+    - Inventory
+  pull_request:
+    paths:
+    - '**.py'
+    branches:
+    - Dev
+    - Inventory
   workflow_dispatch:
 jobs:
   format:
