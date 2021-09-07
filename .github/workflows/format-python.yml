@@ -6,6 +6,7 @@ on:
     - '**.py'
     branches:
     - Dev
+    - Inventory
   workflow_dispatch:
 jobs:
   format:
