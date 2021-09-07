@@ -77,22 +77,17 @@ class Potion(item):
 class Inventory:
     """Defines inventory class"""
 
-    def __init__(self, placeholder, amount):
+    def __init__(self, capacity):
         """Inititates the stuff"""
-        self.placeholder = placeholder
-        self.amount = amount
-
-    def get_amount(self):
-        """Gets the amount of items in the inventory currently"""
-        return self.amount
-
-    def add_item(self):
-        """Adds an item to amount"""
-        self.amount += 1
+        self.capacity = capacity
+        self.items = []
 
     def inventory_list(self):
         """lists out all items"""
-        self.print("sorry, doesnt work yet")
+        index = 1
+        for item in self.items:
+            print(str(f"{index} -> [x{item.amount}] {item.name}"))
+            index += 1
 
 
 def test_weapon():
