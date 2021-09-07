@@ -16,7 +16,6 @@ pyinstaller = "^4.5.1"
 poethepoet = "^0.10.0"
 black = "^21.8b0"
 [tool.poetry.dev-dependencies]
-yapf = "^0.31.0"
 howdoi = "^2.0.18"
 pytest = "^6.2.5"
 coverage = "^5.5"
