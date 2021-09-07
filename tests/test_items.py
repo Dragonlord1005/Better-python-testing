@@ -41,7 +41,7 @@ class Weapon(item):
 
     def deal_damage(self):
         """Deals damage"""
-        info["enemy_health"] = info["enemy_health"] - self.attack
+        info["enemy_health"] -= self.attack
 
 class Armor(item):
     """Defines armor class"""
@@ -75,9 +75,6 @@ class Potion(item):
 
 class Inventory:
     """Defines inventory class"""
-        info["player_health"] = info["player_health"] + self.heal_level
-
-
     def __init__(self, capacity):
         """Inititates the stuff"""
         self.capacity = capacity
