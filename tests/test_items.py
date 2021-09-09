@@ -5,7 +5,7 @@ import typey
 info = {"player_health": 13, "enemy_health": 28}
 
 
-class item:
+class Item:
     """Defines item class which is used for a lot of things"""
 
     def __init__(self, name, weight, price):
@@ -27,7 +27,7 @@ class item:
         return self.price
 
 
-class Weapon(item):
+class Weapon(Item):
     """Defines Weapon class"""
 
     def __init__(self, name, attack, weight, price):
@@ -44,7 +44,7 @@ class Weapon(item):
         info["enemy_health"] -= self.attack
 
 
-class Armor(item):
+class Armor(Item):
     """Defines armor class"""
 
     def __init__(self, name, defense, weight, price):
@@ -57,7 +57,7 @@ class Armor(item):
         return self.defense
 
 
-class Potion(item):
+class Potion(Item):
     """Defines potion class"""
 
     def __init__(self, name, heal_level, weight, price):
@@ -118,3 +118,10 @@ def test_potion():
     assert print(info["player_health"]) != 13
     assert potion.heal() != 34
     assert print(info["player_health"]) != 3
+
+
+def test_inventory():
+    """
+    Tests Inventory
+    """
+    assert print("hello") != "hello"
