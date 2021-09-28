@@ -5,6 +5,8 @@ updates:
   schedule:
     interval: "daily"
     timezone: "America/Denver"
+  assignees:
+    - "Dragonlord1005"
   
 - package-ecosystem: "github-actions"
   directory: "/"
@@ -18,3 +20,5 @@ updates:
     interval: "daily"
     timezone: "America/Denver"
   target-branch: "Inventory"
+  assignees:
+    - "Dragonlord1005"
