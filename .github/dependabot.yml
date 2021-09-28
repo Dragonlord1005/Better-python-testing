@@ -17,4 +17,4 @@ updates:
   schedule:
     interval: "daily"
     timezone: "America/Denver"
-  target-branch: "Inventory
+  target-branch: "Inventory"
