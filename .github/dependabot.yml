@@ -9,5 +9,12 @@ updates:
 - package-ecosystem: "github-actions"
   directory: "/"
   schedule:
+    interval: "weekly"
+    timezone: "America/Denver"
+    
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
     interval: "daily"
     timezone: "America/Denver"
+  target-branch: "Inventory
