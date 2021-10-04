@@ -18,7 +18,7 @@ black = "^21.9b0"
 [tool.poetry.dev-dependencies]
 howdoi = "^2.0.19"
 pytest = "^6.2.5"
-coverage = "^5.5"
+coverage = "^6.0"
 pytest-cov = "^3.0"
 pytest-sugar = "^0.9.4"
 pytest-randomly = "^3.10.1"
