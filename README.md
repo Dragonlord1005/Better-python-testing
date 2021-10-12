@@ -15,7 +15,8 @@
 - [x] Make the automated code fixes not say maintainer name
 - [ ] Inventory system
 - [ ] Redo stats
-- [ ] shops
+- [ ] Currency System
+- [ ] Shops
 - [ ] Exp
 - [ ] Classes
 - [ ] NPC's
