@@ -82,7 +82,7 @@ class Inventory:
         self.capacity = capacity
         self.items = []
 
-    # def inventory_list(self):
+        # def inventory_list(self):
         """lists out all items"""
 
 
