@@ -1,6 +1,6 @@
 # This is an inventory system
 # Also prices aren't final
-import typey
+# import typety
 
 info = {"player_health": 13, "enemy_health": 28}
 
@@ -82,12 +82,8 @@ class Inventory:
         self.capacity = capacity
         self.items = []
 
-    def inventory_list(self):
+    # def inventory_list(self):
         """lists out all items"""
-        index = 1
-        for item in self.items:
-            print(str(f"{index} -> [x{item.amount}] {item.name}"))
-            index += 1
 
 
 def test_weapon():
