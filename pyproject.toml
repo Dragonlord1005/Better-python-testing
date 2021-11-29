@@ -17,7 +17,7 @@ poethepoet = "^0.11.0"
 black = "^21.11b1"
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
-coverage = "^6.1"
+coverage = "^6.2"
 pytest-cov = "^3.0"
 pytest-sugar = "^0.9.4"
 pytest-randomly = "^3.10.2"
