@@ -14,6 +14,14 @@ updates:
     interval: "weekly"
     timezone: "America/Denver"
     
+ - package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "weekly"
+    timezone: "America/Denver"
+  target-branch: "Inventory"
+    
+    
 - package-ecosystem: pip
   directory: "/"
   schedule:
