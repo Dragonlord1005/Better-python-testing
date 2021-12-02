@@ -3,9 +3,10 @@ version = 1
 test_patterns = [
     "tests/**",
     "gametest.py",
-    ".style.py",
-    "typey.py",
-    "playground.py"
+]
+
+exclude_patterns = [
+    ".style.py"
 ]
 
 [[analyzers]]
@@ -14,12 +15,7 @@ enabled = true
 
   [analyzers.meta]
   runtime_version = "3.x.x"
-  skip_doc_coverage = ["module", "init", "class"]
-
-[[analyzers]]
-name = "test-coverage"
-enabled = true
 
 [[transformers]]
-name = "autopep8"
-enabled = false
+    name = "black"
+    enabled = false

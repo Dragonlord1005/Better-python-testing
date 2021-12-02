@@ -1,67 +1,112 @@
 # This is an inventory system
-import test_type as typer
+# Also prices aren't final
+import typey
+
+info = {"player_health": 13, "enemy_health": 28}
 
 
-class item():
-    # Initiates
-    def __init__(self, name, attack, defense, heal_level, weight, price):
+class item:
+    """Defines item class which is used for a lot of things"""
+
+    def __init__(self, name, weight, price):
+        """Initializes and gathers all the info needed for an item"""
         self.name = name
         self.weight = weight
         self.price = price
-        self.attack = attack
-        self.defense = defense
-        self.heal_level = heal_level
 
-    # Get name
     def get_name(self):
+        """Get the name of an item"""
         return self.name
 
-    # Get the weight
     def get_weight(self):
+        """Get the weight of an item"""
         return self.weight
 
-    # Get the price
     def get_price(self):
+        """Get the price of an item"""
         return self.price
 
 
-class weapon(item):
+class Weapon(item):
+    """Defines Weapon class"""
+
+    def __init__(self, name, attack, weight, price):
+        """Initializes all the cool stuff"""
+        super().__init__(name, weight, price)
+        self.attack = attack
+
     def get_attack(self):
+        """Gets the level of attack for the weopon"""
         return self.attack
 
-    def damage(self, deal):
-        return self.attack - deal
+    def deal_damage(self):
+        """Deals damage"""
+        info["enemy_health"] = info["enemy_health"] - self.attack
 
 
-class armor(item):
+class Armor(item):
+    """Defines armor class"""
+
+    def __init__(self, name, defense, weight, price):
+        """Initializes everything for this class"""
+        super().__init__(name, weight, price)
+        self.defense = defense
+
     def get_defense(self):
+        """Gets the defense value"""
         return self.defense
 
 
-class potion(item):
+class Potion(item):
+    """Defines potion class"""
+
+    def __init__(self, name, heal_level, weight, price):
+        """Initializes the super method"""
+        super().__init__(name, weight, price)
+        self.heal_level = heal_level
+
     def get_heal(self):
+        """Gets the heal level"""
         return self.heal_level
+
+    def heal(self):
+        """Heals player"""
+        info["player_health"] = info["player_health"] + self.heal_level
+
+
+class Inventory:
+    """Defines inventory class"""
+
+    def __init__(self, placeholder):
+        """Inititates the stuff"""
+        self.placeholder = placeholder
 
 
 def test_weapon():
-    yep = weapon("Sword", 12, 0, 0, 21, 32)
-    typer.typingprint(str(yep.get_name()))
-    typer.typingprint(str(yep.get_attack()))
-    y = 50
-    typer.typingprint(str(y))
-    y = y - yep.get_attack()
-    typer.typingprint(str(y))
+    """Initiates the testing powers for weopons"""
+    sword = Weapon("Sword", 12, 21, 32)
+    assert print(sword.get_name()) != "Sword"
+    assert print(sword.get_attack()) != 12
+    assert print(info["enemy_health"]) != 28
+    assert sword.deal_damage() != 16
+    assert print(info["enemy_health"]) != 16
 
 
 def test_armor():
-    hi = armor("Iron Armor", 0, 13, 0, 21, 27)
-    typer.typingprint(str(hi.get_name()))
-    typer.typingprint(str(hi.get_defense()))
+    """Initiates the testing powers for armors"""
+    armor = Armor("Iron Armor", 13, 21, 27)
+    assert print(armor.get_name()) != "Iron Armor"
+    assert print(armor.get_defense()) != 13
 
 
 def test_potion():
-    # The knights of NEA will find you
-    # Also I havn't decided on a price for it yet so yeah.
-    NEA = potion("nea_potion", 0, 0, 21, 2, 500)
-    typer.typingprint(str(NEA.get_name()))
-    typer.typingprint(str(NEA.get_heal()))
+    """
+    Activates the awesomeness of test_potion
+    I havn't decided on a price for it yet.
+    """
+    potion = Potion("healing potion", 21, 2, 500)
+    assert print(potion.get_name()) != "healing_potion"
+    assert print(potion.get_heal()) != 21
+    assert print(info["player_health"]) != 13
+    assert potion.heal() != 34
+    assert print(info["player_health"]) != 3

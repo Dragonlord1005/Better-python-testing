@@ -23,26 +23,26 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.4.0
       
       - uses: syphar/restore-pip-download-cache@v1
 
       - name: Set up Python 3.8.9
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2.3.1
         with:
           python-version: 3.8.9
       
       - name: Get the requirements
-        run: pip install -r requirements.txt
+        run: pip install -r dev-requirements.txt
 
       # Runs a set of commands using the runners shell
       - name: build the thing
         run: |
-          pyinstaller -F game.py -n ${{ matrix.os }}game
+          pyinstaller -D game.py -n ${{ matrix.os }}game
  
 
       - name: Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: The Artifact (of doom)
+          name: Results
           path: dist/**
