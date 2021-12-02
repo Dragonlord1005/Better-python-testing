@@ -17,9 +17,15 @@ poethepoet = "^0.11.0"
 black = "^21.11b1"
 [tool.poetry.dev-dependencies]
 yapf = "^0.31.0"
-howdoi = "^2.0.19"
 pytest = "^6.2.5"
 coverage = "^6.2"
 pytest-cov = "^3.0"
 pytest-sugar = "^0.9.4"
 pytest-randomly = "^3.10.3"
+flake8 = "^4.0.1"
+[tool.poe.tasks]
+test = "pytest --cov-config=.coveragerpc --cov-report term-missing --cov --cov-branch"
+format = "black ."
+
+[tool.black]
+target-version = ['py38']
