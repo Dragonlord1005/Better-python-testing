@@ -20,6 +20,8 @@ updates:
     interval: "weekly"
     timezone: "America/Denver"
   target-branch: "Inventory"
+  assignees:
+    - "Dragonlord1005"
     
     
 - package-ecosystem: pip
