@@ -15,13 +15,13 @@ updates:
     timezone: "America/Denver"
     
  - package-ecosystem: "github-actions"
-  directory: "/"
-  schedule:
-    interval: "weekly"
-    timezone: "America/Denver"
-  target-branch: "Inventory"
-  assignees:
-    - "Dragonlord1005"
+   directory: "/"
+   schedule:
+     interval: "weekly"
+     timezone: "America/Denver"
+   target-branch: "Inventory"
+   assignees:
+     - "Dragonlord1005"
     
     
 - package-ecosystem: pip
