@@ -84,6 +84,7 @@ class Inventory:
 
         # def inventory_list(self):
         """lists out all items"""
+        # So this is just a quick little test for wakatime
 
 
 def test_weapon():
