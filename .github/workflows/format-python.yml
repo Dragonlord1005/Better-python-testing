@@ -5,7 +5,7 @@ on:
     paths:
     - '**.py'
     branches:
-    - Dev
+    - master
     - Inventory
   pull_request:
     paths:

@@ -3,7 +3,6 @@
 [![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/Dragonlord1005/Python-text-based-game-framework/?ref=repository-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Dragonlord1005/Python-text-based-game-framework?logo=github)
-![GitHub deployments](https://img.shields.io/github/deployments/Dragonlord1005/python-text-based-game-framework/github-pages?label=Pages&logo=Github)
 ![GitHub](https://img.shields.io/github/license/Dragonlord1005/Python-text-based-game-framework?logo=github)
 ![GitHub all releases](https://img.shields.io/github/downloads/Dragonlord1005/python-text-based-game-framework/total?logo=github&style=flat-square)
 
@@ -15,7 +14,8 @@
 - [x] Make the automated code fixes not say maintainer name
 - [ ] Inventory system
 - [ ] Redo stats
-- [ ] shops
+- [ ] Currency System
+- [ ] Shops
 - [ ] Exp
 - [ ] Classes
 - [ ] NPC's
