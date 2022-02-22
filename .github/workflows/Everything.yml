@@ -10,7 +10,7 @@ on:
     paths:
     - '**.py'
     branches:
-    - Dev
+    - master
     - Inventory
   workflow_dispatch:
 jobs:
