@@ -79,6 +79,3 @@ def combat():
             typey.typingprint(str(info["player_health"]))
             typey.typingprint(" health!!!\n")
             info["turn"] = 0
-
-
-
