@@ -7,8 +7,6 @@ on:
     - master
     - Inventory
   pull_request:
-    paths:
-    - '**.py'
     branches:
     - master
     - Inventory
