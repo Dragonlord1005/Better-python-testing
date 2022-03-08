@@ -17,7 +17,7 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.0.0
       
       - name: Set up Python 3.8
         uses: actions/setup-python@v3
@@ -38,7 +38,7 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.0.0
       - name: Set up Python 3.8
         uses: actions/setup-python@v3
         with:
@@ -74,7 +74,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.0.0
       
       - uses: actions/cache@v2
         with:
