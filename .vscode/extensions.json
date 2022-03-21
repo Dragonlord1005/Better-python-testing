@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "kiteco.kite",
         "ms-python.vscode-pylance",
         "aaron-bond.better-comments"
     ]
