@@ -3,7 +3,7 @@ pytest-sugar== 0.9.4
 pytest== 7.0.1
 pytest-cov== 3.0
 pytest-randomly== 3.11.0
-pyinstaller==4.10
+pyinstaller==5.0
 flake8== 4.0.1
 black== 22.1
 typety== 1.0.3
