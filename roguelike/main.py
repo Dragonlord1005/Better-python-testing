@@ -6,8 +6,8 @@ from input_handlers import EventHandler
 
 
 def main() -> None:
-    screen_width = 50
-    screen_height = 50
+    screen_width = 40
+    screen_height = 30
 
     tileset = tcod.tileset.load_tilesheet(
         "dejavu10x10_gs_tc.png", 32, 8, tcod.tileset.CHARMAP_TCOD
