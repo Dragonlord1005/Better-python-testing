@@ -6,7 +6,7 @@ requires = ["poetry>=1.0"]
 [tool.poetry]
 authors = ["Dragonlord1005 68302450+Dragonlord1005@users.noreply.github.com"]
 description = ""
-name = "Python-text-based-game-framework"
+name = "Personal-Python-Roguelike"
 version = "0.0.2"
 readme = "README.md"
 license = "MIT"
