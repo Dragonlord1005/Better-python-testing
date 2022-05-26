@@ -8,5 +8,6 @@
     ],
     "python.analysis.extraPaths": [
         "tests/"
-    ]
+    ],
+    "nuxt.isNuxtApp": false
 }
