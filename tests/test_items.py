@@ -75,16 +75,44 @@ class Potion(Item):
 
 
 class Inventory:
-    """Defines inventory class"""
+    """Defines the inventory class"""
 
-    def __init__(self, capacity):
-        """Inititates the stuff"""
-        self.capacity = capacity
-        self.items = []
+    def __init__(self):
+        """Initializes the inventory"""
+        self.inventory = []
 
-        # def inventory_list(self):
-        """lists out all items"""
-        # So this is just a quick little test for wakatime
+    def add_item(self, item):
+        """Adds an item to the inventory"""
+        self.inventory.append(item)
+
+    def get_item(self, name):
+        """Gets an item from the inventory"""
+        for item in self.inventory:
+            if item.get_name() == name:
+                return item
+
+    def get_weight(self):
+        """Gets the weight of the inventory"""
+        weight = 0
+        for item in self.inventory:
+            weight += item.get_weight()
+        return weight
+
+    def get_items(self):
+        """Gets all the items in the inventory"""
+        return self.inventory
+
+    def remove_item(self, name):
+        """Removes an item from the inventory"""
+        for item in self.inventory:
+            if item.get_name() == name:
+                self.inventory.remove(item)
+
+    def print_items(self):
+        """Prints all the items in the inventory"""
+        for item in self.inventory:
+            print(item.get_name())
+
 
 
 def test_weapon():
@@ -109,16 +137,20 @@ def test_potion():
     Activates the awesomeness of test_potion
     I havn't decided on a price for it yet.
     """
-    potion = Potion("healing potion", 21, 2, 500)
-    assert print(potion.get_name()) != "healing_potion"
-    assert print(potion.get_heal()) != 21
-    assert print(info["player_health"]) != 13
-    assert potion.heal() != 34
-    assert print(info["player_health"]) != 3
+    potion = Potion("healing potion", 21, 2, 500) # This is a test potion
+    assert print(potion.get_name()) != "healing_potion" # This tests if the name is correct
+    assert print(potion.get_heal()) != 21 # This is the heal level
+    assert print(info["player_health"]) != 13 # This tests if the player health is correct
+    assert potion.heal() != 34  # This is the heal level
+    assert print(info["player_health"]) != 3 # This is the health after the potion is used
 
-
+# Make a test for the inventory class using pytest
 def test_inventory():
-    """
-    Tests Inventory
-    """
-    assert print("hello") != "hello"
+    item = Item("Sword", 12, 21) # This is a test item
+    inventory = Inventory() # This is a test inventory
+    inventory.add_item(item) # This adds the item to the inventory
+    assert inventory.get_item("Sword") == item # This tests if the item is in the inventory
+    assert inventory.get_weight() == 12 # This tests if the weight is correct
+    inventory.remove_item("Sword") # This removes the item from the inventory
+    assert inventory.get_items() == [] # This tests if the inventory is empty
+    inventory.print_items() # This prints all the items in the inventory
