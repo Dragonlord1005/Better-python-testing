@@ -3,7 +3,7 @@
 from random import randint
 from tests import typey
 
-# This is for combat
+# This is for combat testing
 info = {
     "player_health": 50,
     "player_attack": 7,
