@@ -2,5 +2,13 @@
   "extends": [
     "config:base"
   ],
-  "semanticCommits": "enabled"
+  "semanticCommits": "enabled",
+  "baseBranches": ["main", "TOCD"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "dependencies (non-major)"
+    }
+  ],
 }
