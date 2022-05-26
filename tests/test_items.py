@@ -114,7 +114,6 @@ class Inventory:
             print(item.get_name())
 
 
-
 def test_weapon():
     """Initiates the testing powers for weopons"""
     sword = Weapon("Sword", 12, 21, 32)
@@ -137,20 +136,29 @@ def test_potion():
     Activates the awesomeness of test_potion
     I havn't decided on a price for it yet.
     """
-    potion = Potion("healing potion", 21, 2, 500) # This is a test potion
-    assert print(potion.get_name()) != "healing_potion" # This tests if the name is correct
-    assert print(potion.get_heal()) != 21 # This is the heal level
-    assert print(info["player_health"]) != 13 # This tests if the player health is correct
+    potion = Potion("healing potion", 21, 2, 500)  # This is a test potion
+    assert (
+        print(potion.get_name()) != "healing_potion"
+    )  # This tests if the name is correct
+    assert print(potion.get_heal()) != 21  # This is the heal level
+    assert (
+        print(info["player_health"]) != 13
+    )  # This tests if the player health is correct
     assert potion.heal() != 34  # This is the heal level
-    assert print(info["player_health"]) != 3 # This is the health after the potion is used
+    assert (
+        print(info["player_health"]) != 3
+    )  # This is the health after the potion is used
+
 
 # Make a test for the inventory class using pytest
 def test_inventory():
-    item = Item("Sword", 12, 21) # This is a test item
-    inventory = Inventory() # This is a test inventory
-    inventory.add_item(item) # This adds the item to the inventory
-    assert inventory.get_item("Sword") == item # This tests if the item is in the inventory
-    assert inventory.get_weight() == 12 # This tests if the weight is correct
-    inventory.remove_item("Sword") # This removes the item from the inventory
-    assert inventory.get_items() == [] # This tests if the inventory is empty
-    inventory.print_items() # This prints all the items in the inventory
+    item = Item("Sword", 12, 21)  # This is a test item
+    inventory = Inventory()  # This is a test inventory
+    inventory.add_item(item)  # This adds the item to the inventory
+    assert (
+        inventory.get_item("Sword") == item
+    )  # This tests if the item is in the inventory
+    assert inventory.get_weight() == 12  # This tests if the weight is correct
+    inventory.remove_item("Sword")  # This removes the item from the inventory
+    assert inventory.get_items() == []  # This tests if the inventory is empty
+    inventory.print_items()  # This prints all the items in the inventory
