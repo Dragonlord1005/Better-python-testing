@@ -137,26 +137,29 @@ def test_armor():
 def test_inventory():
     """Tests inventory class"""
     inventory = Inventory()
-    assert inventory.get_inventory() == []
-    assert inventory.get_total_weight() == 0
-    assert inventory.get_total_price() == 0
-    assert inventory.get_total_attack() == 0
-    assert inventory.get_total_defense() == 0
-    weapon = Weapon("Sword", 10, 2, 10)
-    armor = Armor("Iron Armor", 10, 2, 10)
-    inventory.add_item(weapon)
-    inventory.add_item(armor)
-    assert inventory.get_inventory() == [weapon, armor]
-    assert inventory.get_total_weight() == 4
-    assert inventory.get_total_price() == 20
-    assert inventory.get_total_attack() == 10
-    assert inventory.get_total_defense() == 10
-    inventory.remove_item(weapon)
-    assert inventory.get_inventory() == [armor]
-    assert inventory.get_total_weight() == 2
-    assert inventory.get_total_price() == 10
-    assert inventory.get_total_attack() == 0
-    assert inventory.get_total_defense() == 10
+    assert inventory.get_inventory() == []  # Make sure inventory is empty
+    assert inventory.get_total_weight() == 0  # Make sure total weight is 0
+    assert inventory.get_total_price() == 0  # Make sure total price is 0
+    assert inventory.get_total_attack() == 0  # Make sure total attack is 0
+    assert inventory.get_total_defense() == 0  # Make sure total defense is 0
+    weapon = Weapon("Sword", 10, 2, 10)  # Create a weapon
+    armor = Armor("Iron Armor", 10, 2, 10)  # Create armor
+    inventory.add_item(weapon)  # Add the weapon to the inventory
+    inventory.add_item(armor)  # Add the armor to the inventory
+    assert inventory.get_inventory() == [
+        weapon,
+        armor,
+    ]  # Make sure inventory has the weapon and armor
+    assert inventory.get_total_weight() == 4  # Make sure total weight is 4
+    assert inventory.get_total_price() == 20  # Make sure total price is 20
+    assert inventory.get_total_attack() == 10  # Make sure total attack is 10
+    assert inventory.get_total_defense() == 10  # Make sure total defense is 10
+    inventory.remove_item(weapon)  # Remove the weapon from the inventory
+    assert inventory.get_inventory() == [armor]  # Make sure inventory has the armor
+    assert inventory.get_total_weight() == 2  # Make sure total weight is 2
+    assert inventory.get_total_price() == 10  # Make sure total price is 10
+    assert inventory.get_total_attack() == 0  # Make sure total attack is 0
+    assert inventory.get_total_defense() == 10  # Make sure total defense is 10
 
 
 # Copilot is awesome
