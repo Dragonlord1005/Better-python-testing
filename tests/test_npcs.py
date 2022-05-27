@@ -1,2 +1,0 @@
-# Run me :)
-import this
