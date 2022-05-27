@@ -1,6 +1,7 @@
 # This is an inventory system and uses classes
 # Every item has a name, weight, and price
 
+
 class Item:
     """Defines item class which is used for a lot of things"""
 
@@ -22,6 +23,7 @@ class Item:
         """Get the price of an item"""
         return self.price
 
+
 # Now we need a weapon that also has damamge in addition to defense
 # We'll use inheritance to do this
 class Weapon(Item):
@@ -40,6 +42,7 @@ class Weapon(Item):
         """Deals damage"""
         info["enemy_health"] -= self.attack
 
+
 # Now we need armour that also has defense in addition to weight
 # We'll use inheritance to do this
 class Armor(Item):
@@ -53,6 +56,7 @@ class Armor(Item):
     def get_defense(self):
         """Gets the defense value"""
         return self.defense
+
 
 # Now we need an inventory system that hooks into all of this
 # We'll use classes
@@ -104,4 +108,3 @@ class Inventory:
             if isinstance(item, Armor):
                 total_defense += item.get_defense()
         return total_defense
-
