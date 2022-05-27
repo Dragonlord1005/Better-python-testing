@@ -1,1 +1,2 @@
-print("theres nothing in here yet")
+# Run me :)
+import this
