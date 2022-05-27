@@ -158,4 +158,5 @@ def test_inventory():
     assert inventory.get_total_attack() == 0
     assert inventory.get_total_defense() == 10
 
+
 # Copilot is awesome
