@@ -1,34 +1,32 @@
-# Random is for well combat stuff and typety is for typing
-from random import randint
-import typety
-from tests import attack
+# We must initialize the game itself in its entirety
+# We will use the player class to create the player
+# We will use the inventory class to create the inventory
+# We will use the combat class to create the combat
+# We will need to import the ability to read and write to json files
+# We will use the ability to read and write to json files to save the player data
+
+import json
+# We will need to import all the necessary classes, these can be found in the src directory
+from player import Player
+from inventory import Inventory, Item, Weapon, Armor
+from combat import Combat
+
+# The player will be able to choose their name at the beginning of the game, and it must be saved to a local file, along with other player information, such as gold, inventory, weapon damage, armor defense
+# The player will have a starting gold of 300
+# The player will have a starting inventory containing a stick that does 4 damage, and a leather amour piece that has a defense of 2
+# The player information will be stored in playerdata.json in the json format and will be loaded when the game starts
 
 
-# This is for sneaking
-def stealth():
-    """Defines stealth"""
-    sneak = randint(1, 20)
-    if sneak == (12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20):
-        typety.typingprint("You sneak past\n")
-    elif sneak:
-        typety.typingprint("You don't sneak past and are caught,\n")
-        attack.combat()
+# We will need to create a class for the game
+class Game:
+    """Defines the game class"""
 
+    def __init__(self):
+        """Initializes the game class"""
+        self.player = Player("", 0, Inventory()) # Initializes the player class
+        self.combat = Combat() # Initializes the combat class
+        self.load_player() # Loads the player data
+        self.load_inventory() # Loads the inventory data
+        self.load_combat() # Loads the combat data
 
-typety.typingprint("A guard stands before you\n")
-typety.typingprint("you can sneak, attack, or run\n")
-typety.typingprint("type your response\n")
-option = input(">")
-if option == ("sneak"):
-    stealth()
-if option == ("attack"):
-    typety.typingprint("You atttack the guard, the battle begins!!!!\n")
-    attack.combat()
-if option == ("run"):
-    typety.typingprint(
-        "You run away, flailing your arms, while screaming like a coward\n"
-    )
-    typety.typingprint(
-        "You end up attracting too much attention, and are thrown in jail\n"
-    )
-    typety.typingprint("You lose\n")
+    
