@@ -3,7 +3,7 @@
 from random import randint
 from tests import typey
 
-# This is for combat
+# This is for combat testing
 info = {
     "player_health": 50,
     "player_attack": 7,
@@ -25,9 +25,9 @@ def combat():
         def attack():
             enemy_defending = info["enemy_defending"]
             if enemy_defending == 0:
-                info["enemy_health"] = info["enemy_health"] - info["player_attack"]
+                info["enemy_health"] -= info["player_attack"]
             elif enemy_defending == 1:
-                info["enemy_health"] = info["enemy_health"] - info["player_attack"] / 2
+                info["enemy_health"] -= info["player_attack"] / 2
                 info["enemy_defending"] = 0
             typey.typingprint("you successfully attacked")
             typey.typingprint(" the enemy is now at ")
@@ -68,11 +68,9 @@ def combat():
             if info["enemy_choice"] == (1 or 2 or 3 or 4 or 5):
                 typey.typingprint("the enemy is going to attack you!\n")
                 if info["player_defending"] == 0:
-                    info["player_health"] = info["player_health"] - info["enemy_attack"]
+                    info["player_health"] -= info["enemy_attack"]
                 elif info["player_defending"] == 1:
-                    info["player_health"] = (
-                        info["player_health"] - info["enemy_attack"] / 2
-                    )
+                    info["player_health"] -= info["enemy_attack"] / 2
                     info["player_defending"] = 0
             elif info["enemy_choice"]:
                 info["enemy_defending"] = 1
