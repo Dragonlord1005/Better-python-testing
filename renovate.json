@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "semanticCommits": "enabled",
+  "baseBranches": ["main", "Inventory"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "dependencies (non-major)"
+    }
+  ],
+}
