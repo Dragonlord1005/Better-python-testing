@@ -13,7 +13,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
 pyinstaller = "^4.5.1"
-poethepoet = "^0.13.1"
+poethepoet = "^0.15.0"
 black = "^22.1"
 typety = "^1.0.3"
 tcod = "^13.6.1"
