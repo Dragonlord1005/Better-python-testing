@@ -3,7 +3,7 @@
     "config:base"
   ],
   "semanticCommits": "enabled",
-  "baseBranches": ["main", "TOCD", "Inventory"],
+  "baseBranches": ["main", "Inventory"],
   "packageRules": [
     {
       "matchDepTypes": ["dependencies"],
