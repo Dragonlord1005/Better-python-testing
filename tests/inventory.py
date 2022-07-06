@@ -29,18 +29,16 @@ class Item:
 class Weapon(Item):
     """Defines Weapon class"""
 
-    def __init__(self, name, attack, weight, price):
+    def __init__(self, name, attack, weight, price, equipped):
         """Initializes all the cool stuff"""
         super().__init__(name, weight, price)
         self.attack = attack
+        self.equipped = False
 
     def get_attack(self):
         """Gets the level of attack for the weopon"""
         return self.attack
 
-    def deal_damage(self):
-        """Deals damage"""
-        info["enemy_health"] -= self.attack
 
 
 # Now we need armour that also has defense in addition to weight
@@ -48,10 +46,11 @@ class Weapon(Item):
 class Armor(Item):
     """Defines armor class"""
 
-    def __init__(self, name, defense, weight, price):
+    def __init__(self, name, defense, weight, price, equipped):
         """Initializes everything for this class"""
         super().__init__(name, weight, price)
         self.defense = defense
+        self.equipped = False
 
     def get_defense(self):
         """Gets the defense value"""
@@ -66,6 +65,8 @@ class Inventory:
     def __init__(self):
         """Initializes the inventory"""
         self.inventory = []
+        self.equipped_weapon = None
+        self.equipped_armor = None
 
     def add_item(self, item):
         """Adds an item to the inventory"""
@@ -93,18 +94,44 @@ class Inventory:
             total_price += item.get_price()
         return total_price
 
-    def get_total_attack(self):
-        """Gets the total attack of the inventory"""
-        total_attack = 0
-        for item in self.inventory:
-            if isinstance(item, Weapon):
-                total_attack += item.get_attack()
-        return total_attack
+    def equip_weapon(self, weapon):
+        """Equips a weapon"""
+        self.equipped_weapon = weapon
+        self.equipped_weapon.equipped = True
 
-    def get_total_defense(self):
-        """Gets the total defense of the inventory"""
-        total_defense = 0
-        for item in self.inventory:
-            if isinstance(item, Armor):
-                total_defense += item.get_defense()
-        return total_defense
+    def equip_armor(self, armor):
+        """Equips an armor"""
+        self.equipped_armor = armor
+        self.equipped_armor.equipped = True
+
+    def get_equipped_weapon(self):
+        """Gets the equipped weapon"""
+        return self.equipped_weapon
+
+    def get_equipped_armor(self):
+        """Gets the equipped armor"""
+        return self.equipped_armor
+
+    def unequip_weapon(self):
+        """Unequips the weapon"""
+        self.equipped_weapon.equipped = False
+        self.equipped_weapon = None
+
+    def unequip_armor(self):
+        """Unequips the armor"""
+        self.equipped_armor.equipped = False
+        self.equipped_armor = None
+
+    def get_equipped_attack(self):
+        """Gets the attack value of the equipped weapon"""
+        equipped_weapon = self.get_equipped_weapon()
+        if equipped_weapon is None:
+            return 0
+        return equipped_weapon.get_attack()
+
+    def get_equipped_defense(self):
+        """Gets the defense value of the equipped armor"""
+        equipped_armor = self.get_equipped_armor()
+        if equipped_armor is None:
+            return 0
+        return equipped_armor.get_defense()

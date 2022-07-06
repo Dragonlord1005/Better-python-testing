@@ -29,18 +29,16 @@ class Item:
 class Weapon(Item):
     """Defines Weapon class"""
 
-    def __init__(self, name, attack, weight, price):
+    def __init__(self, name, attack, weight, price, equipped):
         """Initializes all the cool stuff"""
         super().__init__(name, weight, price)
         self.attack = attack
+        self.equipped = False
 
     def get_attack(self):
         """Gets the level of attack for the weopon"""
         return self.attack
 
-    def deal_damage(self):
-        """Deals damage"""
-        info["enemy_health"] -= self.attack
 
 
 # Now we need armour that also has defense in addition to weight
@@ -48,10 +46,11 @@ class Weapon(Item):
 class Armor(Item):
     """Defines armor class"""
 
-    def __init__(self, name, defense, weight, price):
+    def __init__(self, name, defense, weight, price, equipped):
         """Initializes everything for this class"""
         super().__init__(name, weight, price)
         self.defense = defense
+        self.equipped = False
 
     def get_defense(self):
         """Gets the defense value"""
@@ -66,6 +65,8 @@ class Inventory:
     def __init__(self):
         """Initializes the inventory"""
         self.inventory = []
+        self.equipped_weapon = None
+        self.equipped_armor = None
 
     def add_item(self, item):
         """Adds an item to the inventory"""
@@ -93,73 +94,99 @@ class Inventory:
             total_price += item.get_price()
         return total_price
 
-    def get_total_attack(self):
-        """Gets the total attack of the inventory"""
-        total_attack = 0
-        for item in self.inventory:
-            if isinstance(item, Weapon):
-                total_attack += item.get_attack()
-        return total_attack
+    # When equipping things, it needs to be in the inventory first, and after equipping it, we need to mark it as equipped and not remove it from the inventory so it can still be displayed
+    def equip_weapon(self, weapon):
+        """Equips a weapon"""
+        self.equipped_weapon = weapon
+        self.equipped_weapon.equipped = True
 
-    def get_total_defense(self):
-        """Gets the total defense of the inventory"""
-        total_defense = 0
-        for item in self.inventory:
-            if isinstance(item, Armor):
-                total_defense += item.get_defense()
-        return total_defense
+    def equip_armor(self, armor):
+        """Equips an armor"""
+        self.equipped_armor = armor
+        self.equipped_armor.equipped = True
 
+    def get_equipped_weapon(self):
+        """Gets the equipped weapon"""
+        return self.equipped_weapon
 
-# Now we need tests for weapons that uses pytest
-# We'll use def
-def test_weapon():
-    """Tests weapon class"""
-    weapon = Weapon("Sword", 10, 2, 10)
-    assert weapon.get_name() == "Sword"
-    assert weapon.get_weight() == 2
-    assert weapon.get_price() == 10
-    assert weapon.get_attack() == 10
+    def get_equipped_armor(self):
+        """Gets the equipped armor"""
+        return self.equipped_armor
 
+    def unequip_weapon(self):
+        """Unequips the weapon"""
+        self.equipped_weapon.equipped = False
+        self.equipped_weapon = None
 
-# Now we need tests for armor that uses pytest
-# We'll use def
-def test_armor():
-    """Tests armor class"""
-    armor = Armor("Iron Armor", 10, 2, 10)
-    assert armor.get_name() == "Iron Armor"
-    assert armor.get_weight() == 2
-    assert armor.get_price() == 10
-    assert armor.get_defense() == 10
+    def unequip_armor(self):
+        """Unequips the armor"""
+        self.equipped_armor.equipped = False
+        self.equipped_armor = None
 
+    def get_equipped_attack(self):
+        """Gets the attack value of the equipped weapon"""
+        equipped_weapon = self.get_equipped_weapon()
+        if equipped_weapon is None:
+            return 0
+        return equipped_weapon.get_attack()
 
-# Now we need tests for inventory that uses pytest
-# We'll use def
+    def get_equipped_defense(self):
+        """Gets the defense value of the equipped armor"""
+        equipped_armor = self.get_equipped_armor()
+        if equipped_armor is None:
+            return 0
+        return equipped_armor.get_defense()
+
 def test_inventory():
-    """Tests inventory class"""
+    """Tests the inventory system"""
+    # Create an inventory
     inventory = Inventory()
-    assert inventory.get_inventory() == []  # Make sure inventory is empty
-    assert inventory.get_total_weight() == 0  # Make sure total weight is 0
-    assert inventory.get_total_price() == 0  # Make sure total price is 0
-    assert inventory.get_total_attack() == 0  # Make sure total attack is 0
-    assert inventory.get_total_defense() == 0  # Make sure total defense is 0
-    weapon = Weapon("Sword", 10, 2, 10)  # Create a weapon
-    armor = Armor("Iron Armor", 10, 2, 10)  # Create armor
-    inventory.add_item(weapon)  # Add the weapon to the inventory
-    inventory.add_item(armor)  # Add the armor to the inventory
-    assert inventory.get_inventory() == [
-        weapon,
-        armor,
-    ]  # Make sure inventory has the weapon and armor
-    assert inventory.get_total_weight() == 4  # Make sure total weight is 4
-    assert inventory.get_total_price() == 20  # Make sure total price is 20
-    assert inventory.get_total_attack() == 10  # Make sure total attack is 10
-    assert inventory.get_total_defense() == 10  # Make sure total defense is 10
-    inventory.remove_item(weapon)  # Remove the weapon from the inventory
-    assert inventory.get_inventory() == [armor]  # Make sure inventory has the armor
-    assert inventory.get_total_weight() == 2  # Make sure total weight is 2
-    assert inventory.get_total_price() == 10  # Make sure total price is 10
-    assert inventory.get_total_attack() == 0  # Make sure total attack is 0
-    assert inventory.get_total_defense() == 10  # Make sure total defense is 10
-
-
-# Copilot is awesome
+    # Create a weapon
+    weapon = Weapon("Sword", 10, 10, 10, False)
+    # Create an armor
+    armor = Armor("Armor", 10, 10, 10, False)
+    # Add the weapon to the inventory
+    inventory.add_item(weapon)
+    # Add the armor to the inventory
+    inventory.add_item(armor)
+    # Check the total weight of the inventory
+    assert inventory.get_total_weight() == 20
+    # Check the total price of the inventory
+    assert inventory.get_total_price() == 20
+    # Equip the weapon
+    inventory.equip_weapon(weapon)
+    # Check the attack value of the equipped weapon
+    assert inventory.get_equipped_attack() == 10
+    # Check the defense value of the equipped armor
+    assert inventory.get_equipped_defense() == 0
+    # Unequip the weapon
+    inventory.unequip_weapon()
+    # Check the attack value of the equipped weapon
+    assert inventory.get_equipped_attack() == 0
+    # Check the defense value of the equipped armor
+    assert inventory.get_equipped_defense() == 0
+    # Equip the armor
+    inventory.equip_armor(armor)
+    # Check the attack value of the equipped weapon
+    assert inventory.get_equipped_attack() == 0
+    # Check the defense value of the equipped armor
+    assert inventory.get_equipped_defense() == 10
+    # Unequip the armor
+    inventory.unequip_armor()
+    # Check the attack value of the equipped weapon
+    assert inventory.get_equipped_attack() == 0
+    # Check the defense value of the equipped armor
+    assert inventory.get_equipped_defense() == 0
+    # Remove the weapon from the inventory
+    inventory.remove_item(weapon)
+    # Check the total weight of the inventory
+    assert inventory.get_total_weight() == 10
+    # Check the total price of the inventory
+    assert inventory.get_total_price() == 10
+    # Remove the armor from the inventory
+    inventory.remove_item(armor)
+    # Check the total weight of the inventory
+    assert inventory.get_total_weight() == 0
+    # Check the total price of the inventory
+    assert inventory.get_total_price() == 0
+    
